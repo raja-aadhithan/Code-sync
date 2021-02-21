@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  ASCII                                                                10/13/2020 09:00:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ascii.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ascii.asm SET(SMALL) DEBUG PRINT(.\Listings\ascii.lst) OBJECT(.\Objects
+                      \ascii.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; HEX TO BCD convertion
+0000 78FF              2                     MOV  R0, #0FFH ; value to be coverted
+0002 E8                3                     MOV  A , R0        ; store the value in A
+0003 75F064            4                     MOV  B , #64H  ; to be divided for MSB
+0006 84                5                     DIV  AB            ; divide for 100th place
+0007 2430              6                     ADD  A , #30H  ;
+0009 F9                7                     MOV  R1, A     ; store MSB in R1
+000A E5F0              8                     MOV  A , B     ; load A with remainder
+000C 75F00A            9                     MOV  B , #0AH  ; 10 is the divider
+000F 84               10                     DIV  AB        ; divide for tenth place
+0010 2430             11                     ADD  A ,  #30H        
+0012 FA               12                     MOV  R2, A     ; store in R2
+0013 E5F0             13                     MOV  A , B     ;
+0015 2430             14                     ADD  A ,  #30H        
+0017 FB               15                     MOV  R3, A     ; store in R2
+0018 8980             16                     MOV  P0, R1    ;
+001A 8A90             17                     MOV  P1, R2    ;
+001C 8BA0             18                     MOV  P2, R3
+                      19                     END                        ; result in R1 and R2
+                                                     
+A51 MACRO ASSEMBLER  ASCII                                                                10/13/2020 09:00:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

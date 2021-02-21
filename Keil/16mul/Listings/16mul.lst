@@ -1,0 +1,87 @@
+A51 MACRO ASSEMBLER  16MUL                                                                10/06/2020 07:51:56 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\16mul.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 16mul.asm SET(SMALL) DEBUG PRINT(.\Listings\16mul.lst) OBJECT(.\Objects
+                      \16mul.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; multipling 16 bit number
+                       2     ;1ST NUMBER IS 1234
+                       3     ;2ND NUMBER IS 5678
+                       4                     
+0000 7F34              5                     MOV R7, #034H ; LOWER BYTE OF NUMBER 1
+0002 7E12              6                     MOV R6, #012H ; UPPER BYTE OF NUMBER 1
+0004 7D78              7                     MOV R5, #078H ; LOWER BYTE OF NUMBER 2
+0006 7C56              8                     MOV R4, #056H ; UPPER BYTE OF NUMBER 2
+                       9     
+                      10     ;multipling lower byte of 1st operand           
+                      11                     
+0008 ED               12                     MOV A,R5
+0009 6005             13                     JZ L8     ; checks if R5 is zero
+000B 120020           14             L4:     LCALL L1  ; repeated addition loop
+000E DDFB             15                     DJNZ R5,L4 
+                      16                     
+                      17     ;multipling higher byte of 1st operand  
+                      18     
+0010 EC               19             L8:     MOV A,R4
+0011 6005             20                     JZ  L5    ; checks if R4 is zero
+0013 12002F           21             L6: LCALL L3  ; repeated addition loop
+0016 DCFB             22                     DJNZ R4,L6
+                      23             
+0018 858251           24             L5: MOV 51H, DPL ;moves value of DPTR to these registers 
+001B 858350           25                     MOV 50H, DPH
+001E 801A             26                     SJMP  L9         ; jumps to last line
+                      27     
+                      28     ;1st SUBROUTINE
+                      29     
+0020 E553             30             L1: MOV A,53H 
+0022 2F               31                     ADD A,R7  ; adds lower byte of 2nd operand
+0023 F553             32                     MOV 53H,A
+0025 E552             33                     MOV A,52H ; 4th byte of result
+0027 3E               34                     ADDC A,R6 ; adds higher byte of 2nd operand
+0028 F552             35                     MOV 52H,A ; 3rd byte of result
+002A 5002             36                     JNC L2
+002C A3               37                     INC DPTR  ; 1st and 2nd byte of results
+002D C3               38                     CLR C
+002E 22               39             L2: RET
+                      40     
+                      41     ; 2ND SUBROUTINE ( multiplying higher byte by 100H)
+                      42     
+002F 7BFF             43             L3:     MOV R3, #0FFH 
+0031 120020           44             L7: LCALL L1   ; calls subroutine 255 times
+0034 DBFB             45                     DJNZ R3,L7
+0036 120020           46                     LCALL L1   ; calls subroutine for 256th time
+0039 22               47                     RET        ; this sub routine has been executed 100H times
+                      48             
+003A                  49             L9:                ; result is seen at 50H 51H 52H and 53H registers
+                      50                     END
+                                                     
+                                     
+A51 MACRO ASSEMBLER  16MUL                                                                10/06/2020 07:51:56 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+L1 . . . . . . . .  C ADDR   0020H   A   
+L2 . . . . . . . .  C ADDR   002EH   A   
+L3 . . . . . . . .  C ADDR   002FH   A   
+L4 . . . . . . . .  C ADDR   000BH   A   
+L5 . . . . . . . .  C ADDR   0018H   A   
+L6 . . . . . . . .  C ADDR   0013H   A   
+L7 . . . . . . . .  C ADDR   0031H   A   
+L8 . . . . . . . .  C ADDR   0010H   A   
+L9 . . . . . . . .  C ADDR   003AH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\8BIT.obj" 
+TO ".\Objects\TIMER" 
+PRINT(".\Listings\TIMER.m51")

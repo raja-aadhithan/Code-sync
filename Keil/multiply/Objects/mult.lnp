@@ -1,0 +1,3 @@
+".\Objects\multi.obj" 
+TO ".\Objects\mult" 
+PRINT(".\Listings\mult.m51")

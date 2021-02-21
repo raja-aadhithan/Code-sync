@@ -1,0 +1,52 @@
+A51 MACRO ASSEMBLER  EX                                                                   10/15/2020 16:07:37 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ex.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex.asm SET(SMALL) DEBUG PRINT(.\Listings\ex.lst) OBJECT(.\Objects\ex.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG 00H
+0000 754032            2                     MOV 40H, #32H 
+0003 754142            3                     MOV 41H, #42H
+0006 7542A0            4                     MOV 42H, #0A0H
+0009 75430F            5                     MOV 43H, #0FH
+000C 7840              6                     MOV R0, #40H ; pointer for inputs 
+000E 7953              7                     MOV R1, #53H ; pointer for outputs
+0010 E6                8                     MOV A ,@R0   ; move 1st value to A
+0011 08                9                     INC R0       ; inc A
+0012 26               10                     ADD A ,@R0   ; add 2nd value to A
+0013 08               11                     INC R0       ; inc A
+0014 F7               12                     MOV @R1,A    ; store result 
+0015 19               13                     DEC R1           ; dec R1
+0016 5001             14                     JNC L1           ; check for carry
+0018 07               15                     INC @R1          ; store carry
+0019 19               16             L1: DEC R1               ; dec R1
+001A E6               17                     MOV A ,@R0       ; move 3rd value to A
+001B 08               18                     INC R0           ; inc R0 
+001C 96               19                     SUBB A,@R0       ; sub 4th value from A
+001D F7               20                     MOV @R1,A    ; store result i
+001E 19               21                     DEC R1           ; dec R1
+001F 5001             22                     JNC L2           ; check for carry
+0021 07               23                     INC @R1      ; store carry
+0022 00               24             L2: NOP
+                      25                     END
+                                             
+A51 MACRO ASSEMBLER  EX                                                                   10/15/2020 16:07:37 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+L1 . . . . . . . .  C ADDR   0019H   A   
+L2 . . . . . . . .  C ADDR   0022H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

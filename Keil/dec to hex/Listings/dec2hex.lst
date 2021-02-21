@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  DEC2HEX                                                              10/13/2020 09:35:37 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\dec2hex.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE dec2hex.asm SET(SMALL) DEBUG PRINT(.\Listings\dec2hex.lst) OBJECT(.\Obj
+                      ects\dec2hex.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;DECIMAL TO HEXA DECIMAL
+0000 7815              2                             MOV R0 , #15H           ; enter desired value in R0
+0002 C3                3                LOOP:CLR C                           ; clear carry generated from CJNE
+0003 04                4                             INC A                           ; inc acc
+0004 09                5                             INC R1                          ; inc R1
+0005 D4                6                             DA A                            ; convert A to decimal equivalent
+0006 B500F9            7                             CJNE A , 00H , LOOP ; compare if A has reached R0
+0009 8880              8                             MOV P0 , R0                     ; display input in R0
+000B 8990              9                             MOV P1 , R1                     ; display output in R1
+                      10                             END             
+A51 MACRO ASSEMBLER  DEC2HEX                                                              10/13/2020 09:35:37 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0002H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

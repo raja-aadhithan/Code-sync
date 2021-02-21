@@ -1,0 +1,1 @@
+"mul.asm" SET (SMALL) DEBUG PRINT(.\Listings\mul.lst) OBJECT(.\Objects\mul.obj) EP

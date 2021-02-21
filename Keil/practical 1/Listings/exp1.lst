@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  EXP1                                                                 10/15/2020 15:48:41 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\exp1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE exp1.asm SET(SMALL) DEBUG PRINT(.\Listings\exp1.lst) OBJECT(.\Objects\e
+                      xp1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG 00H
+0000 7410              2                     MOV A,#10H ; load 10H to A
+0002 241D              3                     ADD A,#1DH ; add 1DH to A
+0004 F9                4                     MOV R1,A   ; store result in R1
+0005 5001              5                     JNC L1     
+0007 08                6                     INC R0     ; store carry in R0
+0008 740A              7             L1: MOV A,#0AH ; load 0AH in A
+000A 9405              8                     SUBB A,#05H; Sub 05H from A
+000C FB                9                     MOV R3,A   ; store result in R3
+000D 5001             10                     JNC L2     
+000F 0A               11                     INC R2     ; store carry in R2
+0010 00               12             L2:     NOP
+                      13                     END
+A51 MACRO ASSEMBLER  EXP1                                                                 10/15/2020 15:48:41 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+L1 . . . . . . . .  C ADDR   0008H   A   
+L2 . . . . . . . .  C ADDR   0010H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

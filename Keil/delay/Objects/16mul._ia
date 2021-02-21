@@ -1,0 +1,1 @@
+"..\16mul\16mul.asm" SET (SMALL) DEBUG PRINT(.\Listings\16mul.lst) OBJECT(.\Objects\16mul.obj) EP

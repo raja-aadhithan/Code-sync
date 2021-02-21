@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  MULTI                                                                09/29/2020 08:48:06 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\multi.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE multi.asm SET(SMALL) DEBUG PRINT(.\Listings\multi.lst) OBJECT(.\Objects
+                      \multi.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ;multipling 55h and 40h 
+                       2     ;               MOV R1, #55H ; 1st number
+                       3     ;               MOV R0, #40H ; 2nd number
+                       4     ;NEXT:  ADD A, R1    ; adding R1 repeatedly
+                       5     ;               JNC LABEL    
+                       6     ;               INC R6       ; increment R6 on carry
+                       7     ;LABEL: DJNZ R0 , NEXT ; add R1 to acc 
+                       8     ;               MOV R7, A
+0000 7455              9                     MOV A, #55H ;1st operand
+0002 75F040           10                     MOV B, #40H ;2nd operand
+0005 A4               11                     MUL AB; result in A and B
+                      12                     END
+A51 MACRO ASSEMBLER  MULTI                                                                09/29/2020 08:48:06 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

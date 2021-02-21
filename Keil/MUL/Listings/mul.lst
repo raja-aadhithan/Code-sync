@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  MUL                                                                  10/15/2020 16:34:48 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\mul.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE mul.asm SET(SMALL) DEBUG PRINT(.\Listings\mul.lst) OBJECT(.\Objects\mul
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1                     ORG 00H
+0000 754032            2                     MOV 40H, #32H 
+0003 754142            3                     MOV 41H, #42H
+0006 7560A0            4                     MOV 60H, #0A0H
+0009 75610F            5                     MOV 61H, #0FH
+000C 7840              6                     MOV R0, #40H ; pointer for inputs 
+000E 7944              7                     MOV R1, #44H ; pointer for outputs
+0010 E6                8                     MOV A ,@R0   ; move 1st value to A
+0011 08                9                     INC R0       ; inc R0
+0012 86F0             10                     MOV B  ,@R0  ; mov 2nd value to b
+0014 A4               11                     MUL AB           ; MULTIPLY
+0015 F7               12                     MOV @R1,A    ; store result 
+0016 19               13                     DEC R1           ; dec R1
+0017 A7F0             14                     MOV @R1,B        ; store result  
+0019 7860             15                     MOV R0,#60H
+001B 7964             16                     MOV R1,#64H             
+001D E6               17                     MOV A ,@R0       ; move 3rd value to A
+001E 08               18                     INC R0           ; inc R0 
+001F 86F0             19                     MOV B,@R0        ; move 4th value to B
+0021 84               20                     DIV AB           ; DIVIDE 
+0022 F7               21                     MOV @R1,A    ; store reminder 
+0023 19               22                     DEC R1           ; dec R1
+0024 A7F0             23                     MOV @R1,B    ; store quotient
+                      24                     END
+                                             
+A51 MACRO ASSEMBLER  MUL                                                                  10/15/2020 16:34:48 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

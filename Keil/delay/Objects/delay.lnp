@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\16mul.obj" 
+TO ".\Objects\delay" 
+PRINT(".\Listings\delay.m51")
