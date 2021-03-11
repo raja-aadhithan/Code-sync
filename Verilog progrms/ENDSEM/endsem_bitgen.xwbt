@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\AADHITHAN\Documents\xilinx\ENDSEM\endsem.ncd
-OUTFILE=C:\Users\AADHITHAN\Documents\xilinx\ENDSEM\endsem.bit
-FAMILY=Spartan6
-PART=xc6slx4-3tqg144
-WORKINGDIR=C:\Users\AADHITHAN\Documents\xilinx\ENDSEM
-LICENSE=WebPack
-USER_INFO=210818514_0_0_955
