@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/AADHITHAN/Documents/xilinx/dfflip/dfflip.xst" -ofn "C:/Users/AADHITHAN/Documents/xilinx/dfflip/dfflip.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc dfflip.ucf -p xc6slx4-tqg144-3 dfflip.ngc dfflip.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dfflip_map.ncd dfflip.ngd dfflip.pcf 
+par -w -intstyle ise -ol high -mt off dfflip_map.ncd dfflip.ncd dfflip.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dfflip.twx dfflip.ncd -o dfflip.twr dfflip.pcf -ucf dfflip.ucf 
+bitgen -intstyle ise -f dfflip.ut dfflip.ncd 

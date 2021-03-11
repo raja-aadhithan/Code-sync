@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Fri Mar 15 17:15:44 2019
+# Process ID: 54984
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/mux/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/mux/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/mux/pa.fromHdl.tcl
+startgroup
+set_property loc PAD1 [get_ports i1]
+endgroup
+startgroup
+set_property loc PAD2 [get_ports i2]
+endgroup
+startgroup
+set_property loc PAD3 [get_ports i3]
+endgroup
+startgroup
+set_property loc PAD4 [get_ports i4]
+endgroup
+startgroup
+set_property loc PAD5 [get_ports s0]
+endgroup
+startgroup
+set_property loc PAD6 [get_ports s1]
+endgroup
+startgroup
+set_property loc PAD7 [get_ports y]
+endgroup
+set_property prohibit 1 [get_sites P137]
+set_property prohibit 0 [get_sites P137]
+save_design
+exit

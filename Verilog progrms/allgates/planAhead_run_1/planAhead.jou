@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Feb 16 04:53:03 2019
+# Process ID: 45252
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/allgates/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/allgates/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/allgates/pa.fromHdl.tcl
+startgroup
+set_property loc PAD35 [get_ports a1]
+endgroup
+startgroup
+set_property loc PAD28 [get_ports b1]
+endgroup
+startgroup
+set_property loc PAD27 [get_ports a2]
+endgroup
+startgroup
+set_property loc PAD26 [get_ports b2]
+endgroup
+startgroup
+set_property loc PAD25 [get_ports a3]
+endgroup
+startgroup
+set_property loc PAD24 [get_ports b3]
+endgroup
+startgroup
+set_property loc PAD23 [get_ports a4]
+endgroup
+startgroup
+set_property loc PAD22 [get_ports b4]
+endgroup
+startgroup
+set_property loc PAD21 [get_ports a5]
+endgroup
+startgroup
+set_property loc PAD8 [get_ports b5]
+endgroup
+startgroup
+set_property loc PAD7 [get_ports a6]
+endgroup
+startgroup
+set_property loc PAD6 [get_ports b6]
+endgroup
+startgroup
+set_property loc PAD5 [get_ports a7]
+endgroup
+startgroup
+set_property loc PAD36 [get_ports y7]
+endgroup
+startgroup
+set_property loc PAD37 [get_ports y6]
+endgroup
+startgroup
+set_property loc PAD38 [get_ports y5]
+endgroup
+startgroup
+set_property loc PAD39 [get_ports y4]
+endgroup
+startgroup
+set_property loc PAD40 [get_ports y3]
+endgroup
+startgroup
+set_property loc PAD41 [get_ports y2]
+endgroup
+save_design

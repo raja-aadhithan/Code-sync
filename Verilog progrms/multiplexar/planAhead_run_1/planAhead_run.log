@@ -1,0 +1,90 @@
+WARNING: C:\Xilinx\ISE_DS\ISE\lib\nt64 does not exist.
+WARNING: C:\Xilinx\ISE_DS\ISE\bin\nt64 does not exist.
+
+WARNING: %XILINX% does not contain 64bit executables. Defaulting to 32bit.
+
+
+****** PlanAhead v13.1
+  **** Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -1590 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/multiplexar/pa.fromNetlist.tcl
+starting gui ...
+# create_project -name multiplexar -dir "C:/Users/AADHITHAN/Documents/xilinx/multiplexar/planAhead_run_1" -part xc6slx4tqg144-3
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Qt: Untested Windows version 6.2 detected!
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/AADHITHAN/Documents/xilinx/multiplexar/multiplexar.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/AADHITHAN/Documents/xilinx/multiplexar} }
+# set_param project.pinAheadLayout  yes
+# set_param project.paUcfFile  "multiplexar.ucf"
+# add_files "multiplexar.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to constrset part: xc6slx4tqg144-3
+Release 13.1 - ngc2edif O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.1 - ngc2edif O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design multiplexar.ngc ...
+WARNING:NetListWriters:298 - No output is written to multiplexar.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file multiplexar.edif ...
+ngc2edif: Total memory usage is 68468 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-212332-DESKTOP-4CEVQT4\ngc2edif\multiplexar.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-212332-DESKTOP-4CEVQT4\ngc2edif\multiplexar.edif]
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockBuffers.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/tqg144/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\multiplexar\multiplexar.ucf]
+Finished Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\multiplexar\multiplexar.ucf]
+Time (s): 9.950w
+Time (s): 13.196w
+set_property prohibit 1 [get_sites P121]
+set_property prohibit 0 [get_sites P121]
+startgroup
+set_property loc PAD35 [get_ports i3]
+endgroup
+startgroup
+set_property loc PAD28 [get_ports i2]
+endgroup
+startgroup
+set_property loc PAD27 [get_ports i1]
+endgroup
+startgroup
+set_property loc PAD26 [get_ports i0]
+endgroup
+startgroup
+set_property loc PAD25 [get_ports s1]
+endgroup
+startgroup
+set_property loc PAD24 [get_ports s0]
+endgroup
+startgroup
+set_property loc PAD44 [get_ports y]
+endgroup
+save_design
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

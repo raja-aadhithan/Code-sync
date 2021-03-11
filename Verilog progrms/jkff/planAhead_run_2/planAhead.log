@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Mar 16 05:24:24 2019
+# Process ID: 97460
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/jkff/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/jkff/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -1597 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/jkff/pa.fromNetlist.tcl
+# create_project -name jkff -dir "C:/Users/AADHITHAN/Documents/xilinx/jkff/planAhead_run_2" -part xc6slx4tqg144-3
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Qt: Untested Windows version 6.2 detected!
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/AADHITHAN/Documents/xilinx/jkff/jkff.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/AADHITHAN/Documents/xilinx/jkff} }
+# set_param project.pinAheadLayout  yes
+# set_param project.paUcfFile  "jkff.ucf"
+# add_files "jkff.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to constrset part: xc6slx4tqg144-3
+Release 13.1 - ngc2edif O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.1 - ngc2edif O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design jkff.ngc ...
+WARNING:NetListWriters:298 - No output is written to jkff.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jkff.edif ...
+ngc2edif: Total memory usage is 72472 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-97460-DESKTOP-4CEVQT4\ngc2edif\jkff.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-97460-DESKTOP-4CEVQT4\ngc2edif\jkff.edif]
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockBuffers.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/tqg144/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\jkff\jkff.ucf]
+Finished Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\jkff\jkff.ucf]
+Time (s): 8.154w
+Time (s): 9.971w
+set_property loc "" [get_ports q]
+set_property prohibit 1 [get_sites P120]
+set_property prohibit 0 [get_sites P120]
+startgroup
+set_property loc PAD36 [get_ports q]
+endgroup
+save_design
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

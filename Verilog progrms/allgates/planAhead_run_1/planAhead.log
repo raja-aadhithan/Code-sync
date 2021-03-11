@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Feb 16 04:53:03 2019
+# Process ID: 45252
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/allgates/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/allgates/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -1569 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/allgates/pa.fromHdl.tcl
+# create_project -name allgates -dir "C:/Users/AADHITHAN/Documents/xilinx/allgates/planAhead_run_1" -part xc6slx4tqg144-3
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Qt: Untested Windows version 6.2 detected!
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top allgates $srcset
+# set_param project.paUcfFile  "allgates.ucf"
+# set hdlfile [add_files [list {allgates.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files "allgates.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx4tqg144-3
+INFO: [PlanAhead-58] Using the Verific elaboration engine
+Parsing VHDL file "C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Analyzing Verilog file "C:\Users\AADHITHAN\Documents\xilinx\allgates\allgates.v" into library work
+Parsing module <allgates>.
+
+Elaborating module <allgates>.
+Removing all analyzed parse trees
+INFO: [HD-ArchReader 7] Loading clock regions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockBuffers.xml
+INFO: [HD-ArchReader 13] Loading package pin functions from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/PinFunctions.xml...
+INFO: [HD-ArchReader 3] Loading package from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/spartan6lx/xc6slx4/tqg144/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/IOStandards.xml
+INFO: [HD-ArchReader 12] Loading device configuration modes from C:/Xilinx/ISE_DS/PlanAhead/parts/xilinx/spartan6/ConfigModes.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/drc.xml
+INFO: [HD-LIB 0] Reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+INFO: [HD-LIB 1] Done reading timing library C:/Xilinx/ISE_DS/PlanAhead/./parts/xilinx/spartan6/spartan6.lib .
+Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\allgates\allgates.ucf]
+Finished Parsing UCF File [C:\Users\AADHITHAN\Documents\xilinx\allgates\allgates.ucf]
+Time (s): 8.233w
+Time (s): 10.500w
+startgroup
+set_property loc PAD35 [get_ports a1]
+endgroup
+startgroup
+set_property loc PAD28 [get_ports b1]
+endgroup
+startgroup
+set_property loc PAD27 [get_ports a2]
+endgroup
+startgroup
+set_property loc PAD26 [get_ports b2]
+endgroup
+startgroup
+set_property loc PAD25 [get_ports a3]
+endgroup
+startgroup
+set_property loc PAD24 [get_ports b3]
+endgroup
+startgroup
+set_property loc PAD23 [get_ports a4]
+endgroup
+startgroup
+set_property loc PAD22 [get_ports b4]
+endgroup
+startgroup
+set_property loc PAD21 [get_ports a5]
+endgroup
+startgroup
+set_property loc PAD8 [get_ports b5]
+endgroup
+startgroup
+set_property loc PAD7 [get_ports a6]
+endgroup
+startgroup
+set_property loc PAD6 [get_ports b6]
+endgroup
+startgroup
+set_property loc PAD5 [get_ports a7]
+endgroup
+startgroup
+set_property loc PAD36 [get_ports y7]
+endgroup
+startgroup
+set_property loc PAD37 [get_ports y6]
+endgroup
+startgroup
+set_property loc PAD38 [get_ports y5]
+endgroup
+startgroup
+set_property loc PAD39 [get_ports y4]
+endgroup
+startgroup
+set_property loc PAD40 [get_ports y3]
+endgroup
+startgroup
+set_property loc PAD41 [get_ports y2]
+endgroup
+save_design

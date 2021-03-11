@@ -1,0 +1,6 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = P123;
+NET "d" LOC = P121;
+NET "q" LOC = P120;

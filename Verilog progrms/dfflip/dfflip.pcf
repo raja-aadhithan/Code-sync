@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map O.40d on Wed Mar 20 15:54:51 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P123" LEVEL 1;
+COMP "q" LOCATE = SITE "P120" LEVEL 1;
+COMP "d" LOCATE = SITE "P121" LEVEL 1;
+SCHEMATIC END;
+

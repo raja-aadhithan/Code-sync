@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "i1" LOC = P121;
+NET "i2" LOC = P123;
+NET "o1" LOC = P112;
+NET "o2" LOC = P114;
+NET "o3" LOC = P115;
+NET "o4" LOC = P116;

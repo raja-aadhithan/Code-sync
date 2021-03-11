@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Mar 09 09:04:17 2019
+# Process ID: 209012
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/dflipflop/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/dflipflop/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/dflipflop/pa.fromHdl.tcl
+exit

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/AADHITHAN/Documents/xilinx/ENDSEM/endsem.xst" -ofn "C:/Users/AADHITHAN/Documents/xilinx/ENDSEM/endsem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc endsem.ucf -p xc6slx4-tqg144-3 endsem.ngc endsem.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o endsem_map.ncd endsem.ngd endsem.pcf 
+par -w -intstyle ise -ol high -mt off endsem_map.ncd endsem.ncd endsem.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml endsem.twx endsem.ncd -o endsem.twr endsem.pcf -ucf endsem.ucf 
+bitgen -intstyle ise -f endsem.ut endsem.ncd 

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="a1" Dir="IN"/>
+		<Port Id="b1" Dir="IN"/>
+		<Port Id="a2" Dir="IN"/>
+		<Port Id="b2" Dir="IN"/>
+		<Port Id="a3" Dir="IN"/>
+		<Port Id="b3" Dir="IN"/>
+		<Port Id="a4" Dir="IN"/>
+		<Port Id="b4" Dir="IN"/>
+		<Port Id="a5" Dir="IN"/>
+		<Port Id="b5" Dir="IN"/>
+		<Port Id="a6" Dir="IN"/>
+		<Port Id="b6" Dir="IN"/>
+		<Port Id="a7" Dir="IN"/>
+		<Port Id="y1" Dir="OUT"/>
+		<Port Id="y2" Dir="OUT"/>
+		<Port Id="y3" Dir="OUT"/>
+		<Port Id="y4" Dir="OUT"/>
+		<Port Id="y5" Dir="OUT"/>
+		<Port Id="y6" Dir="OUT"/>
+		<Port Id="y7" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Mar 16 04:34:44 2019
+# Process ID: 77896
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/dff/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/dff/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/dff/pa.fromNetlist.tcl
+set_property loc "" [get_ports D]
+set_property loc "" [get_ports clk]
+set_property loc "" [get_ports Q]
+startgroup
+set_property loc PAD35 [get_ports D]
+endgroup
+startgroup
+set_property loc PAD36 [get_ports clk]
+endgroup
+startgroup
+set_property loc PAD37 [get_ports Q]
+endgroup
+set_property loc "" [get_ports D]
+set_property loc "" [get_ports clk]
+set_property loc "" [get_ports Q]
+startgroup
+set_property loc PAD36 [get_ports D]
+endgroup
+startgroup
+set_property loc PAD37 [get_ports clk]
+endgroup
+startgroup
+set_property loc PAD38 [get_ports Q]
+endgroup
+save_design
+exit

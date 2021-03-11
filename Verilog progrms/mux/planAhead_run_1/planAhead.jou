@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Fri Mar 15 17:13:35 2019
+# Process ID: 53424
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/mux/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/mux/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/mux/pa.fromHdl.tcl
+exit

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+	</CompatParts>
+	<ConfigModes>
+		<Mode Id="JTAG"/>
+	</ConfigModes>
+	<PortProps>
+		<Port Name="s0" OffChipTerm="NONE"/>
+		<Port Name="s1" OffChipTerm="NONE"/>
+		<Port Name="i1" OffChipTerm="NONE"/>
+		<Port Name="i2" OffChipTerm="NONE"/>
+		<Port Name="i3" OffChipTerm="NONE"/>
+		<Port Name="i4" OffChipTerm="NONE"/>
+		<Port Name="y" OffChipTerm="FP_VTT_50"/>
+	</PortProps>
+</Compat>
+

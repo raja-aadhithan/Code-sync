@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Feb 23 04:11:56 2019
+# Process ID: 97492
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/encoder/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/encoder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/encoder/pa.fromNetlist.tcl
+startgroup
+set_property loc PAD42 [get_ports o3]
+endgroup
+save_design
+exit

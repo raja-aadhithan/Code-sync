@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# PlanAhead v13.1
+# Build 117799 by hdbuild on Thu Feb 17 11:38:00 PST 2011
+# Start of session at: Sat Mar 16 04:16:00 2019
+# Process ID: 82332
+# Log file: C:/Users/AADHITHAN/Documents/xilinx/Dflipflopexam/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/AADHITHAN/Documents/xilinx/Dflipflopexam/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -1597 day(s)
+INFO: [HD-ArchReader 0] Loading parts and site information from C:\Xilinx\ISE_DS\PlanAhead\parts\arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file 'C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml'
+start_gui -source C:/Users/AADHITHAN/Documents/xilinx/Dflipflopexam/pa.fromHdl.tcl
+# create_project -name Dflipflopexam -dir "C:/Users/AADHITHAN/Documents/xilinx/Dflipflopexam/planAhead_run_1" -part xc6slx4tqg144-3
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Qt: Untested Windows version 6.2 detected!
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top Dflipflopexam $srcset
+# set_param project.paUcfFile  "Dflipflopexam.ucf"
+# set hdlfile [add_files [list {Dflipflopexam.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# add_files "Dflipflopexam.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx4tqg144-3
+INFO: [PlanAhead-58] Using the Verific elaboration engine
+Parsing VHDL file "C:\Xilinx\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Analyzing Verilog file "C:\Users\AADHITHAN\Documents\xilinx\Dflipflopexam\Dflipflopexam.v" into library work
+Parsing module <Dflipflopexam>.
+ERROR: [HDL-806] Syntax error near "output". [C:\Users\AADHITHAN\Documents\xilinx\Dflipflopexam\Dflipflopexam.v:24]
+INFO: [HDL-1106] Verilog file C:\Users\AADHITHAN\Documents\xilinx\Dflipflopexam\Dflipflopexam.v ignored due to errors
+Removing all analyzed parse trees
+ERROR: [Designutils-72] Failed to analyze HDL design
+    while executing
+"open_rtl_design -part xc6slx4tqg144-3"
+    (file "C:/Users/AADHITHAN/Documents/xilinx/Dflipflopexam/pa.fromHdl.tcl" line 13)
+exit
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead
