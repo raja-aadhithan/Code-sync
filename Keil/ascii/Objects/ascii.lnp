@@ -1,4 +1,0 @@
-".\Objects\STARTUP.obj",
-".\Objects\ascii.obj" 
-TO ".\Objects\ascii" 
-PRINT(".\Listings\ascii.m51")

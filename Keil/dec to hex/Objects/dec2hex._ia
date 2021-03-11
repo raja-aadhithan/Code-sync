@@ -1,1 +1,0 @@
-"dec2hex.asm" SET (SMALL) DEBUG PRINT(.\Listings\dec2hex.lst) OBJECT(.\Objects\dec2hex.obj) EP

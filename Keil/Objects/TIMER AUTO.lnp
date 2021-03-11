@@ -1,4 +1,0 @@
-".\Objects\Timer.obj",
-".\Objects\STARTUP.obj" 
-TO ".\Objects\TIMER AUTO" 
-PRINT(".\Listings\TIMER AUTO.m51")

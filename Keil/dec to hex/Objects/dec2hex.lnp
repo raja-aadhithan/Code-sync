@@ -1,4 +1,0 @@
-".\Objects\STARTUP.obj",
-".\Objects\dec2hex.obj" 
-TO ".\Objects\dec2hex" 
-PRINT(".\Listings\dec2hex.m51")

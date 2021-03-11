@@ -1,3 +1,0 @@
-".\Objects\bcd.obj" 
-TO ".\Objects\bcdadd" 
-PRINT(".\Listings\bcdadd.m51")

@@ -1,1 +1,0 @@
-"desending.asm" SET (SMALL) DEBUG PRINT(.\Listings\desending.lst) OBJECT(.\Objects\desending.obj) EP

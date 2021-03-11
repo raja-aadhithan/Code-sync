@@ -1,1 +1,0 @@
-"bcdadd.asm" SET (SMALL) DEBUG PRINT(.\Listings\bcdadd.lst) OBJECT(.\Objects\bcdadd.obj) EP
