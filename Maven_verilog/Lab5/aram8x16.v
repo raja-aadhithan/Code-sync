@@ -7,7 +7,7 @@ reg [15:0] mem [7:0];
 
    always@(*)begin
       if(wr_in) mem[addr_in]=data_wr;
-      if(rd_in) out = (rd_in) ? mem[addr_out] : 8'hzz;
+      if(rd_in) out = (rd_in) ? mem[addr_out] : 16'hzz;
    end
    assign data_rd = out;
 endmodule 
