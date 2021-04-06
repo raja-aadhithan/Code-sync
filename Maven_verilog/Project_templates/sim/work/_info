@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/20.4
+vaclk_areg
+!s110 1616996606
+!i10b 1
+!s100 6T>Uf3TS^SPJkDc@n[=9Y2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<FS[nMm1W6_JR]Wm9H9YU3
+Z1 dC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/sim
+w1616996601
+8C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v
+!i122 2
+L0 1 22
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OV;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1616996605.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vaclk_lcd_display
+!s110 1616996115
+!i10b 1
+!s100 S8a6?GIzl;f=3Hm>o[CKa3
+R0
+ILHVl0DjUQ:QR;^K;C1;A_1
+R1
+w1616996040
+8C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v
+!i122 1
+L0 1 51
+R2
+R3
+r1
+!s85 0
+31
+!s108 1616996114.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v|
+!i113 1
+R4
+R5
+vaclk_lcd_driver
+!s110 1616932625
+!i10b 1
+!s100 @hEKVK0`A4l]zFmM[5im63
+R0
+I[7=^=Fn1Rfe62:bTndU=^2
+R1
+w1616932545
+8C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v
+!i122 0
+L0 1 42
+R2
+R3
+r1
+!s85 0
+31
+!s108 1616932625.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v|
+!i113 1
+R4
+R5
+vaclk_timegen
+!s110 1616998637
+!i10b 1
+!s100 ?5JZ2O0Tn0]:V09_g6TRf3
+R0
+IR[V2aCKPCZcmdBnUh9kzl2
+R1
+w1616998632
+8C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v
+!i122 3
+L0 1 27
+R2
+R3
+r1
+!s85 0
+31
+!s108 1616998637.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v|
+!i113 1
+R4
+R5
+vcoin
+!s110 1617001287
+!i10b 1
+!s100 F6WVnD864n[;OGUNz2?S22
+R0
+Ie1`=kNdAC52<EPdK^d^?:0
+R1
+w1616843837
+Z6 8C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin.v
+Z7 FC:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin.v
+!i122 7
+Z8 L0 1 20
+R2
+R3
+r1
+!s85 0
+31
+!s108 1617001287.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin.v|
+!i113 1
+R4
+R5
+vcoin_tb
+!s110 1617001294
+!i10b 1
+!s100 bGj^U78ibP0k2k[QbhXZ33
+R0
+I4MR6H24XCDVjgzCZJljKe0
+R1
+w1616920889
+8C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v
+!i122 8
+L0 1 58
+R2
+R3
+r1
+!s85 0
+31
+!s108 1617001294.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v|
+!i113 1
+R4
+R5
+vtb_aclk_timegen
+!s110 1616999003
+!i10b 1
+!s100 gd>VooTLKNloIfX@Qo40<1
+R0
+IJhS^0jkl@ACajR:@f<QFN3
+R1
+w1616998989
+8C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v
+FC:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v
+!i122 6
+L0 1 19
+R2
+R3
+r1
+!s85 0
+31
+!s108 1616999003.000000
+!s107 C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v|
+!i113 1
+R4
+R5
+vvending
+!s110 1617001367
+!i10b 1
+!s100 jS;W[4flU1o:oKI2_dCoW1
+R0
+IWX?9A7@CUW7VlfaAPoAdJ2
+R1
+w1617001357
+R6
+R7
+!i122 9
+R8
+R2
+R3
+r1
+!s85 0
+31
+!s108 1617001367.000000
+Z10 !s107 C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin.v|
+R9
+!i113 1
+R4
+R5

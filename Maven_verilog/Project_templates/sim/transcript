@@ -1,0 +1,61 @@
+vsim work.tb_aclk_timegen
+# vsim work.tb_aclk_timegen 
+# Start time: 11:54:53 on Mar 29,2021
+# Loading work.tb_aclk_timegen
+# Loading work.aclk_timegen
+add wave -r sim:/tb_aclk_timegen/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v(17)
+#    Time: 20055 ps  Iteration: 0  Instance: /tb_aclk_timegen
+# 1
+# Break in Module tb_aclk_timegen at C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v line 17
+# Compile of aclk_timegen.v failed with 2 errors.
+# Compile of aclk_timegen.v failed with 2 errors.
+# Compile of coin.v was successful.
+# Compile of coin_tb.v was successful.
+vsim work.coin_tb
+# End time: 12:31:48 on Mar 29,2021, Elapsed time: 0:36:55
+# Errors: 0, Warnings: 6
+# vsim work.coin_tb 
+# Start time: 12:31:48 on Mar 29,2021
+# Loading work.coin_tb
+# ** Error: (vsim-3033) Instantiation of 'vending' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /coin_tb File: C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v Line: 4
+#         Searched libraries:
+#             C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/sim/work
+# Error loading design
+# End time: 12:31:48 on Mar 29,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of coin.v was successful.
+vsim work.coin_tb
+# vsim work.coin_tb 
+# Start time: 12:32:54 on Mar 29,2021
+# Loading work.coin_tb
+# Loading work.vending
+add wave -position insertpoint sim:/coin_tb/*
+run -all
+# @time:  0,input (ij) is x,x and output (xy) is 0,0
+# @time: 15,input (ij) is 0,1 and output (xy) is 0,0
+# @time: 25,input (ij) is 0,0 and output (xy) is 0,0
+# @time: 35,input (ij) is 1,1 and output (xy) is 0,0
+# @time: 45,input (ij) is 1,0 and output (xy) is 0,0
+# @time: 50,input (ij) is 1,0 and output (xy) is 1,0
+# @time: 55,input (ij) is 0,1 and output (xy) is 1,0
+# @time: 60,input (ij) is 0,1 and output (xy) is 0,0
+# @time: 65,input (ij) is 1,1 and output (xy) is 0,0
+# @time: 80,input (ij) is 1,1 and output (xy) is 1,1
+# @time: 85,input (ij) is 1,0 and output (xy) is 1,1
+# @time: 90,input (ij) is 1,0 and output (xy) is 0,0
+# @time: 95,input (ij) is 1,1 and output (xy) is 0,0
+# @time:105,input (ij) is 1,0 and output (xy) is 0,0
+# @time:110,input (ij) is 1,0 and output (xy) is 1,0
+# @time:115,input (ij) is 0,1 and output (xy) is 1,0
+# @time:120,input (ij) is 0,1 and output (xy) is 0,0
+# @time:125,input (ij) is 1,1 and output (xy) is 0,0
+# @time:140,input (ij) is 1,1 and output (xy) is 1,1
+# @time:145,input (ij) is 1,0 and output (xy) is 1,1
+# @time:150,input (ij) is 1,0 and output (xy) is 0,0
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v(56)
+#    Time: 155 ps  Iteration: 0  Instance: /coin_tb
+# 1
+# Break in Module coin_tb at C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v line 56
