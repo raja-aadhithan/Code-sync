@@ -1,42 +1,90 @@
-C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_driver.v
+C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/counter.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver_4.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver_4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module lcd_driver_4
+
+Top level modules:
+	lcd_driver_4
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_timegen.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_timegen.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_timegen
+
+Top level modules:
+	aclk_timegen
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module lcd_driver
+
+Top level modules:
+	lcd_driver
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_driver.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_driver.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module aclk_lcd_driver
 
 Top level modules:
 	aclk_lcd_driver
 
-} {} {}} C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/tb/tb_aclk_timegen.v
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_keyreg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_keyreg.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tb_aclk_timegen
+-- Compiling module aclk_keyreg
 
 Top level modules:
-	tb_aclk_timegen
+	aclk_keyreg
 
-} {} {}} C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/lab6/coin/coin_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module coin_tb
-
-Top level modules:
-	coin_tb
-
-} {} {}} C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_areg.v
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_areg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_areg.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module aclk_areg
 
 Top level modules:
 	aclk_areg
 
-} {} {}} C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_lcd_display.v
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_reg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module alarm_reg
+
+Top level modules:
+	alarm_reg
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v {0 {vlog -work work -stats=none {C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module alarm_clock_top
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(1): (vlog-2730) Undefined variable: 'clock'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(1): (vlog-13294) Identifier must be declared with a port mode: clock.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(2): (vlog-2730) Undefined variable: 'key'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(2): (vlog-13294) Identifier must be declared with a port mode: key.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(3): (vlog-2730) Undefined variable: 'reset'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(3): (vlog-13294) Identifier must be declared with a port mode: reset.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(4): (vlog-2730) Undefined variable: 'time_button'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(4): (vlog-13294) Identifier must be declared with a port mode: time_button.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(5): (vlog-2730) Undefined variable: 'alarm_button'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(5): (vlog-13294) Identifier must be declared with a port mode: alarm_button.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(6): (vlog-2730) Undefined variable: 'stopwatch'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(6): (vlog-13294) Identifier must be declared with a port mode: stopwatch.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(7): (vlog-2730) Undefined variable: 'ms_hour'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(7): (vlog-13294) Identifier must be declared with a port mode: ms_hour.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(8): (vlog-2730) Undefined variable: 'ls_hour'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(8): (vlog-13294) Identifier must be declared with a port mode: ls_hour.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(9): (vlog-2730) Undefined variable: 'ms_minute'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(9): (vlog-13294) Identifier must be declared with a port mode: ms_minute.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(10): (vlog-2730) Undefined variable: 'ls_minute'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(10): (vlog-13294) Identifier must be declared with a port mode: ls_minute.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(11): (vlog-2730) Undefined variable: 'alarm_sound'.
+** Error: C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_clock_top.v(11): (vlog-13294) Identifier must be declared with a port mode: alarm_sound.
+
+} {4.0 26.0} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_display.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_display.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module aclk_lcd_display
 
 Top level modules:
 	aclk_lcd_display
 
-} {} {}} C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v {0 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module aclk_timegen
-** Error: (vlog-13069) C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v(24): near "else": syntax error, unexpected else.
-** Error: C:/Users/Aadhithan/Documents/Verilog_labs/Project_templates/rtl/aclk_timegen.v(27): (vlog-13205) Syntax error found in the scope following 'i'. Is there a missing '::'?
-
-} {4.0 6.0} {}}
+} {} {}}

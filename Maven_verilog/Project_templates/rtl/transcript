@@ -1,0 +1,30 @@
+# Compile of aclk_areg.v was successful.
+# Compile of aclk_controller.v was successful.
+# Compile of aclk_keyreg.v was successful.
+# Compile of aclk_lcd_display.v was successful.
+# Compile of aclk_lcd_driver.v was successful.
+# Compile of aclk_timegen.v failed with 2 errors.
+# Compile of alarm_clock_top.v failed with 22 errors.
+# Compile of alarm_reg.v failed with 8 errors.
+# Compile of counter.v was successful.
+# Compile of fsm.v failed with 31 errors.
+# Compile of keyreg.v failed with 18 errors.
+# Compile of lcd_driver.v was successful.
+# Compile of lcd_driver_4.v failed with 2 errors.
+# 13 compiles, 6 failed with 83 errors.
+# Compile of lcd_driver_4.v was successful.
+# Compile of aclk_timegen.v failed with 2 errors.
+# Compile of aclk_timegen.v failed with 1 errors.
+# Compile of aclk_timegen.v failed with 2 errors.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm.mpf).  File can not be renamed.
+# Compile of aclk_timegen.v was successful.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm.mpf).  File can not be renamed.
+# Compile of alarm_reg.v was successful.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm.mpf).  File can not be renamed.
+quit

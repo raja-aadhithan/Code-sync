@@ -8,19 +8,17 @@ always@(posedge clk or posedge reset)begin
     else if(reset_count) begin
         one_minute <= 0;
         one_second <= 0;
-        reset_count <= 0;
     end
     else if(!fast_watch)begin
             if (i%256 == 0) one_second <= 1;
             else one_second <= 0;
             if (i == 15360) begin
                 one_minute <= 1;
-                reset_count <= 1;
             end
             else one_minute <= 0;
             i = i + 1'b1;
         end
-    end
+    
     else if(fast_watch)begin
         if (i%256 == 0) one_minute <= 1;
         else one_minute <= 0;

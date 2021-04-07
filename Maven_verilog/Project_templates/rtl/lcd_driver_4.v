@@ -6,7 +6,7 @@ module lcd_driver_4 (input[3:0] alarm_time_ms_hr, alarm_time_ls_hr, alarm_time_m
 
                       output [3:0] display_ms_hr, display_ls_hr, display_ms_min, display_ls_min,
 
-                      output sound_a);
+                      output reg sound_a);
 
 wire sound_alarm1,sound_alarm2,sound_alarm3,sound_alarm4;
 // Assert sound_a when all 4 digits matches

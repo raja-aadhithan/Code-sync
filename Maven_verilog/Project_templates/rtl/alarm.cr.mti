@@ -1,0 +1,154 @@
+C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/counter.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver_4.v {1 {vlog -work work -stats=none {C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\lcd_driver_4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module lcd_driver_4
+
+Top level modules:
+	lcd_driver_4
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_timegen.v {1 {vlog -work work -stats=none {C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\aclk_timegen.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_timegen
+
+Top level modules:
+	aclk_timegen
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/lcd_driver.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module lcd_driver
+
+Top level modules:
+	lcd_driver
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v {0 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_keyreg
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(19): (vlog-13299) Undefined variable: 'clock'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(19): (vlog-13299) Undefined variable: 'reset'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(1): (vlog-2730) Undefined variable: 'reset'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(1): (vlog-13294) Identifier must be declared with a port mode: reset.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(2): (vlog-2730) Undefined variable: 'clock'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(2): (vlog-13294) Identifier must be declared with a port mode: clock.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(3): (vlog-2730) Undefined variable: 'shift'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(3): (vlog-13294) Identifier must be declared with a port mode: shift.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(4): (vlog-2730) Undefined variable: 'key'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(4): (vlog-13294) Identifier must be declared with a port mode: key.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(5): (vlog-2730) Undefined variable: 'key_buffer_ls_min'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(5): (vlog-13294) Identifier must be declared with a port mode: key_buffer_ls_min.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(6): (vlog-2730) Undefined variable: 'key_buffer_ms_min'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(6): (vlog-13294) Identifier must be declared with a port mode: key_buffer_ms_min.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(7): (vlog-2730) Undefined variable: 'key_buffer_ls_hr'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(7): (vlog-13294) Identifier must be declared with a port mode: key_buffer_ls_hr.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(8): (vlog-2730) Undefined variable: 'key_buffer_ms_hr'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/keyreg.v(8): (vlog-13294) Identifier must be declared with a port mode: key_buffer_ms_hr.
+
+} {6.0 22.0} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_driver.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_driver.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_lcd_driver
+
+Top level modules:
+	aclk_lcd_driver
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_areg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_areg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_areg
+
+Top level modules:
+	aclk_areg
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_keyreg.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_keyreg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_keyreg
+
+Top level modules:
+	aclk_keyreg
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_display.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_lcd_display.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_lcd_display
+
+Top level modules:
+	aclk_lcd_display
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v {0 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module alarm_clock_top
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(1): (vlog-2730) Undefined variable: 'clock'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(1): (vlog-13294) Identifier must be declared with a port mode: clock.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(2): (vlog-2730) Undefined variable: 'key'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(2): (vlog-13294) Identifier must be declared with a port mode: key.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(3): (vlog-2730) Undefined variable: 'reset'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(3): (vlog-13294) Identifier must be declared with a port mode: reset.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(4): (vlog-2730) Undefined variable: 'time_button'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(4): (vlog-13294) Identifier must be declared with a port mode: time_button.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(5): (vlog-2730) Undefined variable: 'alarm_button'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(5): (vlog-13294) Identifier must be declared with a port mode: alarm_button.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(6): (vlog-2730) Undefined variable: 'stopwatch'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(6): (vlog-13294) Identifier must be declared with a port mode: stopwatch.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(7): (vlog-2730) Undefined variable: 'ms_hour'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(7): (vlog-13294) Identifier must be declared with a port mode: ms_hour.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(8): (vlog-2730) Undefined variable: 'ls_hour'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(8): (vlog-13294) Identifier must be declared with a port mode: ls_hour.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(9): (vlog-2730) Undefined variable: 'ms_minute'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(9): (vlog-13294) Identifier must be declared with a port mode: ms_minute.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(10): (vlog-2730) Undefined variable: 'ls_minute'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(10): (vlog-13294) Identifier must be declared with a port mode: ls_minute.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(11): (vlog-2730) Undefined variable: 'alarm_sound'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_clock_top.v(11): (vlog-13294) Identifier must be declared with a port mode: alarm_sound.
+
+} {4.0 26.0} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/alarm_reg.v {1 {vlog -work work -stats=none {C:\Users\Aadhithan\Documents\Code-sync\Maven_verilog\Project_templates\rtl\alarm_reg.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module alarm_reg
+
+Top level modules:
+	alarm_reg
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_controller.v {1 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/aclk_controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module aclk_controller
+
+Top level modules:
+	aclk_controller
+
+} {} {}} C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v {0 {vlog -work work -stats=none C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+-- Compiling module fsm
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(34): (vlog-13299) Undefined variable: 'clock'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(34): (vlog-13299) Undefined variable: 'reset'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(47): (vlog-13299) Undefined variable: 'clock'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(47): (vlog-13299) Undefined variable: 'reset'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(63): (vlog-13299) Undefined variable: 'clock'.
+** Error (suppressible): C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(63): (vlog-13299) Undefined variable: 'reset'.
+** Error: (vlog-13025) C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(88): near ":": Syntax error. Statement labels are only allowed in SystemVerilog.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(1): (vlog-2730) Undefined variable: 'clock'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(1): (vlog-13294) Identifier must be declared with a port mode: clock.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(2): (vlog-2730) Undefined variable: 'reset'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(2): (vlog-13294) Identifier must be declared with a port mode: reset.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(3): (vlog-2730) Undefined variable: 'one_second'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(3): (vlog-13294) Identifier must be declared with a port mode: one_second.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(4): (vlog-2730) Undefined variable: 'time_button'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(4): (vlog-13294) Identifier must be declared with a port mode: time_button.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(5): (vlog-2730) Undefined variable: 'alarm_button'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(5): (vlog-13294) Identifier must be declared with a port mode: alarm_button.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(6): (vlog-2730) Undefined variable: 'key'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(6): (vlog-13294) Identifier must be declared with a port mode: key.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(7): (vlog-2730) Undefined variable: 'reset_count'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(7): (vlog-13294) Identifier must be declared with a port mode: reset_count.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(8): (vlog-2730) Undefined variable: 'load_new_a'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(8): (vlog-13294) Identifier must be declared with a port mode: load_new_a.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(9): (vlog-2730) Undefined variable: 'show_a'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(9): (vlog-13294) Identifier must be declared with a port mode: show_a.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(10): (vlog-2730) Undefined variable: 'show_new_time'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(10): (vlog-13294) Identifier must be declared with a port mode: show_new_time.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(11): (vlog-2730) Undefined variable: 'load_new_c'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(11): (vlog-13294) Identifier must be declared with a port mode: load_new_c.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(12): (vlog-2730) Undefined variable: 'shift'.
+** Error: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Project_templates/rtl/fsm.v(12): (vlog-13294) Identifier must be declared with a port mode: shift.
+
+} {10.0 35.0} {}}

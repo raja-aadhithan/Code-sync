@@ -24,7 +24,7 @@ else if (pre_state != KEY_ENTRY) count1 <= 0;
   // Else check if the count1 value reaches 'd9, then set the count1 to 1'b0
 else if (count1 == 4'd9) count1 <= 0;
   // Else increment the count for every one_second pulse
-  else count1 = count1 + 1'b1;
+  else count1 <= count1 + 1'b1;
 end
 
 //Counts 10 seconds pulses for KEY_WAITED state
@@ -37,11 +37,11 @@ else if (pre_state != KEY_WAITED) count2 <= 0;
   // Else check if the count2 value reaches 'd9, then set the count2 to 1'b0
 else if (count2 == 4'd9) count2 <= 0;
   // Else increment the count for every one_second pulse
-else count2 = count2 + 1'b1;
+else count2 <= count2 + 1'b1;
 end
 
 //Time out logic  // Assert time_out signal whenever the count1 or count2 reaches 'd9
-assign time_out = (count2 == 4'd9) || (count1 == 4'd9);
+assign time_out = (count2 == 4'd9) || (count1 == 4'd9) ? 0 : 1;
 
 //Present state logic 
 always @ (posedge clock or posedge reset) 
@@ -60,47 +60,47 @@ begin
        // State transition from SHOW_TIME to other state
        SHOW_TIME  : begin
                     // Check if alarm_button is pressed, then the next state is SHOW_ALARM
-              if (alarm_button) next_state <= SHOW_ALARM;
+              if (alarm_button) next_state = SHOW_ALARM;
                     // Else check if the key is pressed or not, If key pressed, then next_state is KEY_STORED
-              else if(key) next_state <= KEY_STORED;
+              else if(key != 10) next_state = KEY_STORED;
                     // Else if the key is not pressed, then next_state is SHOW_TIME state
-							else next_state <= SHOW_TIME;  
+							else next_state = SHOW_TIME;  
                     end
        // In KEY_STORED state assign next_state as KEY_WAITED 
        KEY_STORED : 
-        next_state <= KEY_WAITED;
+        next_state = KEY_WAITED;
        // State transition from KEY_WAITED state
        KEY_WAITED : begin
                     // Check if the pressed key is released, If the key is released then next_state is KEY_ENTRY state
-                    if(!key) next_state<= KEY_ENTRY;
+                    if(key == 10) next_state= KEY_ENTRY;
                     // Else check if active low time_out signal is asserted, If asserted, then next_state is SHOW_TIME state
-                    else if(!time_out) next_state <= SHOW_TIME;
+                    else if(time_out == 0) next_state = SHOW_TIME;
                     // Else the next_state is KEY_WAITED state
-                   else next_state <= KEY_WAITED;
+                   else next_state = KEY_WAITED;
 	           end
        // State transition from KEY_ENTRY state
        KEY_ENTRY  : begin
                     // Check if the alarm_button is pressed, if pressed then set the next_state as SET_ALARM_TIME state     
-                    if(alarm_button) next_state <= SET_ALARM_TIME;
+                    if(alarm_button) next_state = SET_ALARM_TIME;
                     // Else if the time_button is pressed, then set the next_state as SET_CURRENT_TIME state  
-                      else if (time_button) next_state <= SET_CURRENT_TIME;
+                      else if (time_button) next_state = SET_CURRENT_TIME;
                     // Else if 10sec timeout is asserted, then set the next_state as SHOW_TIME state
-                     else if (time_out) next_state <= SHOW_TIME;
+                     else if (time_out == 0) next_state = SHOW_TIME;
                     // Else if the key is pressed, then set the next_state as KEY_STORED state
-                     else if (key) next_state <= KEY_STORED;
+                     else if (key != 10) next_state = KEY_STORED;
                     // Else the next_state is KEY_ENTRY state
-                    else next_state <= KEY_ENTRY;
+                    else next_state = KEY_ENTRY;
                     end
       // State transition from SHOW_ALARM state
       SHOW_ALARM  : begin
                     // If alarm_button is pressed, then set next_state as SHOW_ALARM state else next_state is SHOW_TIME state
-                      	if (alarm_button) next_state <= SHOW_ALARM;
-                        else next_state <= SHOW_TIME;  
+                      	if (alarm_button) next_state = SHOW_ALARM;
+                        else next_state = SHOW_TIME;  
                     end
    // In SET_ALARM_TIME state assign next_state as SHOW_TIME
-   SET_ALARM_TIME : next_state <= SHOW_TIME;
+   SET_ALARM_TIME : next_state = SHOW_TIME;
    // In SET_ALARM_TIME state assign next_state as SHOW_TIME
-   SET_CURRENT_TIME : next_state <= SHOW_TIME;
+   SET_CURRENT_TIME : next_state = SHOW_TIME;
    // Set default state as SHOW_TIME state
           default : next_state = SHOW_TIME;
 
