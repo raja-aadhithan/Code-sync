@@ -120,6 +120,6 @@ assign load_new_c = (pre_state == SET_CURRENT_TIME);
 // Assert reset_count signal when present state is SET_CURRENT_TIME state
 assign reset_count = (pre_state == SET_CURRENT_TIME);
 // Assert shift signal when present state is KEY_STORED state
-assign shift = (pre_state == KEY_STORED);
+assign shift = (pre_state == KEY_STORED);                                                     
 
 endmodule
