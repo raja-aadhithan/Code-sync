@@ -1,5 +1,5 @@
 Flow report for seq_det
-Sat Mar 27 16:16:55 2021
+Fri Apr  9 12:07:46 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -36,11 +36,15 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------+
-; Flow Summary                                        ;
-+-------------+---------------------------------------+
-; Flow Status ; Successful - Sat Mar 27 16:16:55 2021 ;
-+-------------+---------------------------------------+
++-------------------------------------------------------------------+
+; Flow Summary                                                      ;
++-----------------------+-------------------------------------------+
+; Flow Status           ; Successful - Fri Apr  9 12:07:46 2021     ;
+; Quartus Prime Version ; 20.4.0 Build 72 12/14/2020 SC Pro Edition ;
+; Revision Name         ; seq_det                                   ;
+; Top-level Entity Name ; seq_det                                   ;
+; Family                ; Cyclone 10 GX                             ;
++-----------------------+-------------------------------------------+
 
 
 +-----------------------------------------+
@@ -54,11 +58,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                   ;
-+-----------------+-------+---------------+-------------+------------+
-; Assignment Name ; Value ; Default Value ; Entity Name ; Section Id ;
-+-----------------+-------+---------------+-------------+------------+
++-----------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                    ;
++--------------------------+-------------------------------+---------------+-------------+------------+
+; Assignment Name          ; Value                         ; Default Value ; Entity Name ; Section Id ;
++--------------------------+-------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID    ; 1098349086300.161684201005756 ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                  ; --            ; --          ; --         ;
++--------------------------+-------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------+
@@ -84,6 +91,7 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_syn --read_settings_files=on --write_settings_files=off seq_det -c seq_det
+quartus_eda --read_settings_files=on --write_settings_files=off seq_det -c seq_det
 
 
 
