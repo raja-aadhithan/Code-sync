@@ -105,7 +105,7 @@ FilterOutSL = getLogged(slout,'filter_out');
 FilterValid = getLogged(slout,'filter_valid');
 FilterOutSL = FilterOutSL(FilterValid);%signal through filter
 
-%to comapare and print logged signal values
+%to compare and print logged signal values
 compareData(real(FilterOut),real(FilterOutSL),{2 3 1},'ML vs SL correlator output (re)');
 compareData(imag(FilterOut),imag(FilterOutSL),{2 3 2},'ML vs SL correlator output (im)');
 
