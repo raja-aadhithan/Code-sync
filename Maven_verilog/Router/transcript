@@ -1,240 +1,125 @@
 # Compile of router_fifo.v was successful.
+vsim work.router_fifo_tb
+# vsim work.router_fifo_tb 
+# Start time: 10:39:10 on Apr 16,2021
+# Loading work.router_fifo_tb
+# Loading work.router_fifo
+add wave -r sim:/router_fifo_tb/*
+run -all
+# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 0, empty: 1
+# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 1
+# @time:                   30, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 0
+# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  170, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  210, data_in: e5, data_out: xx, lfd: 0, full: 0, empty: 0
+# @time:                  220, data_in: e5, data_out: 90, lfd: 0, full: 0, empty: 0
+# @time:                  230, data_in: e5, data_out: 09, lfd: 0, full: 0, empty: 0
+# @time:                  240, data_in: e5, data_out: 63, lfd: 0, full: 0, empty: 0
+# @time:                  250, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
+# @time:                  260, data_in: e5, data_out: 8d, lfd: 0, full: 0, empty: 0
+# @time:                  270, data_in: e5, data_out: 65, lfd: 0, full: 0, empty: 0
+# @time:                  280, data_in: e5, data_out: 12, lfd: 0, full: 0, empty: 0
+# @time:                  290, data_in: e5, data_out: 01, lfd: 0, full: 0, empty: 0
+# @time:                  300, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
+# @time:                  310, data_in: e5, data_out: 76, lfd: 0, full: 0, empty: 0
+# @time:                  320, data_in: e5, data_out: 3d, lfd: 0, full: 0, empty: 0
+# @time:                  330, data_in: e5, data_out: ed, lfd: 0, full: 0, empty: 0
+# @time:                  340, data_in: e5, data_out: 8c, lfd: 0, full: 0, empty: 0
+# @time:                  350, data_in: e5, data_out: f9, lfd: 0, full: 0, empty: 1
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
+#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
+# 1
+# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
+# Compile of router_fifo.v was successful.
+vsim work.router_fifo_tb
+# End time: 10:46:20 on Apr 16,2021, Elapsed time: 0:07:10
+# Errors: 0, Warnings: 3
+# vsim work.router_fifo_tb 
+# Start time: 10:46:20 on Apr 16,2021
+# Loading work.router_fifo_tb
+# Loading work.router_fifo
+add wave -r sim:/router_fifo_tb/*
+run -all
+# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
+# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
+# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
+# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
+#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
+# 1
+# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
+# Compile of router_fifo.v was successful.
 # Compile of router_fifo_tb.v was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.router_fifo_tb
-# vsim work.router_fifo_tb 
-# Start time: 16:33:25 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -position insertpoint sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-quit -sim
-# End time: 16:34:22 on Apr 09,2021, Elapsed time: 0:00:57
-# Errors: 0, Warnings: 2
-vsim work.router_fifo_tb
-# vsim work.router_fifo_tb 
-# Start time: 16:34:25 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-quit -sim
-# End time: 16:39:10 on Apr 09,2021, Elapsed time: 0:04:45
-# Errors: 0, Warnings: 1
-vsim work.router_fifo_tb
-# vsim work.router_fifo_tb 
-# Start time: 16:39:12 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-# Compile of router_fifo.v was successful.
-# Compile of router_fifo.v was successful.
-vsim work.router_fifo_tb
-# End time: 16:42:00 on Apr 09,2021, Elapsed time: 0:02:48
-# Errors: 0, Warnings: 3
-# vsim work.router_fifo_tb 
-# Start time: 16:42:00 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-# Compile of router_fifo.v was successful.
-vsim work.router_fifo_tb
-# End time: 16:44:03 on Apr 09,2021, Elapsed time: 0:02:03
+# End time: 11:04:40 on Apr 16,2021, Elapsed time: 0:18:20
 # Errors: 0, Warnings: 2
 # vsim work.router_fifo_tb 
-# Start time: 16:44:03 on Apr 09,2021
+# Start time: 11:04:40 on Apr 16,2021
 # Loading work.router_fifo_tb
 # Loading work.router_fifo
 add wave -r sim:/router_fifo_tb/*
 run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
+# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: x, empty: x
+# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: x, empty: x
+# @time:                   45, data_in: 09, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                   55, data_in: 63, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                   65, data_in: 0d, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                   75, data_in: 8d, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                   85, data_in: 65, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                   95, data_in: 12, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  105, data_in: 01, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  115, data_in: 0d, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  125, data_in: 76, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  135, data_in: 3d, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  145, data_in: ed, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  155, data_in: 8c, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  165, data_in: f9, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  175, data_in: c6, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  185, data_in: c5, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  195, data_in: aa, data_out: 00, lfd: 0, full: x, empty: x
+# @time:                  205, data_in: e5, data_out: 00, lfd: 0, full: x, empty: x
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(56)
+#    Time: 365 ps  Iteration: 0  Instance: /router_fifo_tb
 # 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-quit -sim
-# End time: 16:45:44 on Apr 09,2021, Elapsed time: 0:01:41
-# Errors: 0, Warnings: 1
-vsim work.router_fifo_tb
-# vsim work.router_fifo_tb 
-# Start time: 16:45:52 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
+# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 56
 # Compile of router_fifo.v was successful.
 vsim work.router_fifo_tb
-# End time: 16:46:47 on Apr 09,2021, Elapsed time: 0:00:55
+# End time: 11:05:52 on Apr 16,2021, Elapsed time: 0:01:12
 # Errors: 0, Warnings: 2
 # vsim work.router_fifo_tb 
-# Start time: 16:46:47 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 1, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 1, empty: 1
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 1
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-# Compile of router_fifo.v was successful.
-vsim work.router_fifo_tb
-# End time: 16:49:29 on Apr 09,2021, Elapsed time: 0:02:42
-# Errors: 0, Warnings: 2
-# vsim work.router_fifo_tb 
-# Start time: 16:49:29 on Apr 09,2021
+# Start time: 11:05:52 on Apr 16,2021
 # Loading work.router_fifo_tb
 # Loading work.router_fifo
 add wave -r sim:/router_fifo_tb/*
@@ -242,142 +127,42 @@ run -all
 # @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 0, empty: 1
 # @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 1
 # @time:                   30, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 0
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  170, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  210, data_in: e5, data_out: xx, lfd: 0, full: 0, empty: 0
-# @time:                  220, data_in: e5, data_out: 90, lfd: 0, full: 0, empty: 0
-# @time:                  230, data_in: e5, data_out: 09, lfd: 0, full: 0, empty: 0
-# @time:                  240, data_in: e5, data_out: 63, lfd: 0, full: 0, empty: 0
-# @time:                  250, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  260, data_in: e5, data_out: 8d, lfd: 0, full: 0, empty: 0
-# @time:                  270, data_in: e5, data_out: 65, lfd: 0, full: 0, empty: 0
-# @time:                  280, data_in: e5, data_out: 12, lfd: 0, full: 0, empty: 0
-# @time:                  290, data_in: e5, data_out: 01, lfd: 0, full: 0, empty: 0
-# @time:                  300, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  310, data_in: e5, data_out: 76, lfd: 0, full: 0, empty: 0
-# @time:                  320, data_in: e5, data_out: 3d, lfd: 0, full: 0, empty: 0
-# @time:                  330, data_in: e5, data_out: ed, lfd: 0, full: 0, empty: 0
-# @time:                  340, data_in: e5, data_out: 8c, lfd: 0, full: 0, empty: 0
-# @time:                  350, data_in: e5, data_out: f9, lfd: 0, full: 0, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
+# @time:                   45, data_in: 09, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   55, data_in: 63, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   65, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   75, data_in: 8d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   85, data_in: 65, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                   95, data_in: 12, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  105, data_in: 01, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  115, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  125, data_in: 76, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  135, data_in: 3d, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  145, data_in: ed, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  155, data_in: 8c, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  165, data_in: f9, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  175, data_in: c6, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  185, data_in: c5, data_out: 00, lfd: 0, full: 0, empty: 0
+# @time:                  190, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  195, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  205, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 0
+# @time:                  220, data_in: e5, data_out: xx, lfd: 0, full: 0, empty: 0
+# @time:                  230, data_in: e5, data_out: 90, lfd: 0, full: 0, empty: 0
+# @time:                  240, data_in: e5, data_out: 09, lfd: 0, full: 0, empty: 0
+# @time:                  250, data_in: e5, data_out: 63, lfd: 0, full: 0, empty: 0
+# @time:                  260, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
+# @time:                  270, data_in: e5, data_out: 8d, lfd: 0, full: 0, empty: 0
+# @time:                  280, data_in: e5, data_out: 65, lfd: 0, full: 0, empty: 0
+# @time:                  290, data_in: e5, data_out: 12, lfd: 0, full: 0, empty: 0
+# @time:                  300, data_in: e5, data_out: 01, lfd: 0, full: 0, empty: 0
+# @time:                  310, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
+# @time:                  320, data_in: e5, data_out: 76, lfd: 0, full: 0, empty: 0
+# @time:                  330, data_in: e5, data_out: 3d, lfd: 0, full: 0, empty: 0
+# @time:                  340, data_in: e5, data_out: ed, lfd: 0, full: 0, empty: 0
+# @time:                  350, data_in: e5, data_out: 8c, lfd: 0, full: 0, empty: 0
+# @time:                  360, data_in: e5, data_out: f9, lfd: 0, full: 0, empty: 0
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(56)
+#    Time: 365 ps  Iteration: 0  Instance: /router_fifo_tb
 # 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-quit -sim
-# End time: 16:51:34 on Apr 09,2021, Elapsed time: 0:02:05
-# Errors: 0, Warnings: 1
-vsim work.router_fifo_tb
-# vsim work.router_fifo_tb 
-# Start time: 16:51:36 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 0, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 1
-# @time:                   30, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 0
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  170, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  210, data_in: e5, data_out: xx, lfd: 0, full: 0, empty: 0
-# @time:                  220, data_in: e5, data_out: 90, lfd: 0, full: 0, empty: 0
-# @time:                  230, data_in: e5, data_out: 09, lfd: 0, full: 0, empty: 0
-# @time:                  240, data_in: e5, data_out: 63, lfd: 0, full: 0, empty: 0
-# @time:                  250, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  260, data_in: e5, data_out: 8d, lfd: 0, full: 0, empty: 0
-# @time:                  270, data_in: e5, data_out: 65, lfd: 0, full: 0, empty: 0
-# @time:                  280, data_in: e5, data_out: 12, lfd: 0, full: 0, empty: 0
-# @time:                  290, data_in: e5, data_out: 01, lfd: 0, full: 0, empty: 0
-# @time:                  300, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  310, data_in: e5, data_out: 76, lfd: 0, full: 0, empty: 0
-# @time:                  320, data_in: e5, data_out: 3d, lfd: 0, full: 0, empty: 0
-# @time:                  330, data_in: e5, data_out: ed, lfd: 0, full: 0, empty: 0
-# @time:                  340, data_in: e5, data_out: 8c, lfd: 0, full: 0, empty: 0
-# @time:                  350, data_in: e5, data_out: f9, lfd: 0, full: 0, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-# Compile of router_fifo.v was successful.
-vsim work.router_fifo_tb
-# End time: 16:54:57 on Apr 09,2021, Elapsed time: 0:03:21
-# Errors: 0, Warnings: 3
-# vsim work.router_fifo_tb 
-# Start time: 16:54:57 on Apr 09,2021
-# Loading work.router_fifo_tb
-# Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
-run -all
-# @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 0, empty: 1
-# @time:                   25, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 1
-# @time:                   30, data_in: 90, data_out: 00, lfd: 1, full: 0, empty: 0
-# @time:                   35, data_in: 09, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   45, data_in: 63, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   55, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   65, data_in: 8d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   75, data_in: 65, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   85, data_in: 12, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                   95, data_in: 01, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  105, data_in: 0d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  115, data_in: 76, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  125, data_in: 3d, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  135, data_in: ed, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  145, data_in: 8c, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  155, data_in: f9, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  165, data_in: c6, data_out: 00, lfd: 0, full: 0, empty: 0
-# @time:                  170, data_in: c6, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  175, data_in: c5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  185, data_in: aa, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  195, data_in: e5, data_out: 00, lfd: 0, full: 1, empty: 0
-# @time:                  210, data_in: e5, data_out: xx, lfd: 0, full: 0, empty: 0
-# @time:                  220, data_in: e5, data_out: 90, lfd: 0, full: 0, empty: 0
-# @time:                  230, data_in: e5, data_out: 09, lfd: 0, full: 0, empty: 0
-# @time:                  240, data_in: e5, data_out: 63, lfd: 0, full: 0, empty: 0
-# @time:                  250, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  260, data_in: e5, data_out: 8d, lfd: 0, full: 0, empty: 0
-# @time:                  270, data_in: e5, data_out: 65, lfd: 0, full: 0, empty: 0
-# @time:                  280, data_in: e5, data_out: 12, lfd: 0, full: 0, empty: 0
-# @time:                  290, data_in: e5, data_out: 01, lfd: 0, full: 0, empty: 0
-# @time:                  300, data_in: e5, data_out: 0d, lfd: 0, full: 0, empty: 0
-# @time:                  310, data_in: e5, data_out: 76, lfd: 0, full: 0, empty: 0
-# @time:                  320, data_in: e5, data_out: 3d, lfd: 0, full: 0, empty: 0
-# @time:                  330, data_in: e5, data_out: ed, lfd: 0, full: 0, empty: 0
-# @time:                  340, data_in: e5, data_out: 8c, lfd: 0, full: 0, empty: 0
-# @time:                  350, data_in: e5, data_out: f9, lfd: 0, full: 0, empty: 1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v(54)
-#    Time: 355 ps  Iteration: 0  Instance: /router_fifo_tb
-# 1
-# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 54
-# End time: 17:07:18 on Apr 09,2021, Elapsed time: 0:12:21
+# Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 56
+# End time: 11:38:04 on Apr 16,2021, Elapsed time: 0:32:12
 # Errors: 0, Warnings: 1

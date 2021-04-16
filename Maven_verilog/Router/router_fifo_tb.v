@@ -27,6 +27,8 @@ task header(input [5:0]data,input [1:0]set);
         write_enb = 1;
         lfd_state = 1;
         data_in = {data,set};
+        #10;
+        write_enb = 0;
     end
 endtask
 

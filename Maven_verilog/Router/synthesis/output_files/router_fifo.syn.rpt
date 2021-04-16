@@ -1,5 +1,5 @@
 Synthesis report
-Fri Apr  9 17:01:48 2021
+Fri Apr 16 11:10:27 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -27,7 +27,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr  9 17:01:48 2021 ;
+; Synthesis Status      ; Successful - Fri Apr 16 11:10:26 2021 ;
 ; Revision Name         ; router_fifo                           ;
 ; Top-level Entity Name ; router_fifo                           ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -133,7 +133,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path                                                                                        ; File Type                    ; File Name with Absolute Path                                                                                            ; Library ; MD5                              ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; 90b7c3349e37c96e892bada4ab282603 ;
+; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; 5e6d33c4bbdc774c66cab11cc359cc4a ;
 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; work    ;                                  ;
 ; stratix_ram_block.inc                                                                                                   ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ;                                  ;
 ; lpm_mux.inc                                                                                                             ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ;                                  ;
@@ -144,7 +144,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; altram.inc                                                                                                              ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                        ;         ;                                  ;
 ; altdpram.inc                                                                                                            ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ;                                  ;
 ; cbx.lst                                                                                                                 ; Auto-Found Unspecified File  ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                           ;         ;                                  ;
-; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/7184/altsyncram_v2o1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/7184/altsyncram_v2o1.tdf ;         ;                                  ;
+; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/1968/altsyncram_v2o1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/1968/altsyncram_v2o1.tdf ;         ;                                  ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -162,8 +162,8 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
 ; Assignment ; Value ; To               ; Reason                  ; Location                                                                      ;
 +------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
-; ORIG_DEPTH ; 16    ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(23) ;
-; ORIG_WIDTH ; 9     ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(23) ;
+; ORIG_DEPTH ; 16    ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(24) ;
+; ORIG_WIDTH ; 9     ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(24) ;
 +------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
 
 
@@ -172,7 +172,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name      ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
-; |                          ; 21 (21)             ; 16 (16)                   ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; |                        ; router_fifo     ; altera_work  ;
+; |                          ; 26 (26)             ; 21 (21)                   ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; |                        ; router_fifo     ; altera_work  ;
 ;    |mem_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_rtl_0                ; altsyncram      ; work         ;
 ;       |auto_generated|     ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_rtl_0|auto_generated ; altsyncram_v2o1 ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
@@ -184,8 +184,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------------+
 ; Statistic                                    ; Value       ;
 +----------------------------------------------+-------------+
-; Total registers                              ; 16          ;
-; Number of registers using Synchronous Clear  ; 16          ;
+; Total registers                              ; 21          ;
+; Number of registers using Synchronous Clear  ; 11          ;
 ; Number of registers using Synchronous Load   ; 0           ;
 ; Number of registers using Asynchronous Clear ; 0           ;
 ; Number of registers using Asynchronous Load  ; 0           ;
@@ -200,7 +200,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ; Restructuring Performed ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; wr_pointer[1]              ; Yes                     ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; rd_pointer[1]              ; Yes                     ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; data_out[0]~reg0           ; Yes                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
 
 
@@ -288,26 +288,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                   ; Count                                   ;
 +------------------------+-----------------------------------------+
 ; boundary_port          ; 24                                      ;
-; cyclone10gx_ff         ; 16                                      ;
-;     ENA SCLR           ; 14                                      ;
-;     SCLR               ; 2                                       ;
-; cyclone10gx_lcell_comb ; 21                                      ;
-;     normal             ; 16                                      ;
-;         2 data inputs  ; 4                                       ;
-;         3 data inputs  ; 2                                       ;
-;         4 data inputs  ; 3                                       ;
-;         5 data inputs  ; 1                                       ;
-;         6 data inputs  ; 6                                       ;
-;     shared             ; 5                                       ;
-;         0 data inputs  ; 1                                       ;
-;         2 data inputs  ; 4                                       ;
+; cyclone10gx_ff         ; 21                                      ;
+;     ENA                ; 3                                       ;
+;     ENA SCLR           ; 11                                      ;
+;     plain              ; 7                                       ;
+; cyclone10gx_lcell_comb ; 26                                      ;
+;     normal             ; 26                                      ;
+;         2 data inputs  ; 2                                       ;
+;         3 data inputs  ; 4                                       ;
+;         4 data inputs  ; 4                                       ;
+;         5 data inputs  ; 6                                       ;
+;         6 data inputs  ; 10                                      ;
 ; cyclone10gx_ram_block  ; 8                                       ;
 ;                        ;                                         ;
-; Number of carry chains ; 1                                       ;
-; Max carry chain length ; 5                                       ;
+; Number of carry chains ; 0                                       ;
+; Max carry chain length ; 0                                       ;
 ;                        ;                                         ;
-; Max LUT depth          ; 3.10                                    ;
-; Average LUT depth      ; 1.39                                    ;
+; Max LUT depth          ; 2.00                                    ;
+; Average LUT depth      ; 1.06                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -316,16 +314,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 14                ;
+; Estimate of Logic utilization (ALMs needed) ; 19                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 21                ;
+; Combinational ALUT usage for logic          ; 26                ;
 ;     -- 7 input functions                    ; 0                 ;
-;     -- 6 input functions                    ; 6                 ;
-;     -- 5 input functions                    ; 1                 ;
-;     -- 4 input functions                    ; 3                 ;
-;     -- <=3 input functions                  ; 11                ;
+;     -- 6 input functions                    ; 10                ;
+;     -- 5 input functions                    ; 6                 ;
+;     -- 4 input functions                    ; 4                 ;
+;     -- <=3 input functions                  ; 6                 ;
 ;                                             ;                   ;
-; Dedicated logic registers                   ; 16                ;
+; Dedicated logic registers                   ; 21                ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 24                ;
 ; Total MLAB memory bits                      ; 0                 ;
@@ -336,9 +334,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     -- [B] Total Floating Point DSP Blocks  ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clock             ;
-; Maximum fan-out                             ; 24                ;
-; Total fan-out                               ; 247               ;
-; Average fan-out                             ; 3.58              ;
+; Maximum fan-out                             ; 29                ;
+; Total fan-out                               ; 295               ;
+; Average fan-out                             ; 3.73              ;
 +---------------------------------------------+-------------------+
 
 
@@ -357,8 +355,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr  9 17:01:40 2021
-    Info: System process ID: 7184
+    Info: Processing started: Fri Apr 16 11:10:15 2021
+    Info: System process ID: 1968
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_fifo -c router_fifo
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -392,17 +390,17 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
         Info (286033): Parameter RDCONTROL_REG_B set to CLOCK0
 Info (286030): Timing-Driven Synthesis is running
-Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 29 logic cells
+    Info (21061): Implemented 34 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri Apr  9 17:01:48 2021
-    Info: Elapsed time: 00:00:08
-    Info: System process ID: 7184
+    Info: Peak virtual memory: 519 megabytes
+    Info: Processing ended: Fri Apr 16 11:10:27 2021
+    Info: Elapsed time: 00:00:12
+    Info: System process ID: 1968
 
 
