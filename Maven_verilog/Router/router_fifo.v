@@ -12,6 +12,7 @@ assign empty = (status_count == 0 ) ? 1'b1 : 1'b0 ;
 assign full = (status_count == 5'd16) ? 1'b1 : 1'b0 ;
 assign packet[7:0] = data_in[7:0];
 assign packet[8] = lfd_state;
+assign data_out = packet_out[7:0];
 
 always@(posedge clock) begin
     if(!resetn || soft_reset) begin
@@ -31,15 +32,15 @@ always@(posedge clock) begin
             status_count <= status_count - 1'b1;
             
             if(packet_out[8])begin
-                length <= packet_out[7:2] + 1'b1;
+                length <= packet_out[7:2] - 1;
             end
             
-            if (length != 0) 
+            else if (length != 0) 
             begin
                 length <= length - 1'b1;
             end
             
-            data_out <= packet_out[7:0]; 
+           
         end
     end
 end

@@ -47,9 +47,9 @@ initial begin
     @(negedge clock);
     resetn = 1'b1;
 
-    header({$random}%64,{$random}%3);
+    header(6'd15,{$random}%3);// 6'dx denotes the paylength, %3 selects he fifo from 0 to 2
     #10;
-    repeat(17)
+    repeat(15) // payload length is denoted here
     write({$random}%256);
     repeat(15)
     read();
