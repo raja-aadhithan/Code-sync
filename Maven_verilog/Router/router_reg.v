@@ -12,6 +12,7 @@ always(@posedge clock) begin
     end
     parity_done <= (ld_state & !fifo_full & !pkt_valid) | (laf_state & low_pkt_valid & !parity_done);
     if(rst_int_reg) low_pkt_valid <= 1'b0;
+    
 
 end
 endmodule
