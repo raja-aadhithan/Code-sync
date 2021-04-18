@@ -14,33 +14,60 @@ assign packet[7:0] = data_in[7:0];
 assign packet[8] = lfd_state;
 assign data_out = packet_out[7:0];
 
+
+
+
 always@(posedge clock) begin
-    if(!resetn || soft_reset) begin
-        data_out <= 8'd0;
-        rd_pointer <= 4'd0;
+    if(full == 1'b0 && write_enb & empty == 1'b0 && read_enb) status_count <= status_count;
+    else if (full == 1'b0 && write_enb) status_count <= status_count + 1'b1;
+    else if(empty == 1'b0 && read_enb ) status_count <= status_count - 1'b1;
+    else status_count <= status_count;
+end
+
+
+
+//write block:
+always@(posedge clock) begin
+
+    if(!resetn || soft_reset) begin //reset
         wr_pointer <= 4'd0;
     end
-    else begin
-        if(full == 1'b0 && write_enb) begin
+    else if(full == 1'b0 && write_enb) begin //only write
             mem[wr_pointer[3:0]] <= packet;
             wr_pointer <= wr_pointer + 1'b1;
-            status_count <= status_count + 1'b1;
+    end
+end
+
+
+
+//read block:
+always@(posedge clock) begin
+
+    if(!resetn || soft_reset) begin //reset
+        rd_pointer <= 4'd0;
+        data_out <= 8'd0;
+    end
+    else begin 
+        if(empty == 1'b0 && read_enb ) begin //only write
+                packet_out <= mem[rd_pointer[3:0]];
+                rd_pointer <= rd_pointer + 1'b1;
         end
-        if(empty == 1'b0 && read_enb) begin
-            packet_out <= mem[rd_pointer[3:0]];
-            rd_pointer <= rd_pointer + 1'b1;
-            status_count <= status_count - 1'b1;
-            
-            if(packet_out[8])begin
-                length <= packet_out[7:2] - 1;
-            end
-            
-            else if (length != 0) 
-            begin
+        if (length == 0 && !mem[rd_pointer[3:0]][8]) packet_out <= 8'bz;
+    end
+end
+
+
+
+
+always@(posedge clock)begin
+    if(empty == 1'b0 && read_enb && resetn) begin
+
+        if(mem[rd_pointer[3:0]][8])begin
+                length <= mem[rd_pointer[3:0]][7:2];
+        end
+
+        else if (length != 0)  begin
                 length <= length - 1'b1;
-            end
-            
-           
         end
     end
 end

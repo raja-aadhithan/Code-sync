@@ -40,6 +40,19 @@ task read();
     end
 endtask
 
+task readandwrite(input [7:0]data);
+begin
+        lfd_state = 0;
+        write_enb = 1;
+        data_in = data;
+        read_enb = 1;
+        #10;
+        read_enb = 0;
+        write_enb = 0;
+    end
+endtask
+
+
 initial begin
     $monitor("@time: %t, data_in: %h, data_out: %h, lfd: %b, full: %b, empty: %b",$time, data_in, data_out, lfd_state, full, empty);
     resetn = 1'b0;
@@ -47,9 +60,18 @@ initial begin
     @(negedge clock);
     resetn = 1'b1;
 
-    header(6'd15,{$random}%3);// 6'dx denotes the paylength, %3 selects he fifo from 0 to 2
-    #10;
+    header(6'd14,{$random}%3);// 6'dx denotes the paylength, %3 selects the fifo from 0 to 2
     repeat(15) // payload length is denoted here
+    write({$random}%256);
+    repeat(15)
+    read();
+    repeat(3)
+    readandwrite({$random}%256);
+    repeat(15)
+    read();
+
+    header(6'd4,{$random}%3);
+    repeat(4) // payload length is denoted here
     write({$random}%256);
     repeat(15)
     read();
