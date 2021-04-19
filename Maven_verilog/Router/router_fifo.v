@@ -1,5 +1,5 @@
 module router_fifo(input clock, resetn, write_enb, read_enb, soft_reset, lfd_state,
-                   input [7:0] data_in, output full, empty, output reg [7:0] data_out);
+                   input [7:0] data_in, output full, empty, output [7:0] data_out);
 
 reg [8:0] mem [0:15];
 reg [3:0] rd_pointer, wr_pointer;
@@ -12,8 +12,7 @@ assign empty = (status_count == 0 ) ? 1'b1 : 1'b0 ;
 assign full = (status_count == 5'd16) ? 1'b1 : 1'b0 ;
 assign packet[7:0] = data_in[7:0];
 assign packet[8] = lfd_state;
-assign data_out = packet_out[7:0];
-
+assign data_out = resetn ? packet_out[7:0] : 8'd0;
 
 
 
@@ -45,7 +44,6 @@ always@(posedge clock) begin
 
     if(!resetn || soft_reset) begin //reset
         rd_pointer <= 4'd0;
-        data_out <= 8'd0;
     end
     else begin 
         if(empty == 1'b0 && read_enb ) begin //only write

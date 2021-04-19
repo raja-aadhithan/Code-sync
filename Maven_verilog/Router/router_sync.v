@@ -8,10 +8,16 @@ module router_sync(input detect_add, write_enb_reg, clock, resetn,
                          fifo_full,
                    output reg [2:0] write_enb);
 
-integer i,j,k;
 reg [2:0] q;
+reg [4:0] count0,count1,count2;
 
 always@(posedge clock) begin
+
+    if(!resetn)begin
+        count0<=5'd0;
+        count1<=5'd0;
+        count2<=5'd0;
+    end
 
     vld_out_0 <= !empty_0;
     vld_out_1 <= !empty_1;
@@ -40,27 +46,42 @@ always@(posedge clock) begin
     endcase
 
     if (vld_out_0) begin
-        for (i = 0; i<30; i = i+1)
-        begin
-            if (read_enb_0) q[0] <= 1'b1;
-        end
-        soft_reset_0 <= !q[0];
+            if (read_enb_0) begin
+              if (count0 == 5'b11101)begin
+                    soft_reset_0 <= 1'b1;
+                    count0 <= 5'd0;
+                end
+                else begin
+                    soft_reset_0 <= 1'b0;
+                    count0 <= count0 + 1'b1;
+                end
+            end
     end
 
     if (vld_out_1) begin
-        for (j = 0; j<30; j = j+1)
-        begin
-            if (read_enb_1) q[1] <= 1'b1;
-        end
-        soft_reset_1 <= !q[1];
+            if (read_enb_1) begin
+              if (count1 == 5'b11101)begin
+                    soft_reset_1 <= 1'b1;
+                    count1 <= 5'd0;
+                end
+                else begin
+                    soft_reset_1 <= 1'b0;
+                    count1 <= count1 + 1'b1;
+                end
+            end
     end
 
     if (vld_out_2) begin
-        for (k = 0; k<30; k = i+1)
-        begin
-            if (read_enb_2) q[2] <= 1'b1;
-        end
-        soft_reset_2 <= !q[2];
+            if (read_enb_2) begin
+              if (count2 == 5'b11101)begin
+                    soft_reset_2 <= 1'b1;
+                    count2 <= 5'd0;
+                end
+                else begin
+                    soft_reset_2 <= 1'b0;
+                    count2 <= count2 + 1'b1;
+                end
+            end
     end
 
 end

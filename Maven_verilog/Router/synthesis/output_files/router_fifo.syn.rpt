@@ -1,5 +1,5 @@
 Synthesis report
-Fri Apr 16 11:10:27 2021
+Mon Apr 19 10:49:10 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -10,13 +10,13 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
   2. Synthesis Settings
   3. Synthesis Source Files Read
   4. Synthesis Partition Summary
-  5. Ignored Source Level Assignments for Top-Level Entity
-  6. Partition "root_partition" Resource Utilization by Entity
-  7. General Register Statistics for Partition "root_partition"
-  8. Multiplexer Restructuring Statistics (Restructuring Performed)
-  9. Registers Packed Into Inferred Megafunctions
- 10. Source Assignments for mem_rtl_0|auto_generated
- 11. Parameter Settings for Inferred Entity Instance: mem_rtl_0
+  5. Registers Added for RAM Pass-Through Logic
+  6. Source Assignments for mem_0_3|auto_generated
+  7. Parameter Settings for User Entity Instance: mem_0_3
+  8. Partition "root_partition" Resource Utilization by Entity
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics for Partition "root_partition"
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
  12. Post-Synthesis Netlist Statistics for Partition "root_partition"
  13. Synthesis Resource Usage Summary for Partition "root_partition"
  14. Synthesis RAM Summary for Partition "root_partition"
@@ -27,7 +27,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr 16 11:10:26 2021 ;
+; Synthesis Status      ; Successful - Mon Apr 19 10:49:10 2021 ;
 ; Revision Name         ; router_fifo                           ;
 ; Top-level Entity Name ; router_fifo                           ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -133,18 +133,18 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path                                                                                        ; File Type                    ; File Name with Absolute Path                                                                                            ; Library ; MD5                              ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; 5e6d33c4bbdc774c66cab11cc359cc4a ;
-; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; work    ;                                  ;
-; stratix_ram_block.inc                                                                                                   ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ;                                  ;
-; lpm_mux.inc                                                                                                             ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ;                                  ;
-; lpm_decode.inc                                                                                                          ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_decode.inc                                                    ;         ;                                  ;
-; aglobal204.inc                                                                                                          ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/aglobal204.inc                                                    ;         ;                                  ;
-; a_rdenreg.inc                                                                                                           ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;         ;                                  ;
-; altrom.inc                                                                                                              ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altrom.inc                                                        ;         ;                                  ;
-; altram.inc                                                                                                              ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                        ;         ;                                  ;
-; altdpram.inc                                                                                                            ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ;                                  ;
-; cbx.lst                                                                                                                 ; Auto-Found Unspecified File  ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                           ;         ;                                  ;
-; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/1968/altsyncram_v2o1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/1968/altsyncram_v2o1.tdf ;         ;                                  ;
+; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; f7a44dd73dcba9c872a0c228f8bc3cc8 ;
+; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; work    ; bee38145082854bcb3ff4b76e66c3374 ;
+; stratix_ram_block.inc                                                                                                   ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ; e3a03868917f0b3dd57b6ed1dd195f22 ;
+; lpm_mux.inc                                                                                                             ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ; dd87bed90959d6126db09970164b7ba6 ;
+; lpm_decode.inc                                                                                                          ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_decode.inc                                                    ;         ; 10da69a8bbd590d66779e7a142f73790 ;
+; aglobal204.inc                                                                                                          ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/aglobal204.inc                                                    ;         ; 4129cacc2cc1b1610455db41542c0f10 ;
+; a_rdenreg.inc                                                                                                           ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/a_rdenreg.inc                                                     ;         ; 3fcdce7559590d5a8afbe64788d201fb ;
+; altrom.inc                                                                                                              ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altrom.inc                                                        ;         ; 192b74eafa8debf2248ea73881e77f91 ;
+; altram.inc                                                                                                              ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                        ;         ; ad5518b39ffd3cf1df377e6360d1c9b6 ;
+; altdpram.inc                                                                                                            ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ; 229c034d72d6c571b2f9af0f2aa5d997 ;
+; cbx.lst                                                                                                                 ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                           ;         ; e8e35ff46ea794e27463c607c126d772 ;
+; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/6424/altsyncram_56l1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/6424/altsyncram_56l1.tdf ;         ; 61a581df5eb6e2c7d345fa1297b8bfb9 ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -157,64 +157,34 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------+----------------+---------+--------------+-------+-------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Ignored Source Level Assignments for Top-Level Entity                                                                                           ;
-+------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
-; Assignment ; Value ; To               ; Reason                  ; Location                                                                      ;
-+------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
-; ORIG_DEPTH ; 16    ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(24) ;
-; ORIG_WIDTH ; 9     ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v(24) ;
-+------------+-------+------------------+-------------------------+-------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition "root_partition" Resource Utilization by Entity                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name      ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
-; |                          ; 26 (26)             ; 21 (21)                   ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; |                        ; router_fifo     ; altera_work  ;
-;    |mem_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_rtl_0                ; altsyncram      ; work         ;
-;       |auto_generated|     ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_rtl_0|auto_generated ; altsyncram_v2o1 ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+--------------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------+
-; General Register Statistics for Partition "root_partition" ;
-+----------------------------------------------+-------------+
-; Statistic                                    ; Value       ;
-+----------------------------------------------+-------------+
-; Total registers                              ; 21          ;
-; Number of registers using Synchronous Clear  ; 11          ;
-; Number of registers using Synchronous Load   ; 0           ;
-; Number of registers using Asynchronous Clear ; 0           ;
-; Number of registers using Asynchronous Load  ; 0           ;
-; Number of registers using Clock Enable       ; 14          ;
-; Number of registers using Preset             ; 0           ;
-+----------------------------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ; Restructuring Performed ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; wr_pointer[1]              ; Yes                     ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 0 LEs                ; 22 LEs                 ; Yes        ; data_out[0]~reg0           ; Yes                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
-
-
-+----------------------------------------------+
-; Registers Packed Into Inferred Megafunctions ;
-+------------------+--------------+------------+
-; Register Name    ; Megafunction ; Type       ;
-+------------------+--------------+------------+
-; packet_out[0..7] ; mem_rtl_0    ; RAM        ;
-+------------------+--------------+------------+
++----------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic         ;
++-------------------------------+--------------------+
+; Register Name                 ; RAM Name           ;
++-------------------------------+--------------------+
+; altsyncram_mem_0_3_bypass[0]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[1]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[2]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[3]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[4]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[5]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[6]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[7]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[8]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[9]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[10] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[11] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[12] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[13] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[14] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[15] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[16] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[17] ; altsyncram:mem_0_3 ;
++-------------------------------+--------------------+
 
 
 +------------------------------------------------------------------+
-; Source Assignments for mem_rtl_0|auto_generated                  ;
+; Source Assignments for mem_0_3|auto_generated                    ;
 +---------------------------------+--------------------+------+----+
 ; Assignment                      ; Value              ; From ; To ;
 +---------------------------------+--------------------+------+----+
@@ -223,7 +193,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: mem_rtl_0               ;
+; Parameter Settings for User Entity Instance: mem_0_3                     ;
 +------------------------------------+----------------------+--------------+
 ; Parameter Name                     ; Value                ; Type         ;
 +------------------------------------+----------------------+--------------+
@@ -234,7 +204,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IGNORE_CASCADE_BUFFERS             ; OFF                  ; Untyped      ;
 ; WIDTH_BYTEENA                      ; 1                    ; Untyped      ;
 ; OPERATION_MODE                     ; DUAL_PORT            ; Untyped      ;
-; WIDTH_A                            ; 8                    ; Untyped      ;
+; WIDTH_A                            ; 9                    ; Untyped      ;
 ; WIDTHAD_A                          ; 4                    ; Untyped      ;
 ; NUMWORDS_A                         ; 16                   ; Untyped      ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped      ;
@@ -243,12 +213,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped      ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped      ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped      ;
-; WIDTH_B                            ; 8                    ; Untyped      ;
+; WIDTH_B                            ; 9                    ; Untyped      ;
 ; WIDTHAD_B                          ; 4                    ; Untyped      ;
 ; NUMWORDS_B                         ; 16                   ; Untyped      ;
 ; INDATA_REG_B                       ; CLOCK1               ; Untyped      ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped      ;
-; RDCONTROL_REG_B                    ; CLOCK0               ; Untyped      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped      ;
 ; ADDRESS_REG_B                      ; CLOCK0               ; Untyped      ;
 ; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped      ;
 ; BYTEENA_REG_B                      ; CLOCK1               ; Untyped      ;
@@ -278,8 +248,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped      ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped      ;
 ; DEVICE_FAMILY                      ; Cyclone 10 GX        ; Untyped      ;
-; CBXI_PARAMETER                     ; altsyncram_v2o1      ; Untyped      ;
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
 +------------------------------------+----------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "root_partition" Resource Utilization by Entity                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name    ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
+; |                          ; 53 (53)             ; 41 (41)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; |                      ; router_fifo     ; altera_work  ;
+;    |mem_0_3|               ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_0_3                ; altsyncram      ; work         ;
+;       |auto_generated|     ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_0_3|auto_generated ; altsyncram_56l1 ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++----------------------------------------+------------------------------------------+
+; Register name                          ; Reason for Removal                       ;
++----------------------------------------+------------------------------------------+
+; rd_pointer[0]                          ; Merged with altsyncram_mem_0_3_bypass[2] ;
+; rd_pointer[1]                          ; Merged with altsyncram_mem_0_3_bypass[4] ;
+; rd_pointer[2]                          ; Merged with altsyncram_mem_0_3_bypass[6] ;
+; rd_pointer[3]                          ; Merged with altsyncram_mem_0_3_bypass[8] ;
+; i134                                   ; Lost fanout                              ;
+; i147                                   ; Lost fanout                              ;
+; i160                                   ; Lost fanout                              ;
+; i173                                   ; Lost fanout                              ;
+; i186                                   ; Lost fanout                              ;
+; i199                                   ; Lost fanout                              ;
+; i212                                   ; Lost fanout                              ;
+; i225                                   ; Lost fanout                              ;
+; Total Number of Removed Registers = 12 ;                                          ;
++----------------------------------------+------------------------------------------+
+
+
++------------------------------------------------------------+
+; General Register Statistics for Partition "root_partition" ;
++----------------------------------------------+-------------+
+; Statistic                                    ; Value       ;
++----------------------------------------------+-------------+
+; Total registers                              ; 41          ;
+; Number of registers using Synchronous Clear  ; 0           ;
+; Number of registers using Synchronous Load   ; 0           ;
+; Number of registers using Asynchronous Clear ; 0           ;
+; Number of registers using Asynchronous Load  ; 0           ;
+; Number of registers using Clock Enable       ; 11          ;
+; Number of registers using Preset             ; 0           ;
++----------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ; Restructuring Performed ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; wr_pointer[1]              ; Yes                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; length[2]                  ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; i101                       ; Yes                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
 
 
 +------------------------------------------------------------------+
@@ -288,24 +317,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                   ; Count                                   ;
 +------------------------+-----------------------------------------+
 ; boundary_port          ; 24                                      ;
-; cyclone10gx_ff         ; 21                                      ;
-;     ENA                ; 3                                       ;
-;     ENA SCLR           ; 11                                      ;
-;     plain              ; 7                                       ;
-; cyclone10gx_lcell_comb ; 26                                      ;
-;     normal             ; 26                                      ;
-;         2 data inputs  ; 2                                       ;
-;         3 data inputs  ; 4                                       ;
-;         4 data inputs  ; 4                                       ;
-;         5 data inputs  ; 6                                       ;
-;         6 data inputs  ; 10                                      ;
-; cyclone10gx_ram_block  ; 8                                       ;
+; cyclone10gx_ff         ; 41                                      ;
+;     ENA                ; 11                                      ;
+;     plain              ; 30                                      ;
+; cyclone10gx_lcell_comb ; 53                                      ;
+;     extend             ; 1                                       ;
+;         7 data inputs  ; 1                                       ;
+;     normal             ; 52                                      ;
+;         2 data inputs  ; 9                                       ;
+;         3 data inputs  ; 3                                       ;
+;         4 data inputs  ; 15                                      ;
+;         5 data inputs  ; 12                                      ;
+;         6 data inputs  ; 13                                      ;
+; cyclone10gx_ram_block  ; 9                                       ;
 ;                        ;                                         ;
 ; Number of carry chains ; 0                                       ;
 ; Max carry chain length ; 0                                       ;
 ;                        ;                                         ;
-; Max LUT depth          ; 2.00                                    ;
-; Average LUT depth      ; 1.06                                    ;
+; Max LUT depth          ; 3.00                                    ;
+; Average LUT depth      ; 1.92                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -314,39 +344,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 19                ;
+; Estimate of Logic utilization (ALMs needed) ; 35                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 26                ;
-;     -- 7 input functions                    ; 0                 ;
-;     -- 6 input functions                    ; 10                ;
-;     -- 5 input functions                    ; 6                 ;
-;     -- 4 input functions                    ; 4                 ;
-;     -- <=3 input functions                  ; 6                 ;
+; Combinational ALUT usage for logic          ; 53                ;
+;     -- 7 input functions                    ; 1                 ;
+;     -- 6 input functions                    ; 13                ;
+;     -- 5 input functions                    ; 12                ;
+;     -- 4 input functions                    ; 15                ;
+;     -- <=3 input functions                  ; 12                ;
 ;                                             ;                   ;
-; Dedicated logic registers                   ; 21                ;
+; Dedicated logic registers                   ; 41                ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 24                ;
 ; Total MLAB memory bits                      ; 0                 ;
-; Total block memory bits                     ; 128               ;
+; Total block memory bits                     ; 144               ;
 ;                                             ;                   ;
 ; Total DSP Blocks                            ; 0                 ;
 ;     -- [A] Total Fixed Point DSP Blocks     ; 0                 ;
 ;     -- [B] Total Floating Point DSP Blocks  ; 0                 ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clock             ;
-; Maximum fan-out                             ; 29                ;
-; Total fan-out                               ; 295               ;
-; Average fan-out                             ; 3.73              ;
+; Maximum fan-out                             ; 50                ;
+; Total fan-out                               ; 434               ;
+; Average fan-out                             ; 3.42              ;
 +---------------------------------------------+-------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Synthesis RAM Summary for Partition "root_partition"                                                                                    ;
-+-------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+-------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; mem_rtl_0|auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 8            ; 16           ; 8            ; 128  ; None ;
-+-------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis RAM Summary for Partition "root_partition"                                                                                  ;
++-----------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                              ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++-----------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; mem_0_3|auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 9            ; 16           ; 9            ; 144  ; None ;
++-----------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +--------------------+
@@ -355,8 +385,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr 16 11:10:15 2021
-    Info: System process ID: 1968
+    Info: Processing started: Mon Apr 19 10:49:03 2021
+    Info: System process ID: 6424
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_fifo -c router_fifo
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -364,20 +394,14 @@ Info: Project = "router_fifo"
 Info: Revision = "router_fifo"
 Info: Analyzing source files
 Info: Elaborating from top-level entity "router_fifo"
-Info: Found 1 design entities
-Info: There are 1 partitions after elaboration.
-Info: Creating instance-specific data models and dissolving soft partitions
-Info (18299): Expanding entity and wildcard assignments.
-Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
-Info: found pre-synthesis snapshots for 1 partition(s)
-Info: Synthesizing partition "root_partition"
+Warning (276020): Inferred RAM node "|altsyncram:mem_0_3" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "mem_rtl_0" 
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "|altsyncram:mem_0_3" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
-        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTH_A set to 9
         Info (286033): Parameter WIDTHAD_A set to 4
         Info (286033): Parameter NUMWORDS_A set to 16
-        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTH_B set to 9
         Info (286033): Parameter WIDTHAD_B set to 4
         Info (286033): Parameter NUMWORDS_B set to 16
         Info (286033): Parameter ADDRESS_ACLR_A set to NONE
@@ -388,19 +412,35 @@ Info (19000): Inferred 1 megafunctions from design logic
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
-        Info (286033): Parameter RDCONTROL_REG_B set to CLOCK0
+Info: Found 3 design entities
+Info: There are 3 partitions after elaboration.
+Info: Creating instance-specific data models and dissolving soft partitions
+Info (18299): Expanding entity and wildcard assignments.
+Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
+Info: found pre-synthesis snapshots for 1 partition(s)
+Info: Synthesizing partition "root_partition"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "packet_out[7]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[6]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[5]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[4]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[3]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[2]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[1]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "packet_out[0]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 110 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 34 logic cells
-    Info (21064): Implemented 8 RAM segments
+    Info (21061): Implemented 77 logic cells
+    Info (21064): Implemented 9 RAM segments
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
-Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 519 megabytes
-    Info: Processing ended: Fri Apr 16 11:10:27 2021
-    Info: Elapsed time: 00:00:12
-    Info: System process ID: 1968
+Info: Quartus Prime Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 571 megabytes
+    Info: Processing ended: Mon Apr 19 10:49:10 2021
+    Info: Elapsed time: 00:00:07
+    Info: System process ID: 6424
 
 

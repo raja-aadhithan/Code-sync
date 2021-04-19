@@ -10,28 +10,28 @@ z2
 cModel Technology
 dC:/intelFPGA_pro/20.4
 vrouter_fifo
-!s110 1618741224
+!s110 1618809245
 !i10b 1
-!s100 I]KgU4FElXlkJn1R<mEgT1
+!s100 =lXdZm815^2XC;]4R5kDH0
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IkSYgHeBcJXRcODY:5Pf7J3
+Iz1RgIN6GO<]<@WI?nXbdb3
 Z1 dC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router
-w1618741215
+w1618809236
 8C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v
 FC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v
-!i122 60
-L0 1 75
+!i122 63
+L0 1 73
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OV;L;2020.3;71
 r1
 !s85 0
 31
-Z4 !s108 1618741224.000000
+!s108 1618809245.000000
 !s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 vrouter_fifo_tb
 !s110 1618741225
 !i10b 1
@@ -49,9 +49,9 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1618741224.000000
 !s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v|
 !i113 1
+R4
 R5
-R6
