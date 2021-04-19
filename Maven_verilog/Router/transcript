@@ -791,3 +791,5 @@ run -all
 #    Time: 715 ps  Iteration: 0  Instance: /router_fifo_tb
 # 1
 # Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 78
+# End time: 17:41:04 on Apr 18,2021, Elapsed time: 1:50:27
+# Errors: 0, Warnings: 1
