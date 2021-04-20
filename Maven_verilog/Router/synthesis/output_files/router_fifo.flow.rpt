@@ -1,5 +1,5 @@
 Flow report for router_fifo
-Mon Apr 19 10:49:10 2021
+Mon Apr 19 18:16:16 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+
 ; Flow Summary                                        ;
 +-------------+---------------------------------------+
-; Flow Status ; Successful - Mon Apr 19 10:49:10 2021 ;
+; Flow Status ; Successful - Mon Apr 19 18:16:16 2021 ;
 +-------------+---------------------------------------+
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/19/2021 10:49:04 ;
+; Start date & time ; 04/19/2021 18:16:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; router_fifo         ;
 +-------------------+---------------------+

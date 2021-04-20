@@ -12,7 +12,7 @@ assign empty = (status_count == 0 ) ? 1'b1 : 1'b0 ;
 assign full = (status_count == 5'd16) ? 1'b1 : 1'b0 ;
 assign packet[7:0] = data_in[7:0];
 assign packet[8] = lfd_state;
-assign data_out = resetn ? packet_out[7:0] : 8'd0;
+assign data_out = resetn ?  packet_out[7:0] : 8'd0;
 
 
 
@@ -44,6 +44,7 @@ always@(posedge clock) begin
 
     if(!resetn || soft_reset) begin //reset
         rd_pointer <= 4'd0;
+        packet_out <= 8'dz;
     end
     else begin 
         if(empty == 1'b0 && read_enb ) begin //only write
@@ -58,10 +59,13 @@ end
 
 
 always@(posedge clock)begin
-    if(empty == 1'b0 && read_enb && resetn) begin
+    if (!resetn || soft_reset) begin
+        length <= 0;
+    end
+    else if(empty == 1'b0 && read_enb ) begin
 
         if(mem[rd_pointer[3:0]][8])begin
-                length <= mem[rd_pointer[3:0]][7:2];
+                length <= mem[rd_pointer[3:0]][7:2] + 1'b1;
         end
 
         else if (length != 0)  begin

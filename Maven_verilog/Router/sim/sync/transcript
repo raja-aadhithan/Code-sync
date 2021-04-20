@@ -1,0 +1,93 @@
+# Compile of router_sync.v was successful.
+# Compile of router_sync_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.router_sync_tb
+# vsim work.router_sync_tb 
+# Start time: 11:24:05 on Apr 20,2021
+# Loading work.router_sync_tb
+# Loading work.router_sync
+add wave -r sim:/router_sync_tb/*
+run -all
+# @  0ns : q = x, vldout = x,x,x
+# @ 10ns : q = x, vldout = x,1,x
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(38)
+#    Time: 3020 ps  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 38
+# Compile of router_sync.v was successful.
+# Compile of router_sync_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.router_sync_tb
+# End time: 11:28:31 on Apr 20,2021, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 6
+# vsim work.router_sync_tb 
+# Start time: 11:28:31 on Apr 20,2021
+# Loading work.router_sync_tb
+# Loading work.router_sync
+add wave -r sim:/router_sync_tb/*
+run -all
+# @  0ns : q = x, vldout = x,x,x
+# @ 10ns : q = x, vldout = 1,1,0
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(47)
+#    Time: 3030 ps  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 47
+# Compile of router_sync.v was successful.
+# Compile of router_sync_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.router_sync_tb
+# End time: 11:33:53 on Apr 20,2021, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 2
+# vsim work.router_sync_tb 
+# Start time: 11:33:53 on Apr 20,2021
+# Loading work.router_sync_tb
+# Loading work.router_sync
+add wave -r sim:/router_sync_tb/*
+run -all
+# @  0ns : q = x, vldout = x,x,x
+# @ 10ns : q = x, vldout = 1,1,0
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(61)
+#    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 61
+# Compile of router_sync.v was successful.
+# Compile of router_sync_tb.v was successful.
+vsim work.router_sync_tb
+# End time: 11:38:15 on Apr 20,2021, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 3
+# vsim work.router_sync_tb 
+# Start time: 11:38:15 on Apr 20,2021
+# Loading work.router_sync_tb
+# Loading work.router_sync
+add wave -r sim:/router_sync_tb/*
+run -all
+# @  0ns : q = x, vldout = x,x,x
+# @ 10ns : q = x, vldout = 0,1,1
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(61)
+#    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 61
+# Compile of router_sync.v was successful.
+# Compile of router_sync_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.router_sync_tb
+# End time: 11:43:39 on Apr 20,2021, Elapsed time: 0:05:24
+# Errors: 0, Warnings: 2
+# vsim work.router_sync_tb 
+# Start time: 11:43:39 on Apr 20,2021
+# Loading work.router_sync_tb
+# Loading work.router_sync
+add wave -position insertpoint sim:/router_sync_tb/*
+run -all
+# @  0ns : q = x, vldout = x,x,x
+# @ 10ns : q = x, vldout = 0,1,1
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(61)
+#    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
+# 1
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 61
+add wave -r sim:/router_sync_tb/*
+run -all
+# Break key hit
+# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 21
+# End time: 11:45:45 on Apr 20,2021, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 2

@@ -1,5 +1,5 @@
 Synthesis report
-Mon Apr 19 10:49:10 2021
+Mon Apr 19 18:16:16 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -27,7 +27,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Mon Apr 19 10:49:10 2021 ;
+; Synthesis Status      ; Successful - Mon Apr 19 18:16:16 2021 ;
 ; Revision Name         ; router_fifo                           ;
 ; Top-level Entity Name ; router_fifo                           ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -133,7 +133,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path                                                                                        ; File Type                    ; File Name with Absolute Path                                                                                            ; Library ; MD5                              ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; f7a44dd73dcba9c872a0c228f8bc3cc8 ;
+; ../router_fifo.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                               ;         ; 175ea58034d55af520f3a5c87183671b ;
 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                    ; work    ; bee38145082854bcb3ff4b76e66c3374 ;
 ; stratix_ram_block.inc                                                                                                   ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                             ;         ; e3a03868917f0b3dd57b6ed1dd195f22 ;
 ; lpm_mux.inc                                                                                                             ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                       ;         ; dd87bed90959d6126db09970164b7ba6 ;
@@ -144,7 +144,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; altram.inc                                                                                                              ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                        ;         ; ad5518b39ffd3cf1df377e6360d1c9b6 ;
 ; altdpram.inc                                                                                                            ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                      ;         ; 229c034d72d6c571b2f9af0f2aa5d997 ;
 ; cbx.lst                                                                                                                 ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                           ;         ; e8e35ff46ea794e27463c607c126d772 ;
-; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/6424/altsyncram_56l1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/6424/altsyncram_56l1.tdf ;         ; 61a581df5eb6e2c7d345fa1297b8bfb9 ;
+; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/5856/altsyncram_56l1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/synthesis/tmp-clearbox/router_fifo/5856/altsyncram_56l1.tdf ;         ; 61a581df5eb6e2c7d345fa1297b8bfb9 ;
 +-------------------------------------------------------------------------------------------------------------------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -257,7 +257,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name    ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
-; |                          ; 53 (53)             ; 41 (41)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; |                      ; router_fifo     ; altera_work  ;
+; |                          ; 62 (62)             ; 41 (41)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; |                      ; router_fifo     ; altera_work  ;
 ;    |mem_0_3|               ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_0_3                ; altsyncram      ; work         ;
 ;       |auto_generated|     ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; mem_0_3|auto_generated ; altsyncram_56l1 ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+------------------------+-----------------+--------------+
@@ -273,14 +273,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; rd_pointer[1]                          ; Merged with altsyncram_mem_0_3_bypass[4] ;
 ; rd_pointer[2]                          ; Merged with altsyncram_mem_0_3_bypass[6] ;
 ; rd_pointer[3]                          ; Merged with altsyncram_mem_0_3_bypass[8] ;
-; i134                                   ; Lost fanout                              ;
-; i147                                   ; Lost fanout                              ;
-; i160                                   ; Lost fanout                              ;
-; i173                                   ; Lost fanout                              ;
-; i186                                   ; Lost fanout                              ;
-; i199                                   ; Lost fanout                              ;
-; i212                                   ; Lost fanout                              ;
-; i225                                   ; Lost fanout                              ;
+; i135                                   ; Lost fanout                              ;
+; i149                                   ; Lost fanout                              ;
+; i163                                   ; Lost fanout                              ;
+; i177                                   ; Lost fanout                              ;
+; i191                                   ; Lost fanout                              ;
+; i205                                   ; Lost fanout                              ;
+; i219                                   ; Lost fanout                              ;
+; i233                                   ; Lost fanout                              ;
 ; Total Number of Removed Registers = 12 ;                                          ;
 +----------------------------------------+------------------------------------------+
 
@@ -291,11 +291,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value       ;
 +----------------------------------------------+-------------+
 ; Total registers                              ; 41          ;
-; Number of registers using Synchronous Clear  ; 0           ;
+; Number of registers using Synchronous Clear  ; 15          ;
 ; Number of registers using Synchronous Load   ; 0           ;
 ; Number of registers using Asynchronous Clear ; 0           ;
 ; Number of registers using Asynchronous Load  ; 0           ;
-; Number of registers using Clock Enable       ; 11          ;
+; Number of registers using Clock Enable       ; 17          ;
 ; Number of registers using Preset             ; 0           ;
 +----------------------------------------------+-------------+
 
@@ -306,8 +306,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ; Restructuring Performed ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; wr_pointer[1]              ; Yes                     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; length[2]                  ; Yes                     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; i101                       ; Yes                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; length[5]                  ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; i99                        ; Yes                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
 
 
@@ -318,24 +318,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------+-----------------------------------------+
 ; boundary_port          ; 24                                      ;
 ; cyclone10gx_ff         ; 41                                      ;
-;     ENA                ; 11                                      ;
-;     plain              ; 30                                      ;
-; cyclone10gx_lcell_comb ; 53                                      ;
-;     extend             ; 1                                       ;
-;         7 data inputs  ; 1                                       ;
-;     normal             ; 52                                      ;
-;         2 data inputs  ; 9                                       ;
-;         3 data inputs  ; 3                                       ;
-;         4 data inputs  ; 15                                      ;
-;         5 data inputs  ; 12                                      ;
-;         6 data inputs  ; 13                                      ;
+;     ENA                ; 8                                       ;
+;     ENA SCLR           ; 9                                       ;
+;     SCLR               ; 6                                       ;
+;     plain              ; 18                                      ;
+; cyclone10gx_lcell_comb ; 62                                      ;
+;     arith              ; 6                                       ;
+;         3 data inputs  ; 1                                       ;
+;         4 data inputs  ; 5                                       ;
+;     normal             ; 56                                      ;
+;         2 data inputs  ; 11                                      ;
+;         3 data inputs  ; 5                                       ;
+;         4 data inputs  ; 17                                      ;
+;         5 data inputs  ; 7                                       ;
+;         6 data inputs  ; 16                                      ;
 ; cyclone10gx_ram_block  ; 9                                       ;
 ;                        ;                                         ;
-; Number of carry chains ; 0                                       ;
-; Max carry chain length ; 0                                       ;
+; Number of carry chains ; 1                                       ;
+; Max carry chain length ; 6                                       ;
 ;                        ;                                         ;
-; Max LUT depth          ; 3.00                                    ;
-; Average LUT depth      ; 1.92                                    ;
+; Max LUT depth          ; 4.30                                    ;
+; Average LUT depth      ; 2.25                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -344,14 +347,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 35                ;
+; Estimate of Logic utilization (ALMs needed) ; 40                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 53                ;
-;     -- 7 input functions                    ; 1                 ;
-;     -- 6 input functions                    ; 13                ;
-;     -- 5 input functions                    ; 12                ;
-;     -- 4 input functions                    ; 15                ;
-;     -- <=3 input functions                  ; 12                ;
+; Combinational ALUT usage for logic          ; 62                ;
+;     -- 7 input functions                    ; 0                 ;
+;     -- 6 input functions                    ; 16                ;
+;     -- 5 input functions                    ; 7                 ;
+;     -- 4 input functions                    ; 22                ;
+;     -- <=3 input functions                  ; 17                ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 41                ;
 ;                                             ;                   ;
@@ -365,8 +368,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clock             ;
 ; Maximum fan-out                             ; 50                ;
-; Total fan-out                               ; 434               ;
-; Average fan-out                             ; 3.42              ;
+; Total fan-out                               ; 487               ;
+; Average fan-out                             ; 3.58              ;
 +---------------------------------------------+-------------------+
 
 
@@ -385,8 +388,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Mon Apr 19 10:49:03 2021
-    Info: System process ID: 6424
+    Info: Processing started: Mon Apr 19 18:16:09 2021
+    Info: System process ID: 5856
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_fifo -c router_fifo
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -439,8 +442,8 @@ Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 571 megabytes
-    Info: Processing ended: Mon Apr 19 10:49:10 2021
+    Info: Processing ended: Mon Apr 19 18:16:16 2021
     Info: Elapsed time: 00:00:07
-    Info: System process ID: 6424
+    Info: System process ID: 5856
 
 

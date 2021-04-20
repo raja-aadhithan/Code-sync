@@ -69,7 +69,10 @@ initial begin
     readandwrite({$random}%256);
     repeat(15)
     read();
-
+    soft_reset = 1'b1;
+    #20;
+    soft_reset = 1'b0;
+    #20;
     header(6'd4,{$random}%3);
     repeat(4) // payload length is denoted here
     write({$random}%256);
