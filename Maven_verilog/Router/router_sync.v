@@ -4,26 +4,23 @@ module router_sync(input detect_add, write_enb_reg, clock, resetn,
                          full_0, full_1, full_2, 
                    input [1:0] data_in,
                    output reg vld_out_0, vld_out_1, vld_out_2,
-                         soft_reset_0, soft_reset_1, soft_reset_2, 
-                         fifo_full,
+                   output reg soft_reset_0, soft_reset_1, soft_reset_2, 
+                   output reg fifo_full,
                    output reg [2:0] write_enb);
 
-reg [2:0] q;
+reg [1:0] q;
 reg [4:0] count0,count1,count2;
 
-always@(posedge clock) begin
+always@(*)begin
 
-    if(!resetn)begin
-        count0<=5'd0;
-        count1<=5'd0;
-        count2<=5'd0;
-    end
-
+    if(detect_add) q<= data_in;
+    else q <= q;
+    
     vld_out_0 <= !empty_0;
     vld_out_1 <= !empty_1;
     vld_out_2 <= !empty_2;
 
-    case(data_in)
+    case(q)
     2'b00 : begin
             fifo_full = full_0;
             write_enb = {2'b00, write_enb_reg};
@@ -44,6 +41,16 @@ always@(posedge clock) begin
                 write_enb = 3'd0;
     end
     endcase
+end
+
+always@(posedge clock) begin
+
+    if(!resetn)begin
+        count0<=5'd0;
+        count1<=5'd0;
+        count2<=5'd0;
+    end
+
 
     if (vld_out_0) begin
             if (read_enb_0) begin
@@ -86,6 +93,4 @@ always@(posedge clock) begin
 
 end
 
-
-
-endmodule//detect add resetn missing
+endmodule
