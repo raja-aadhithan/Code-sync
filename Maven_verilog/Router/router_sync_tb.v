@@ -40,13 +40,14 @@ module router_sync_tb();
 
     full_1 = 0;
     read_enb_1 = 1'b1;
-    read_enb_2 = 1'b1;
+    read_enb_2 = 1'b0;
     write_enb_reg = 1'b1;
     #10;
     full_1 = 1;
     write_enb_reg = 1'b0;
     #3000;
 
+    read_enb_2 = 1'b1;
     detect_add = 1'b1;
     data_in =2'b10;
     #10;

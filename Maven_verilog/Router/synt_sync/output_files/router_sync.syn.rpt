@@ -1,5 +1,5 @@
 Synthesis report
-Tue Apr 20 11:43:31 2021
+Tue Apr 20 18:24:13 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -23,7 +23,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Tue Apr 20 11:43:30 2021 ;
+; Synthesis Status      ; Successful - Tue Apr 20 18:24:12 2021 ;
 ; Revision Name         ; router_sync                           ;
 ; Top-level Entity Name ; router_sync                           ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -129,7 +129,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------------+------------------------+---------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path ; File Type              ; File Name with Absolute Path                                              ; Library ; MD5                              ;
 +----------------------------------+------------------------+---------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_sync.v                 ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync.v ;         ; 282c9c65f4a438a894d4df3c2e31e0e6 ;
+; ../router_sync.v                 ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync.v ;         ; 81808e090a6d1fbf475c6792e6ea2cb9 ;
 +----------------------------------+------------------------+---------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -203,8 +203,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;     normal             ; 39                                      ;
 ;         1 data inputs  ; 3                                       ;
 ;         2 data inputs  ; 1                                       ;
-;         3 data inputs  ; 12                                      ;
-;         4 data inputs  ; 9                                       ;
+;         3 data inputs  ; 10                                      ;
+;         4 data inputs  ; 11                                      ;
 ;         5 data inputs  ; 9                                       ;
 ;         6 data inputs  ; 5                                       ;
 ;                        ;                                         ;
@@ -212,7 +212,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Max carry chain length ; 0                                       ;
 ;                        ;                                         ;
 ; Max LUT depth          ; 2.00                                    ;
-; Average LUT depth      ; 1.49                                    ;
+; Average LUT depth      ; 1.51                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -227,8 +227,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;     -- 7 input functions                    ; 0                 ;
 ;     -- 6 input functions                    ; 5                 ;
 ;     -- 5 input functions                    ; 9                 ;
-;     -- 4 input functions                    ; 9                 ;
-;     -- <=3 input functions                  ; 16                ;
+;     -- 4 input functions                    ; 11                ;
+;     -- <=3 input functions                  ; 14                ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 18                ;
 ;                                             ;                   ;
@@ -240,8 +240,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clock             ;
 ; Maximum fan-out                             ; 18                ;
-; Total fan-out                               ; 213               ;
-; Average fan-out                             ; 2.60              ;
+; Total fan-out                               ; 215               ;
+; Average fan-out                             ; 2.62              ;
 +---------------------------------------------+-------------------+
 
 
@@ -251,8 +251,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Tue Apr 20 11:43:24 2021
-    Info: System process ID: 7532
+    Info: Processing started: Tue Apr 20 18:24:00 2021
+    Info: System process ID: 10856
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_sync -c router_sync
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -276,9 +276,9 @@ Info (21057): Implemented 64 device resources after synthesis - the final resour
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 507 megabytes
-    Info: Processing ended: Tue Apr 20 11:43:31 2021
-    Info: Elapsed time: 00:00:07
-    Info: System process ID: 7532
+    Info: Peak virtual memory: 510 megabytes
+    Info: Processing ended: Tue Apr 20 18:24:13 2021
+    Info: Elapsed time: 00:00:13
+    Info: System process ID: 10856
 
 

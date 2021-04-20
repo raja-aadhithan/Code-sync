@@ -53,7 +53,7 @@ always@(posedge clock) begin
 
 
     if (vld_out_0) begin
-            if (read_enb_0) begin
+            if (!read_enb_0) begin
               if (count0 == 5'b11101)begin
                     soft_reset_0 <= 1'b1;
                     count0 <= 5'd0;
@@ -66,7 +66,7 @@ always@(posedge clock) begin
     end
 
     if (vld_out_1) begin
-            if (read_enb_1) begin
+            if (!read_enb_1) begin
               if (count1 == 5'b11101)begin
                     soft_reset_1 <= 1'b1;
                     count1 <= 5'd0;
@@ -79,7 +79,7 @@ always@(posedge clock) begin
     end
 
     if (vld_out_2) begin
-            if (read_enb_2) begin
+            if (!read_enb_2) begin
               if (count2 == 5'b11101)begin
                     soft_reset_2 <= 1'b1;
                     count2 <= 5'd0;

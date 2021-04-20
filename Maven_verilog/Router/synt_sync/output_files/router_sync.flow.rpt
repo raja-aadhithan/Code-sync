@@ -1,5 +1,5 @@
 Flow report for router_sync
-Tue Apr 20 11:43:30 2021
+Tue Apr 20 18:24:12 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+
 ; Flow Summary                                        ;
 +-------------+---------------------------------------+
-; Flow Status ; Successful - Tue Apr 20 11:43:30 2021 ;
+; Flow Status ; Successful - Tue Apr 20 18:24:12 2021 ;
 +-------------+---------------------------------------+
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/20/2021 11:43:24 ;
+; Start date & time ; 04/20/2021 18:24:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; router_sync         ;
 +-------------------+---------------------+
@@ -66,8 +66,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------+--------------+---------------------+
 ; Module Name ; Elapsed Time ; Peak Virtual Memory ;
 +-------------+--------------+---------------------+
-; Synthesis   ; 00:00:06     ; 507 MB              ;
-; Total       ; 00:00:06     ; --                  ;
+; Synthesis   ; 00:00:12     ; 510 MB              ;
+; Total       ; 00:00:12     ; --                  ;
 +-------------+--------------+---------------------+
 
 
