@@ -1,0 +1,815 @@
+Synthesis report
+Sat Apr 24 10:30:33 2021
+Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Synthesis Summary
+  2. Synthesis Settings
+  3. Synthesis Source Files Read
+  4. Synthesis Partition Summary
+  5. Registers Added for RAM Pass-Through Logic
+  6. Source Assignments for fifo[0].f|mem_0_3|auto_generated
+  7. Source Assignments for fifo[1].f|mem_0_3|auto_generated
+  8. Source Assignments for fifo[2].f|mem_0_3|auto_generated
+  9. Parameter Settings for User Entity Instance: dut1
+ 10. Parameter Settings for User Entity Instance: fifo[0].f|mem_0_3
+ 11. Parameter Settings for User Entity Instance: fifo[1].f|mem_0_3
+ 12. Parameter Settings for User Entity Instance: fifo[2].f|mem_0_3
+ 13. Partition "root_partition" Resource Utilization by Entity
+ 14. State Machine - Summary
+ 15. State Machine - dut1|state
+ 16. User-Specified and Inferred Latches
+ 17. Registers Removed During Synthesis
+ 18. General Register Statistics for Partition "root_partition"
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Post-Synthesis Netlist Statistics for Partition "root_partition"
+ 21. Synthesis Resource Usage Summary for Partition "root_partition"
+ 22. Synthesis RAM Summary for Partition "root_partition"
+ 23. Synthesis Messages
+
+
+
++---------------------------------------------------------------+
+; Synthesis Summary                                             ;
++-----------------------+---------------------------------------+
+; Synthesis Status      ; Successful - Sat Apr 24 10:30:32 2021 ;
+; Revision Name         ; router_top                            ;
+; Top-level Entity Name ; router_top                            ;
+; Family                ; Cyclone 10 GX                         ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Settings                                                                                                        ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 10CX220YF780I5G    ;                    ;
+; Top-level entity name                                                           ; router_top         ; router_top         ;
+; Family name                                                                     ; Cyclone 10 GX      ; Cyclone 10 GX      ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Design Assistant include IP blocks                                              ; Off                ; Off                ;
+; High fanout net threshold for RAM inference                                     ; 15                 ; 15                 ;
+; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Optimization Mode                                                               ; Balanced           ; Balanced           ;
+; Allow Register Merging                                                          ; On                 ; On                 ;
+; Allow Register Duplication                                                      ; On                 ; On                 ;
+; Allow Register Retiming                                                         ; On                 ; On                 ;
+; Allow RAM Retiming                                                              ; Off                ; Off                ;
+; Allow DSP Retiming                                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Auto               ; Auto               ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Number of Protected Registers Reported in Synthesis Report                      ; 100                ; 100                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
+; Disable DSP Negate Inferencing                                                  ; Off                ; Off                ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Parameter Settings to ASCII                                              ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Source Assignments to ASCII                                              ; On                 ; On                 ;
+; Report Resource Utilization by Entity to ASCII                                  ; On                 ; On                 ;
+; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable State Machines Inference                                                 ; On                 ; On                 ;
+; Enable formal verification support during compilation                           ; Off                ; Off                ;
+; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
+; Number of Registers with Ignored Power-Up Settings Reported in Synthesis Report ; 500                ; 500                ;
+; Report PR Initial Values as Errors                                              ; Off                ; Off                ;
+; Fractal Synthesis                                                               ; Off                ; Off                ;
+; Synthesis Available Resource Multiplier                                         ; 1                  ; 1                  ;
+; Message Level for Unconnected Output Ports                                      ; Warning            ; Warning            ;
+; Pack Barrelshifters into Carry Chains for Better Area                           ; Auto               ; Auto               ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                                                                                                                                                 ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; File Name with User-Entered Path                                                                                       ; File Type                    ; File Name with Absolute Path                                                                                           ; Library ; MD5                              ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; ../router_top.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v                                               ;         ; fedd4a4d27435fcdb0527ba713fbe5ac ;
+; ../router_sync.v                                                                                                       ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync.v                                              ;         ; 81808e090a6d1fbf475c6792e6ea2cb9 ;
+; ../router_reg.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v                                               ;         ; cb0f96283f907aeabf56e0c3145749da ;
+; ../router_fsm.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v                                               ;         ; a4fbc7b8fde38603c16482ec136fb150 ;
+; ../router_fifo.v                                                                                                       ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v                                              ;         ; 175ea58034d55af520f3a5c87183671b ;
+; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                   ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                   ; work    ; bee38145082854bcb3ff4b76e66c3374 ;
+; stratix_ram_block.inc                                                                                                  ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                            ;         ; e3a03868917f0b3dd57b6ed1dd195f22 ;
+; lpm_mux.inc                                                                                                            ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                      ;         ; dd87bed90959d6126db09970164b7ba6 ;
+; lpm_decode.inc                                                                                                         ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_decode.inc                                                   ;         ; 10da69a8bbd590d66779e7a142f73790 ;
+; aglobal204.inc                                                                                                         ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/aglobal204.inc                                                   ;         ; 4129cacc2cc1b1610455db41542c0f10 ;
+; a_rdenreg.inc                                                                                                          ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/a_rdenreg.inc                                                    ;         ; 3fcdce7559590d5a8afbe64788d201fb ;
+; altrom.inc                                                                                                             ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altrom.inc                                                       ;         ; 192b74eafa8debf2248ea73881e77f91 ;
+; altram.inc                                                                                                             ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                       ;         ; ad5518b39ffd3cf1df377e6360d1c9b6 ;
+; altdpram.inc                                                                                                           ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                     ;         ; 229c034d72d6c571b2f9af0f2aa5d997 ;
+; cbx.lst                                                                                                                ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                          ;         ; e8e35ff46ea794e27463c607c126d772 ;
+; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/top_synt/tmp-clearbox/router_top/13492/altsyncram_56l1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/top_synt/tmp-clearbox/router_top/13492/altsyncram_56l1.tdf ;         ; 61a581df5eb6e2c7d345fa1297b8bfb9 ;
++------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Synthesis Partition Summary                                                                ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; Partition Name ; Hierarchy Path ; Type    ; Preservation ; Empty ; Partition Database File ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+; root_partition ; |              ; Default ;              ;       ;                         ;
++----------------+----------------+---------+--------------+-------+-------------------------+
+
+
++----------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic         ;
++-------------------------------+--------------------+
+; Register Name                 ; RAM Name           ;
++-------------------------------+--------------------+
+; altsyncram_mem_0_3_bypass[0]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[1]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[2]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[3]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[4]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[5]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[6]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[7]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[8]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[9]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[10] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[11] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[12] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[13] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[14] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[15] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[16] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[17] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[0]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[1]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[2]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[3]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[4]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[5]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[6]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[7]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[8]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[9]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[10] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[11] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[12] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[13] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[14] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[15] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[16] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[17] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[0]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[1]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[2]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[3]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[4]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[5]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[6]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[7]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[8]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[9]  ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[10] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[11] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[12] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[13] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[14] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[15] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[16] ; altsyncram:mem_0_3 ;
+; altsyncram_mem_0_3_bypass[17] ; altsyncram:mem_0_3 ;
++-------------------------------+--------------------+
+
+
++------------------------------------------------------------------+
+; Source Assignments for fifo[0].f|mem_0_3|auto_generated          ;
++---------------------------------+--------------------+------+----+
+; Assignment                      ; Value              ; From ; To ;
++---------------------------------+--------------------+------+----+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -  ;
++---------------------------------+--------------------+------+----+
+
+
++------------------------------------------------------------------+
+; Source Assignments for fifo[1].f|mem_0_3|auto_generated          ;
++---------------------------------+--------------------+------+----+
+; Assignment                      ; Value              ; From ; To ;
++---------------------------------+--------------------+------+----+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -  ;
++---------------------------------+--------------------+------+----+
+
+
++------------------------------------------------------------------+
+; Source Assignments for fifo[2].f|mem_0_3|auto_generated          ;
++---------------------------------+--------------------+------+----+
+; Assignment                      ; Value              ; From ; To ;
++---------------------------------+--------------------+------+----+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -  ;
++---------------------------------+--------------------+------+----+
+
+
++---------------------------------------------------+
+; Parameter Settings for User Entity Instance: dut1 ;
++--------------------+-------+----------------------+
+; Parameter Name     ; Value ; Type                 ;
++--------------------+-------+----------------------+
+; Decode_Address     ; 000   ; Unsigned Binary      ;
+; Load_First_Data    ; 001   ; Unsigned Binary      ;
+; Wait_Till_Empty    ; 010   ; Unsigned Binary      ;
+; Load_Data          ; 011   ; Unsigned Binary      ;
+; Check_Parity_Error ; 100   ; Unsigned Binary      ;
+; Load_Parity        ; 101   ; Unsigned Binary      ;
+; Fifo_Full_State    ; 110   ; Unsigned Binary      ;
+; Load_After_Full    ; 111   ; Unsigned Binary      ;
++--------------------+-------+----------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fifo[0].f|mem_0_3           ;
++------------------------------------+----------------------+--------------+
+; Parameter Name                     ; Value                ; Type         ;
++------------------------------------+----------------------+--------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; Untyped      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; Untyped      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; Untyped      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped      ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped      ;
+; WIDTH_A                            ; 9                    ; Untyped      ;
+; WIDTHAD_A                          ; 4                    ; Untyped      ;
+; NUMWORDS_A                         ; 16                   ; Untyped      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WIDTH_B                            ; 9                    ; Untyped      ;
+; WIDTHAD_B                          ; 4                    ; Untyped      ;
+; NUMWORDS_B                         ; 16                   ; Untyped      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped      ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped      ;
+; BYTE_SIZE                          ; 8                    ; Untyped      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; INIT_FILE                          ; UNUSED               ; Untyped      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped      ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped      ;
+; DEVICE_FAMILY                      ; Cyclone 10 GX        ; Untyped      ;
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
++------------------------------------+----------------------+--------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fifo[1].f|mem_0_3           ;
++------------------------------------+----------------------+--------------+
+; Parameter Name                     ; Value                ; Type         ;
++------------------------------------+----------------------+--------------+
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; Untyped      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; Untyped      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; Untyped      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped      ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped      ;
+; WIDTH_A                            ; 9                    ; Untyped      ;
+; WIDTHAD_A                          ; 4                    ; Untyped      ;
+; NUMWORDS_A                         ; 16                   ; Untyped      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WIDTH_B                            ; 9                    ; Untyped      ;
+; WIDTHAD_B                          ; 4                    ; Untyped      ;
+; NUMWORDS_B                         ; 16                   ; Untyped      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped      ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped      ;
+; BYTE_SIZE                          ; 8                    ; Untyped      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; INIT_FILE                          ; UNUSED               ; Untyped      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped      ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped      ;
+; DEVICE_FAMILY                      ; Cyclone 10 GX        ; Untyped      ;
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
++------------------------------------+----------------------+--------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fifo[2].f|mem_0_3           ;
++------------------------------------+----------------------+--------------+
+; Parameter Name                     ; Value                ; Type         ;
++------------------------------------+----------------------+--------------+
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; Untyped      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; Untyped      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; Untyped      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped      ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped      ;
+; WIDTH_A                            ; 9                    ; Untyped      ;
+; WIDTHAD_A                          ; 4                    ; Untyped      ;
+; NUMWORDS_A                         ; 16                   ; Untyped      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped      ;
+; WIDTH_B                            ; 9                    ; Untyped      ;
+; WIDTHAD_B                          ; 4                    ; Untyped      ;
+; NUMWORDS_B                         ; 16                   ; Untyped      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped      ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped      ;
+; BYTE_SIZE                          ; 8                    ; Untyped      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped      ;
+; INIT_FILE                          ; UNUSED               ; Untyped      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped      ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped      ;
+; DEVICE_FAMILY                      ; Cyclone 10 GX        ; Untyped      ;
+; CBXI_PARAMETER                     ; altsyncram_56l1      ; Untyped      ;
++------------------------------------+----------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition "root_partition" Resource Utilization by Entity                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+----------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name              ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+----------------------------------+-----------------+--------------+
+; |                          ; 243 (1)             ; 150 (0)                   ; 432               ; 0          ; 0    ; 0            ; 0 (0)  ; |                                ; router_top      ; altera_work  ;
+;    |dut1|                  ; 20 (20)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; dut1                             ; router_fsm      ; altera_work  ;
+;    |dut2|                  ; 19 (19)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; dut2                             ; router_reg      ; altera_work  ;
+;    |dut3|                  ; 35 (35)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; dut3                             ; router_sync     ; altera_work  ;
+;    |fifo[0].f|             ; 57 (57)             ; 34 (34)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[0].f                        ; router_fifo     ; altera_work  ;
+;       |mem_0_3|            ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[0].f|mem_0_3                ; altsyncram      ; work         ;
+;          |auto_generated|  ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[0].f|mem_0_3|auto_generated ; altsyncram_56l1 ; work         ;
+;    |fifo[1].f|             ; 56 (56)             ; 34 (34)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[1].f                        ; router_fifo     ; altera_work  ;
+;       |mem_0_3|            ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[1].f|mem_0_3                ; altsyncram      ; work         ;
+;          |auto_generated|  ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[1].f|mem_0_3|auto_generated ; altsyncram_56l1 ; work         ;
+;    |fifo[2].f|             ; 55 (55)             ; 34 (34)                   ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[2].f                        ; router_fifo     ; altera_work  ;
+;       |mem_0_3|            ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[2].f|mem_0_3                ; altsyncram      ; work         ;
+;          |auto_generated|  ; 0 (0)               ; 0 (0)                     ; 144               ; 0          ; 0    ; 0            ; 0 (0)  ; fifo[2].f|mem_0_3|auto_generated ; altsyncram_56l1 ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+----------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------+
+; State Machine - Summary                                                ;
++------------+------------------+------------+----------------+----------+
+; Name       ; Number of States ; Using aclr ; Encoding Style ; Safeness ;
++------------+------------------+------------+----------------+----------+
+; dut1|state ; 8                ; No         ; One-Hot        ; Not Safe ;
++------------+------------------+------------+----------------+----------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - dut1|state                                                                                                                                                                                       ;
++--------------------------+--------------------------+-----------------------+-------------------+-----------------------+-----------------+-----------------------+-----------------------+----------------------+
+; Name                     ; state.Check_Parity_Error ; state.Load_After_Full ; state.Load_Parity ; state.Fifo_Full_State ; state.Load_Data ; state.Wait_Till_Empty ; state.Load_First_Data ; state.Decode_Address ;
++--------------------------+--------------------------+-----------------------+-------------------+-----------------------+-----------------+-----------------------+-----------------------+----------------------+
+; state.Decode_Address     ; 0                        ; 0                     ; 0                 ; 0                     ; 0               ; 0                     ; 0                     ; 0                    ;
+; state.Load_First_Data    ; 0                        ; 0                     ; 0                 ; 0                     ; 0               ; 0                     ; 1                     ; 1                    ;
+; state.Wait_Till_Empty    ; 0                        ; 0                     ; 0                 ; 0                     ; 0               ; 1                     ; 0                     ; 1                    ;
+; state.Load_Data          ; 0                        ; 0                     ; 0                 ; 0                     ; 1               ; 0                     ; 0                     ; 1                    ;
+; state.Fifo_Full_State    ; 0                        ; 0                     ; 0                 ; 1                     ; 0               ; 0                     ; 0                     ; 1                    ;
+; state.Load_Parity        ; 0                        ; 0                     ; 1                 ; 0                     ; 0               ; 0                     ; 0                     ; 1                    ;
+; state.Load_After_Full    ; 0                        ; 1                     ; 0                 ; 0                     ; 0               ; 0                     ; 0                     ; 1                    ;
+; state.Check_Parity_Error ; 1                        ; 0                     ; 0                 ; 0                     ; 0               ; 0                     ; 0                     ; 1                    ;
++--------------------------+--------------------------+-----------------------+-------------------+-----------------------+-----------------+-----------------------+-----------------------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                     ;
++----------------------------------------------------+---------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal       ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------------+------------------------+
+; dut3|q[0]                                          ; dut1|state.Decode_Address ; yes                    ;
+; dut3|q[1]                                          ; dut1|state.Decode_Address ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                           ;                        ;
++----------------------------------------------------+---------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++--------------------------------------------+----------------------------------------------------+
+; Register name                              ; Reason for Removal                                 ;
++--------------------------------------------+----------------------------------------------------+
+; fifo[0].f|altsyncram_mem_0_3_bypass[9..15] ; Stuck at GND due to stuck port data_in             ;
+; fifo[1].f|altsyncram_mem_0_3_bypass[9..15] ; Stuck at GND due to stuck port data_in             ;
+; fifo[2].f|altsyncram_mem_0_3_bypass[9..15] ; Stuck at GND due to stuck port data_in             ;
+; dut2|dout[6]~reg0                          ; Lost fanout                                        ;
+; dut2|dout[5]~reg0                          ; Lost fanout                                        ;
+; dut2|dout[4]~reg0                          ; Lost fanout                                        ;
+; dut2|dout[3]~reg0                          ; Lost fanout                                        ;
+; dut2|dout[2]~reg0                          ; Lost fanout                                        ;
+; dut2|dout[1]~reg0                          ; Lost fanout                                        ;
+; dut2|a[1..7]                               ; Lost fanout                                        ;
+; dut2|b[1..7]                               ; Lost fanout                                        ;
+; dut2|dout[7]~reg0                          ; Lost fanout                                        ;
+; fifo[0].f|rd_pointer[0]                    ; Merged with fifo[0].f|altsyncram_mem_0_3_bypass[2] ;
+; fifo[0].f|rd_pointer[1]                    ; Merged with fifo[0].f|altsyncram_mem_0_3_bypass[4] ;
+; fifo[0].f|rd_pointer[2]                    ; Merged with fifo[0].f|altsyncram_mem_0_3_bypass[6] ;
+; fifo[0].f|rd_pointer[3]                    ; Merged with fifo[0].f|altsyncram_mem_0_3_bypass[8] ;
+; fifo[1].f|rd_pointer[0]                    ; Merged with fifo[1].f|altsyncram_mem_0_3_bypass[2] ;
+; fifo[1].f|rd_pointer[1]                    ; Merged with fifo[1].f|altsyncram_mem_0_3_bypass[4] ;
+; fifo[1].f|rd_pointer[2]                    ; Merged with fifo[1].f|altsyncram_mem_0_3_bypass[6] ;
+; fifo[1].f|rd_pointer[3]                    ; Merged with fifo[1].f|altsyncram_mem_0_3_bypass[8] ;
+; fifo[2].f|rd_pointer[0]                    ; Merged with fifo[2].f|altsyncram_mem_0_3_bypass[2] ;
+; fifo[2].f|rd_pointer[1]                    ; Merged with fifo[2].f|altsyncram_mem_0_3_bypass[4] ;
+; fifo[2].f|rd_pointer[2]                    ; Merged with fifo[2].f|altsyncram_mem_0_3_bypass[6] ;
+; fifo[2].f|rd_pointer[3]                    ; Merged with fifo[2].f|altsyncram_mem_0_3_bypass[8] ;
+; fifo[0].f|i135                             ; Lost fanout                                        ;
+; fifo[0].f|i149                             ; Lost fanout                                        ;
+; fifo[0].f|i163                             ; Lost fanout                                        ;
+; fifo[0].f|i177                             ; Lost fanout                                        ;
+; fifo[0].f|i191                             ; Lost fanout                                        ;
+; fifo[0].f|i205                             ; Lost fanout                                        ;
+; fifo[0].f|i219                             ; Lost fanout                                        ;
+; fifo[0].f|i233                             ; Lost fanout                                        ;
+; fifo[1].f|i135                             ; Lost fanout                                        ;
+; fifo[1].f|i149                             ; Lost fanout                                        ;
+; fifo[1].f|i163                             ; Lost fanout                                        ;
+; fifo[1].f|i177                             ; Lost fanout                                        ;
+; fifo[1].f|i191                             ; Lost fanout                                        ;
+; fifo[1].f|i205                             ; Lost fanout                                        ;
+; fifo[1].f|i219                             ; Lost fanout                                        ;
+; fifo[1].f|i233                             ; Lost fanout                                        ;
+; fifo[2].f|i135                             ; Lost fanout                                        ;
+; fifo[2].f|i149                             ; Lost fanout                                        ;
+; fifo[2].f|i163                             ; Lost fanout                                        ;
+; fifo[2].f|i177                             ; Lost fanout                                        ;
+; fifo[2].f|i191                             ; Lost fanout                                        ;
+; fifo[2].f|i205                             ; Lost fanout                                        ;
+; fifo[2].f|i219                             ; Lost fanout                                        ;
+; fifo[2].f|i233                             ; Lost fanout                                        ;
+; dut1|state~0                               ; Lost fanout                                        ;
+; dut1|state~1                               ; Lost fanout                                        ;
+; dut1|state~2                               ; Lost fanout                                        ;
+; Total Number of Removed Registers = 81     ;                                                    ;
++--------------------------------------------+----------------------------------------------------+
+
+
++------------------------------------------------------------+
+; General Register Statistics for Partition "root_partition" ;
++----------------------------------------------+-------------+
+; Statistic                                    ; Value       ;
++----------------------------------------------+-------------+
+; Total registers                              ; 150         ;
+; Number of registers using Synchronous Clear  ; 51          ;
+; Number of registers using Synchronous Load   ; 8           ;
+; Number of registers using Asynchronous Clear ; 0           ;
+; Number of registers using Asynchronous Load  ; 0           ;
+; Number of registers using Clock Enable       ; 82          ;
+; Number of registers using Preset             ; 0           ;
++----------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ; Restructuring Performed ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; dut2|c[6]                  ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; fifo[0].f|wr_pointer[3]    ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; fifo[1].f|wr_pointer[1]    ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; fifo[2].f|wr_pointer[3]    ; Yes                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; fifo[0].f|length[0]        ; Yes                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; fifo[1].f|length[3]        ; Yes                     ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; fifo[2].f|length[2]        ; Yes                     ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; dut3|count0[3]             ; Yes                     ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; dut3|count1[4]             ; Yes                     ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; dut3|count2[0]             ; Yes                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; dut1|i54~0                 ; Yes                     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; dut1|i28                   ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; fifo[0].f|i100             ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; fifo[1].f|i99              ; Yes                     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; fifo[2].f|i101             ; Yes                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+-------------------------+
+
+
++------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition "root_partition" ;
++------------------------+-----------------------------------------+
+; Type                   ; Count                                   ;
++------------------------+-----------------------------------------+
+; boundary_port          ; 43                                      ;
+; cyclone10gx_ff         ; 150                                     ;
+;     ENA                ; 47                                      ;
+;     ENA SCLR           ; 27                                      ;
+;     ENA SLD            ; 8                                       ;
+;     SCLR               ; 24                                      ;
+;     plain              ; 44                                      ;
+; cyclone10gx_lcell_comb ; 243                                     ;
+;     arith              ; 18                                      ;
+;         4 data inputs  ; 18                                      ;
+;     extend             ; 1                                       ;
+;         7 data inputs  ; 1                                       ;
+;     normal             ; 224                                     ;
+;         0 data inputs  ; 1                                       ;
+;         2 data inputs  ; 42                                      ;
+;         3 data inputs  ; 48                                      ;
+;         4 data inputs  ; 35                                      ;
+;         5 data inputs  ; 50                                      ;
+;         6 data inputs  ; 48                                      ;
+; cyclone10gx_ram_block  ; 27                                      ;
+;                        ;                                         ;
+; Number of carry chains ; 3                                       ;
+; Max carry chain length ; 6                                       ;
+;                        ;                                         ;
+; Max LUT depth          ; 3.50                                    ;
+; Average LUT depth      ; 2.09                                    ;
++------------------------+-----------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Synthesis Resource Usage Summary for Partition "root_partition" ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimate of Logic utilization (ALMs needed) ; 148               ;
+;                                             ;                   ;
+; Combinational ALUT usage for logic          ; 243               ;
+;     -- 7 input functions                    ; 1                 ;
+;     -- 6 input functions                    ; 48                ;
+;     -- 5 input functions                    ; 50                ;
+;     -- 4 input functions                    ; 53                ;
+;     -- <=3 input functions                  ; 91                ;
+;                                             ;                   ;
+; Dedicated logic registers                   ; 150               ;
+;                                             ;                   ;
+; I/O pins                                    ; 43                ;
+; Total MLAB memory bits                      ; 0                 ;
+; Total block memory bits                     ; 432               ;
+;                                             ;                   ;
+; Total DSP Blocks                            ; 0                 ;
+;     -- [A] Total Fixed Point DSP Blocks     ; 0                 ;
+;     -- [B] Total Floating Point DSP Blocks  ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; clock             ;
+; Maximum fan-out                             ; 177               ;
+; Total fan-out                               ; 1775              ;
+; Average fan-out                             ; 3.83              ;
++---------------------------------------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis RAM Summary for Partition "root_partition"                                                                                            ;
++---------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++---------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; fifo[0].f|mem_0_3|auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 9            ; 16           ; 9            ; 144  ; None ;
+; fifo[1].f|mem_0_3|auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 9            ; 16           ; 9            ; 144  ; None ;
+; fifo[2].f|mem_0_3|auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 16           ; 9            ; 16           ; 9            ; 144  ; None ;
++---------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++--------------------+
+; Synthesis Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Synthesis
+    Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+    Info: Processing started: Sat Apr 24 10:30:21 2021
+    Info: System process ID: 13492
+Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_top -c router_top
+Info: qis_default_flow_script.tcl version: #2
+Info: Initializing Synthesis...
+Info: Project = "router_top"
+Info: Revision = "router_top"
+Info: Analyzing source files
+Info: Elaborating from top-level entity "router_top"
+Warning (16735): Verilog HDL warning at router_top.v(56): actual bit length 1 differs from formal bit length 8 for port "dout" File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v Line: 56
+Warning (19651): Verilog HDL warning at router_sync.v(44): latch inferred for net q[1] File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync.v Line: 44
+Warning (16735): Verilog HDL warning at router_top.v(90): actual bit length 1 differs from formal bit length 8 for port "data_in" File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v Line: 90
+Warning (16735): Verilog HDL warning at router_top.v(90): actual bit length 1 differs from formal bit length 8 for port "data_in" File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v Line: 90
+Warning (16735): Verilog HDL warning at router_top.v(90): actual bit length 1 differs from formal bit length 8 for port "data_in" File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v Line: 90
+Warning (16788): Net "soft_reset[2]" does not have a driver at router_top.v(7) File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top.v Line: 7
+Warning (276020): Inferred RAM node "fifo[0].f|altsyncram:mem_0_3" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "fifo[0].f|altsyncram:mem_0_3" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 9
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 9
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Warning (276020): Inferred RAM node "fifo[1].f|altsyncram:mem_0_3" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "fifo[1].f|altsyncram:mem_0_3" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 9
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 9
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Warning (276020): Inferred RAM node "fifo[2].f|altsyncram:mem_0_3" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "fifo[2].f|altsyncram:mem_0_3" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 9
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 9
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+Info: Found 7 design entities
+Info: There are 13 partitions after elaboration.
+Info: Creating instance-specific data models and dissolving soft partitions
+Info (18299): Expanding entity and wildcard assignments.
+Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
+Info: found pre-synthesis snapshots for 1 partition(s)
+Info: Synthesizing partition "root_partition"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[7]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[6]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[5]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[4]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[3]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[2]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[1]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[0].f|packet_out[0]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[7]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[6]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[5]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[4]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[3]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[2]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[1]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[1].f|packet_out[0]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[7]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[6]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[5]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[4]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[3]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[2]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[1]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+    Warning (13049): Converted tri-state buffer "fifo[2].f|packet_out[0]" feeding internal logic into a wire File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo.v Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 48 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 342 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 272 logic cells
+    Info (21064): Implemented 27 RAM segments
+Info: Successfully synthesized partition
+Info: Saving post-synthesis snapshots for 1 partition(s)
+Info: Quartus Prime Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 588 megabytes
+    Info: Processing ended: Sat Apr 24 10:30:33 2021
+    Info: Elapsed time: 00:00:12
+    Info: System process ID: 13492
+
+

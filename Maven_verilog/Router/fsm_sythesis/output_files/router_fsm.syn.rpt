@@ -1,5 +1,5 @@
 Synthesis report
-Thu Apr 22 11:03:29 2021
+Fri Apr 23 21:10:18 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -26,7 +26,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Thu Apr 22 11:03:28 2021 ;
+; Synthesis Status      ; Successful - Fri Apr 23 21:10:18 2021 ;
 ; Revision Name         ; router_fsm                            ;
 ; Top-level Entity Name ; router_fsm                            ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -294,8 +294,8 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Thu Apr 22 11:03:22 2021
-    Info: System process ID: 9828
+    Info: Processing started: Fri Apr 23 21:10:10 2021
+    Info: System process ID: 11680
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_fsm -c router_fsm
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -319,9 +319,9 @@ Info (21057): Implemented 39 device resources after synthesis - the final resour
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 492 megabytes
-    Info: Processing ended: Thu Apr 22 11:03:29 2021
-    Info: Elapsed time: 00:00:07
-    Info: System process ID: 9828
+    Info: Peak virtual memory: 499 megabytes
+    Info: Processing ended: Fri Apr 23 21:10:18 2021
+    Info: Elapsed time: 00:00:08
+    Info: System process ID: 11680
 
 

@@ -3,7 +3,8 @@ module router_reg(input clock, resetn, pkt_valid, fifo_full, rst_int_reg, detect
                   output reg parity_done, low_pkt_valid, err, 
                   input [7:0] data_in, output reg [7:0] dout);
 
-always(@posedge clock) begin
+reg [7:0] a,b,c,d;
+always@(posedge clock) begin
     if(!resetn) begin
         dout <= 8'd0;
         parity_done <= 1'b0;
@@ -11,12 +12,28 @@ always(@posedge clock) begin
         err <= 1'b0;
     end
     
-    else if(rst_int_reg) low_pkt_valid <= 1'b0;
-    else if(detect_add) parity_done <= 1'b0;
-
     else begin
-    parity_done <= (ld_state & !fifo_full & !pkt_valid) | (laf_state & low_pkt_valid & !parity_done);
-    low_pkt_valid <= ld_state & !pkt_valid;
+    parity_done <= ((ld_state & !fifo_full & !pkt_valid) | (laf_state & low_pkt_valid & !parity_done)) & !detect_add;
+    low_pkt_valid <= (ld_state & !pkt_valid) & !rst_int_reg;
+    if(pkt_valid) begin
+    if(detect_add ) begin
+        a <= data_in;
+        c <= data_in;
     end
+    if(ld_state) begin
+       if(fifo_full) b <= data_in;
+        c <= c^data_in;
+    end 
+    end
+    
+    else begin
+        d <= data_in;
+    end
+    end
+dout <= lfd_state ? a : (laf_state ? b : (ld_state ? data_in : dout));
+err <= (c==d) ? 0 : 1 ;
+
 end
+
+
 endmodule

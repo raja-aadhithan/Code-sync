@@ -1,46 +1,9 @@
-# Compile of router_sync.v was successful.
 vsim work.router_sync_tb
 # vsim work.router_sync_tb 
-# Start time: 18:12:45 on Apr 20,2021
+# Start time: 17:51:40 on Apr 22,2021
 # Loading work.router_sync_tb
 # Loading work.router_sync
-add wave -r sim:/router_sync_tb/*
-run -all
-# @  0ns : q = x, vldout = x,x,x
-# @ 10ns : q = x, vldout = 0,1,1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(61)
-#    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
-# 1
-# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 61
-# Compile of router_sync.v was successful.
-# Compile of router_sync_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.router_sync_tb
-# End time: 18:18:57 on Apr 20,2021, Elapsed time: 0:06:12
-# Errors: 0, Warnings: 3
-# vsim work.router_sync_tb 
-# Start time: 18:18:57 on Apr 20,2021
-# Loading work.router_sync_tb
-# Loading work.router_sync
-add wave -r sim:/router_sync_tb/*
-run -all
-# @  0ns : q = x, vldout = x,x,x
-# @ 10ns : q = x, vldout = 0,1,1
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v(61)
-#    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
-# 1
-# Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 61
-# Compile of router_sync.v was successful.
-# Compile of router_sync_tb.v was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.router_sync_tb
-# End time: 18:22:15 on Apr 20,2021, Elapsed time: 0:03:18
-# Errors: 0, Warnings: 2
-# vsim work.router_sync_tb 
-# Start time: 18:22:15 on Apr 20,2021
-# Loading work.router_sync_tb
-# Loading work.router_sync
-add wave -r sim:/router_sync_tb/*
+add wave sim:/router_sync_tb/*
 run -all
 # @  0ns : q = x, vldout = x,x,x
 # @ 10ns : q = x, vldout = 0,1,1
@@ -48,5 +11,5 @@ run -all
 #    Time: 4070 ps  Iteration: 0  Instance: /router_sync_tb
 # 1
 # Break in Module router_sync_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_sync_tb.v line 62
-# End time: 18:24:35 on Apr 20,2021, Elapsed time: 0:02:20
-# Errors: 0, Warnings: 2
+# End time: 17:55:19 on Apr 22,2021, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 1
