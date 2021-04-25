@@ -1,0 +1,14 @@
+|coin
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+i => next_state.OUTPUTSELECT
+i => next_state.OUTPUTSELECT
+i => Selector0.IN2
+i => Selector1.IN1
+i => Selector2.IN1
+j => next_state.DATAB
+j => next_state.DATAB
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
