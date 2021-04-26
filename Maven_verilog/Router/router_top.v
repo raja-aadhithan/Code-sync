@@ -4,11 +4,15 @@ module router_top(input clock, resetn, read_enb_0, read_enb_1, read_enb_2, pkt_v
 
 wire parity_done,detect_add;
 wire ld_state, laf_state, full_state, write_enb_reg, rst_int_reg, lfd_state;
-wire [2:0] fifo_empty, full,w_enb, write_enb, soft_reset;
-wire fifo_full,low_pkt_valid,soft_reset_0,soft_reset_1,soft_reset_2,dout;
+wire [2:0] fifo_empty, full,w_enb, write_enb, soft_reset_temp;
+wire fifo_full,low_pkt_valid,soft_reset_0,soft_reset_1,soft_reset_2;
+wire [7:0] dout;
 
 wire read_enb_temp[2:0];
 wire [7:0] data_out_temp[2:0];
+assign soft_reset_temp[0] = soft_reset_0;
+assign soft_reset_temp[1] = soft_reset_2;
+assign soft_reset_temp[2] = soft_reset_1;
 assign read_enb_temp[0] = read_enb_0;
 assign read_enb_temp[1] = read_enb_1;
 assign read_enb_temp[2] = read_enb_2;
@@ -84,7 +88,7 @@ generate for (x= 0 ; x<3 ; x = x+1)
 begin:fifo
 	router_fifo f(.clock(clock),
                   .resetn(resetn), 
-                  .soft_reset(soft_reset[x]),
+                  .soft_reset(soft_reset_temp[x]),
 	              .lfd_state(lfd_state),
                   .write_enb(w_enb[x]),
                   .data_in(dout), 

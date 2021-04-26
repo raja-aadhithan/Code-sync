@@ -77,8 +77,8 @@ end
 assign detect_add = (state == Decode_Address);
 assign lfd_state = (state == Load_First_Data);
 assign busy = (state == Load_First_Data) || (state == Load_Parity) || (state == Fifo_Full_State) || (state == Load_After_Full) || (state == Wait_Till_Empty) || (state == Check_Parity_Error);
-assign ld_state = (state == Load_Data);
-assign write_enb_reg = (state == Load_Data) || (state == Load_Parity) || (state == Load_After_Full);
+assign ld_state = (state == Load_Data)||(state == Load_Parity) ;
+assign write_enb_reg = (state == Load_First_Data)|(state == Load_Data)||(state == Load_Parity);
 assign full_state = (state == Fifo_Full_State);
 assign laf_state = (state == Load_After_Full);  
 assign rst_int_reg = (state == Check_Parity_Error);
