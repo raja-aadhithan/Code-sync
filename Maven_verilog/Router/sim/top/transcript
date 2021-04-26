@@ -1,402 +1,117 @@
-vsim work.router_top_tb
-# vsim work.router_top_tb 
-# Start time: 14:43:11 on Apr 26,2021
-# Loading work.router_top_tb
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# vsim work.router_top_tb_16 
+# Start time: 16:48:06 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
+#    Time: 1485 ps  Iteration: 0  Instance: /router_top_tb_16
 # 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_fsm.v was successful.
-vsim work.router_top_tb
-# End time: 14:46:04 on Apr 26,2021, Elapsed time: 0:02:53
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 14:46:04 on Apr 26,2021
-# Loading work.router_top_tb
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 17:10:14 on Apr 26,2021, Elapsed time: 0:22:08
+# Errors: 0, Warnings: 4
+# vsim work.router_top_tb_16 
+# Start time: 17:10:14 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_fsm.v was successful.
-vsim work.router_top_tb
-# End time: 14:49:48 on Apr 26,2021, Elapsed time: 0:03:44
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 14:49:48 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_top_tb.v was successful.
-vsim work.router_top_tb
-# End time: 14:57:00 on Apr 26,2021, Elapsed time: 0:07:12
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 14:57:00 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1455 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# invalid command name "2"
-# invalid command name "2"
-vsim work.router_top_tb
-# End time: 15:06:20 on Apr 26,2021, Elapsed time: 0:09:20
-# Errors: 0, Warnings: 1
-# vsim work.router_top_tb 
-# Start time: 15:06:20 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r {sim:/router_top_tb/dut/fifo[2]/*}
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1455 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_top_tb.v was successful.
-vsim work.router_top_tb
-# End time: 15:12:24 on Apr 26,2021, Elapsed time: 0:06:04
-# Errors: 0, Warnings: 3
-# vsim work.router_top_tb 
-# Start time: 15:12:24 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(59)
-#    Time: 1445 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 59
-mem load -i a.mem -filltype value -filldata a -fillradix symbolic -skip 0 {/router_top_tb/dut/fifo[2]/f/mem}
-# ** UI-Msg: (vsim-7) Failed to open mem file "a.mem" in read mode.
-# No such file or directory. (errno = ENOENT)
-vsim work.router_top_tb
-# End time: 15:27:32 on Apr 26,2021, Elapsed time: 0:15:08
-# Errors: 0, Warnings: 1
-# vsim work.router_top_tb 
-# Start time: 15:27:32 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(59)
-#    Time: 1445 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 59
 quit -sim
-# End time: 15:29:54 on Apr 26,2021, Elapsed time: 0:02:22
+# End time: 17:10:59 on Apr 26,2021, Elapsed time: 0:00:45
 # Errors: 0, Warnings: 1
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# vsim work.router_top_tb 
-# Start time: 15:30:06 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(59)
-#    Time: 1445 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 59
-# Compile of router_fifo.v was successful.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# End time: 15:35:09 on Apr 26,2021, Elapsed time: 0:05:03
-# Errors: 0, Warnings: 4
-# vsim work.router_top_tb 
-# Start time: 15:35:09 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# ** Error: (vsim-3043) Unresolved reference to 'reset'.
-#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v Line: 47
-# Error loading design
-# End time: 15:35:10 on Apr 26,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
-# Compile of router_top_tb.v failed with 1 errors.
-# Compile of router_top_tb.v was successful.
-vsim work.router_top_tb
-# vsim work.router_top_tb 
-# Start time: 15:37:16 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(59)
-#    Time: 1455 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 59
-# Compile of router_fifo.v was successful.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim work.router_top_tb
-# End time: 15:43:05 on Apr 26,2021, Elapsed time: 0:05:49
-# Errors: 0, Warnings: 4
-# vsim work.router_top_tb 
-# Start time: 15:43:05 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1165 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_fifo.v was successful.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim work.router_top_tb
-# End time: 15:48:58 on Apr 26,2021, Elapsed time: 0:05:53
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 15:48:58 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1165 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_reg.v failed with 1 errors.
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# End time: 15:58:32 on Apr 26,2021, Elapsed time: 0:09:34
-# Errors: 0, Warnings: 3
-# vsim work.router_top_tb 
-# Start time: 15:58:32 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1165 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_fifo.v was successful.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim work.router_top_tb
-# End time: 16:08:44 on Apr 26,2021, Elapsed time: 0:10:12
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:08:44 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1175 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# End time: 16:15:39 on Apr 26,2021, Elapsed time: 0:06:55
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:15:39 on Apr 26,2021
-# Loading work.router_top_tb
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1175 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# WARNING: No extended dataflow license exists
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# End time: 16:23:43 on Apr 26,2021, Elapsed time: 0:08:04
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:23:43 on Apr 26,2021
-# Loading work.router_top_tb
+vsim work.router_top_tb_16
+# vsim work.router_top_tb_16 
+# Start time: 17:11:00 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
 # WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb/*
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1175 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_fifo.v was successful.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-vsim work.router_top_tb
-# End time: 16:28:40 on Apr 26,2021, Elapsed time: 0:04:57
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 17:14:23 on Apr 26,2021, Elapsed time: 0:03:23
 # Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:28:41 on Apr 26,2021
-# Loading work.router_top_tb
+# vsim work.router_top_tb_16 
+# Start time: 17:14:23 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
 # WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb/*
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1175 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_top_tb.v was successful.
-vsim work.router_top_tb
-# End time: 16:31:54 on Apr 26,2021, Elapsed time: 0:03:13
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 17:15:26 on Apr 26,2021, Elapsed time: 0:01:03
 # Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:31:54 on Apr 26,2021
-# Loading work.router_top_tb
+# vsim work.router_top_tb_16 
+# Start time: 17:15:26 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
 # WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb/*
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
+#    Time: 1405 ps  Iteration: 0  Instance: /router_top_tb_16
 # 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_reg.v was successful.
-vsim work.router_top_tb
-# End time: 16:33:56 on Apr 26,2021, Elapsed time: 0:02:02
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 17:16:54 on Apr 26,2021, Elapsed time: 0:01:28
 # Errors: 0, Warnings: 2
-# vsim work.router_top_tb 
-# Start time: 16:33:56 on Apr 26,2021
-# Loading work.router_top_tb
+# vsim work.router_top_tb_16 
+# Start time: 17:16:54 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+add wave -r sim:/router_top_tb_16/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
+#    Time: 1495 ps  Iteration: 0  Instance: /router_top_tb_16
+# 1
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# WARNING: No extended dataflow license exists
+# End time: 17:20:00 on Apr 26,2021, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 2
+# vsim work.router_top_tb_16 
+# Start time: 17:20:01 on Apr 26,2021
+# Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
 # Loading work.router_reg
 # Loading work.router_sync
 # Loading work.router_fifo
 # WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb/*
+add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
-#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
-# Compile of router_reg.v was successful.
-# Compile of router_fifo.v was successful.
-# Compile of router_fifo.v was successful with warnings.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-# Compile of router_fsm.v was successful.
-# Compile of router_reg.v was successful.
-# Compile of router_top.v was successful.
-# Compile of router_sync.v was successful.
-# Compile of router_top_tb.v was successful.
-# Compile of router_fsm_tb.v was successful.
-# 7 compiles, 0 failed with no errors.
-# End time: 16:41:13 on Apr 26,2021, Elapsed time: 0:07:17
-# Errors: 0, Warnings: 4
+# End time: 17:31:39 on Apr 26,2021, Elapsed time: 0:11:38
+# Errors: 0, Warnings: 1
