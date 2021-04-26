@@ -1,7 +1,41 @@
-# Compile of router_top_tb_16.v was successful.
+# Compile of router_reg.v was successful.
+vsim work.router_top_tb
+# vsim work.router_top_tb 
+# Start time: 18:07:34 on Apr 26,2021
+# Loading work.router_top_tb
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v(60)
+#    Time: 1465 ps  Iteration: 0  Instance: /router_top_tb
+# 1
+# Break in Module router_top_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb.v line 60
+quit -sim
+# End time: 18:08:42 on Apr 26,2021, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 2
 vsim work.router_top_tb_16
 # vsim work.router_top_tb_16 
-# Start time: 16:48:06 on Apr 26,2021
+# Start time: 18:08:50 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+add wave -r sim:/router_top_tb_16/*
+run -all
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# WARNING: No extended dataflow license exists
+# End time: 18:19:48 on Apr 26,2021, Elapsed time: 0:10:58
+# Errors: 0, Warnings: 2
+# vsim work.router_top_tb_16 
+# Start time: 18:19:48 on Apr 26,2021
 # Loading work.router_top_tb_16
 # Loading work.router_top
 # Loading work.router_fsm
@@ -11,107 +45,84 @@ vsim work.router_top_tb_16
 # WARNING: No extended dataflow license exists
 add wave -r sim:/router_top_tb_16/*
 run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(59)
+#    Time: 1415 ps  Iteration: 0  Instance: /router_top_tb_16
+# 1
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 59
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 18:21:07 on Apr 26,2021, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 2
+# vsim work.router_top_tb_16 
+# Start time: 18:21:07 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb_16/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(59)
+#    Time: 1625 ps  Iteration: 0  Instance: /router_top_tb_16
+# 1
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 59
+# Compile of router_top_tb_16.v was successful.
+vsim work.router_top_tb_16
+# End time: 18:23:25 on Apr 26,2021, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 2
+# vsim work.router_top_tb_16 
+# Start time: 18:23:25 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+add wave -position insertpoint sim:/router_top_tb_16/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(59)
+#    Time: 1625 ps  Iteration: 0  Instance: /router_top_tb_16
+# 1
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 59
+vsim work.router_top_tb_16
+# End time: 18:24:56 on Apr 26,2021, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 1
+# vsim work.router_top_tb_16 
+# Start time: 18:24:56 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb_16/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(59)
+#    Time: 1625 ps  Iteration: 0  Instance: /router_top_tb_16
+# 1
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 59
+# Compile of router_top_tb_16.v was successful.
+# Compile of router_reg.v was successful.
+vsim work.router_top_tb_16
+# End time: 18:29:17 on Apr 26,2021, Elapsed time: 0:04:21
+# Errors: 0, Warnings: 3
+# vsim work.router_top_tb_16 
+# Start time: 18:29:18 on Apr 26,2021
+# Loading work.router_top_tb_16
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_reg
+# Loading work.router_sync
+# Loading work.router_fifo
+# WARNING: No extended dataflow license exists
+add wave -r sim:/router_top_tb_16/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(59)
 #    Time: 1485 ps  Iteration: 0  Instance: /router_top_tb_16
 # 1
-# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
-# Compile of router_top_tb_16.v was successful.
-vsim work.router_top_tb_16
-# End time: 17:10:14 on Apr 26,2021, Elapsed time: 0:22:08
-# Errors: 0, Warnings: 4
-# vsim work.router_top_tb_16 
-# Start time: 17:10:14 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb_16/*
-run -all
-quit -sim
-# End time: 17:10:59 on Apr 26,2021, Elapsed time: 0:00:45
-# Errors: 0, Warnings: 1
-vsim work.router_top_tb_16
-# vsim work.router_top_tb_16 
-# Start time: 17:11:00 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb_16/*
-run -all
-# Compile of router_top_tb_16.v was successful.
-vsim work.router_top_tb_16
-# End time: 17:14:23 on Apr 26,2021, Elapsed time: 0:03:23
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb_16 
-# Start time: 17:14:23 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb_16/*
-run -all
-# Compile of router_top_tb_16.v was successful.
-vsim work.router_top_tb_16
-# End time: 17:15:26 on Apr 26,2021, Elapsed time: 0:01:03
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb_16 
-# Start time: 17:15:26 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb_16/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
-#    Time: 1405 ps  Iteration: 0  Instance: /router_top_tb_16
-# 1
-# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
-# Compile of router_top_tb_16.v was successful.
-vsim work.router_top_tb_16
-# End time: 17:16:54 on Apr 26,2021, Elapsed time: 0:01:28
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb_16 
-# Start time: 17:16:54 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-add wave -r sim:/router_top_tb_16/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v(60)
-#    Time: 1495 ps  Iteration: 0  Instance: /router_top_tb_16
-# 1
-# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 60
-# Compile of router_top_tb_16.v was successful.
-vsim work.router_top_tb_16
-# WARNING: No extended dataflow license exists
-# End time: 17:20:00 on Apr 26,2021, Elapsed time: 0:03:06
-# Errors: 0, Warnings: 2
-# vsim work.router_top_tb_16 
-# Start time: 17:20:01 on Apr 26,2021
-# Loading work.router_top_tb_16
-# Loading work.router_top
-# Loading work.router_fsm
-# Loading work.router_reg
-# Loading work.router_sync
-# Loading work.router_fifo
-# WARNING: No extended dataflow license exists
-add wave -r sim:/router_top_tb_16/*
-run -all
-# End time: 17:31:39 on Apr 26,2021, Elapsed time: 0:11:38
+# Break in Module router_top_tb_16 at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_top_tb_16.v line 59
+# End time: 18:31:46 on Apr 26,2021, Elapsed time: 0:02:28
 # Errors: 0, Warnings: 1
