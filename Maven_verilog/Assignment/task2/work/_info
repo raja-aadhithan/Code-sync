@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_pro/20.4
+vvending
+!s110 1619700240
+!i10b 1
+!s100 Xl]76i=[Zh]K3>>2WzB`D0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ik_0zSGdh8beL[Ulze3E[l3
+Z1 dC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2
+w1619700230
+8C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v
+FC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v
+!i122 1
+L0 1 37
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OV;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1619700240.000000
+!s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vvending_tb
+!s110 1619699510
+!i10b 1
+!s100 `;3XQ229FCk1S8409_Z9=3
+R0
+I8_chXQ0?T;Doa2mT?TomB2
+R1
+w1619699447
+8C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v
+FC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v
+!i122 0
+L0 1 31
+R2
+R3
+r1
+!s85 0
+31
+!s108 1619699510.000000
+!s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v|
+!i113 1
+R4
+R5
