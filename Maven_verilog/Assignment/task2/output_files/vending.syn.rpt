@@ -1,5 +1,5 @@
 Synthesis report
-Fri Apr 30 11:02:37 2021
+Fri Apr 30 11:15:57 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -15,18 +15,17 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
   7. State Machine - Summary
   8. State Machine - state
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics for Partition "root_partition"
- 12. Post-Synthesis Netlist Statistics for Partition "root_partition"
- 13. Synthesis Resource Usage Summary for Partition "root_partition"
- 14. Synthesis Messages
+ 10. General Register Statistics for Partition "root_partition"
+ 11. Post-Synthesis Netlist Statistics for Partition "root_partition"
+ 12. Synthesis Resource Usage Summary for Partition "root_partition"
+ 13. Synthesis Messages
 
 
 
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr 30 11:02:37 2021 ;
+; Synthesis Status      ; Successful - Fri Apr 30 11:15:56 2021 ;
 ; Revision Name         ; vending                               ;
 ; Top-level Entity Name ; vending                               ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -132,7 +131,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------------+------------------------------+---------------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path ; File Type                    ; File Name with Absolute Path                                                    ; Library ; MD5                              ;
 +----------------------------------+------------------------------+---------------------------------------------------------------------------------+---------+----------------------------------+
-; vending.v                        ; Auto-Found Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v ; work    ; ef9745f375532c743332f6ce82f39234 ;
+; vending.v                        ; Auto-Found Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v ; work    ; 1607dbc84532ff080b5ec7dbdc3912b5 ;
 +----------------------------------+------------------------------+---------------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -209,16 +208,6 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                       ;
-+---------------+---------------------------+-----------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+---------------+---------------------------+-----------------------------------------------------------------------+
-; s             ; Stuck at GND              ; count[10], count[9], count[8], count[7], count[6], count[5], count[4] ;
-;               ; due to stuck port data_in ;                                                                       ;
-+---------------+---------------------------+-----------------------------------------------------------------------+
-
-
 +------------------------------------------------------------+
 ; General Register Statistics for Partition "root_partition" ;
 +----------------------------------------------+-------------+
@@ -287,8 +276,8 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
     Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr 30 11:02:32 2021
-    Info: System process ID: 11680
+    Info: Processing started: Fri Apr 30 11:15:51 2021
+    Info: System process ID: 15660
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off vending -c vending
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -296,7 +285,6 @@ Info: Project = "vending"
 Info: Revision = "vending"
 Info: Analyzing source files
 Info: Elaborating from top-level entity "vending"
-Warning (21610): Output port "pr_en" in top-level entity "vending" does not have a driver. Connecting to the default value "gnd". File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending.v Line: 1
 Info: Found 1 design entities
 Info: There are 1 partitions after elaboration.
 Info: Creating instance-specific data models and dissolving soft partitions
@@ -313,10 +301,10 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21061): Implemented 1 logic cells
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
-Info: Quartus Prime Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 495 megabytes
-    Info: Processing ended: Fri Apr 30 11:02:37 2021
-    Info: Elapsed time: 00:00:05
-    Info: System process ID: 11680
+Info: Quartus Prime Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 490 megabytes
+    Info: Processing ended: Fri Apr 30 11:15:57 2021
+    Info: Elapsed time: 00:00:06
+    Info: System process ID: 15660
 
 

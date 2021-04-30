@@ -1,5 +1,5 @@
 Flow report for vending
-Fri Apr 30 11:02:37 2021
+Fri Apr 30 11:15:56 2021
 Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+
 ; Flow Summary                                        ;
 +-------------+---------------------------------------+
-; Flow Status ; Successful - Fri Apr 30 11:02:37 2021 ;
+; Flow Status ; Successful - Fri Apr 30 11:15:56 2021 ;
 +-------------+---------------------------------------+
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/30/2021 11:02:32 ;
+; Start date & time ; 04/30/2021 11:15:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; vending             ;
 +-------------------+---------------------+
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------+--------------+---------------------+
 ; Module Name ; Elapsed Time ; Peak Virtual Memory ;
 +-------------+--------------+---------------------+
-; Synthesis   ; 00:00:05     ; 495 MB              ;
+; Synthesis   ; 00:00:05     ; 490 MB              ;
 ; Total       ; 00:00:05     ; --                  ;
 +-------------+--------------+---------------------+
 

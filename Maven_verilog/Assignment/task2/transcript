@@ -3,7 +3,7 @@
 # 2 compiles, 0 failed with no errors.
 vsim work.vending_tb
 # vsim work.vending_tb 
-# Start time: 11:03:50 on Apr 30,2021
+# Start time: 11:17:39 on Apr 30,2021
 # Loading work.vending_tb
 # Loading work.vending
 # WARNING: No extended dataflow license exists
@@ -13,19 +13,5 @@ run -all
 #    Time: 13095 ps  Iteration: 1  Instance: /vending_tb
 # 1
 # Break in Module vending_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v line 36
-quit -sim
-# End time: 11:05:11 on Apr 30,2021, Elapsed time: 0:01:21
+# End time: 11:18:08 on Apr 30,2021, Elapsed time: 0:00:29
 # Errors: 0, Warnings: 2
-vsim work.vending_tb
-# vsim work.vending_tb 
-# Start time: 11:05:14 on Apr 30,2021
-# Loading work.vending_tb
-# Loading work.vending
-add wave -r sim:/vending_tb/*
-run -all
-# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v(36)
-#    Time: 13095 ps  Iteration: 1  Instance: /vending_tb
-# 1
-# Break in Module vending_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Assignment/task2/vending_tb.v line 36
-# End time: 11:05:43 on Apr 30,2021, Elapsed time: 0:00:29
-# Errors: 0, Warnings: 1
