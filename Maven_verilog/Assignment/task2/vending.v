@@ -1,7 +1,7 @@
 module vending(input clk,reset,input [1:0]coin, output pr_en);
 reg s;
 reg [10:0] count;
-parameter s0 = 000, s25 = 001, s50 = 010, s75 = 011, s100 = 100;
+parameter s0 = 3'b000, s25 = 3'b001, s50 = 3'b010, s75 = 3'b011, s100 = 3'b100;
 reg [2:0] state , next_state;
 
 always@(*)begin
@@ -11,7 +11,6 @@ always@(*)begin
     s50 :next_state =  coin[1] ? (coin [0] ?  s50 :  s100) : (coin [0] ?  s100 :  s75) ;
     s75 : next_state = coin[1] ? (coin [0] ?  s75 :  s100) : (coin [0] ?  s100 :  s100) ;
     s100 : next_state = s0;
-    default : next_state = s0;
 
     endcase
 end
@@ -27,11 +26,11 @@ end
 end
 
 always@(posedge clk)begin
-    if(state == next_state)begin
+    if(coin == 2'b11)begin
         count <= count + 1'b1;
         if(count == 11'd1280) s <= 1'b0;
     end
 end
 
-assign pr_rn = (state == s100);
+assign pr_rn = (state == s100) ? 1 : 0;
 endmodule
