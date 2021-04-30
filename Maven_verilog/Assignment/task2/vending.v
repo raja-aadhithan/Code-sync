@@ -21,12 +21,12 @@ always@(posedge clk)begin
     else begin
         state<= next_state;
         s =1'b1;
-        if(coin != 2'b11) count <= 11'd0;
-end 
+    end 
 end
 
 always@(posedge clk)begin
-    if(coin == 2'b11)begin
+    if(coin != 2'b11) count <= 11'd0;
+    else if(coin == 2'b11)begin
         count <= count + 1'b1;
         if(count == 11'd1280) s <= 1'b0;
     end
