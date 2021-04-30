@@ -37,11 +37,11 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "MAX V"
-set_global_assignment -name DEVICE auto
+set_global_assignment -name FAMILY "Cyclone 10 GX"
+set_global_assignment -name DEVICE 10CX220YF780I5G
 set_global_assignment -name TOP_LEVEL_ENTITY router_reg
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:44:29  APRIL 25, 2021"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.4.0 Pro Edition"
 set_global_assignment -name VERILOG_FILE ../router_reg.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files

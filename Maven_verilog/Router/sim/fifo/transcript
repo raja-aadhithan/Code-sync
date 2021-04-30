@@ -1,9 +1,12 @@
+# Compile of router_fifo.v was successful.
+# Compile of router_fifo_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
 vsim work.router_fifo_tb
 # vsim work.router_fifo_tb 
-# Start time: 15:21:06 on Apr 26,2021
+# Start time: 08:47:45 on Apr 30,2021
 # Loading work.router_fifo_tb
 # Loading work.router_fifo
-add wave -r sim:/router_fifo_tb/*
+add wave -position insertpoint sim:/router_fifo_tb/*
 run -all
 # @time:                    0, data_in: xx, data_out: 00, lfd: x, full: 0, empty: 1
 # @time:                   25, data_in: 3a, data_out: zz, lfd: 1, full: 0, empty: 1
@@ -60,5 +63,6 @@ run -all
 #    Time: 755 ps  Iteration: 0  Instance: /router_fifo_tb
 # 1
 # Break in Module router_fifo_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fifo_tb.v line 81
-# End time: 15:48:37 on Apr 26,2021, Elapsed time: 0:27:31
-# Errors: 0, Warnings: 1
+quit -sim
+# End time: 08:54:56 on Apr 30,2021, Elapsed time: 0:07:11
+# Errors: 0, Warnings: 2
