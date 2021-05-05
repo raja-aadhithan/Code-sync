@@ -1,0 +1,97 @@
+# Compile of ram168.v was successful.
+# Compile of selfcheckingtb_ram.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of selfcheckingtb_ram.v failed with 3 errors.
+# Compile of selfcheckingtb_ram.v failed with 2 errors.
+# Compile of selfcheckingtb_ram.v was successful.
+vsim work.ram168_tb
+# vsim work.ram168_tb 
+# Start time: 15:17:40 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/ram168_tb/*
+run -all
+# read is working
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(43)
+#    Time: 205 ps  Iteration: 0  Instance: /ram168_tb
+# 1
+# Break in Module ram168_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 43
+# Compile of selfcheckingtb_ram.v was successful.
+run -all
+vsim work.ram168_tb
+# End time: 15:19:51 on May 03,2021, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 9
+# vsim work.ram168_tb 
+# Start time: 15:19:51 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/ram168_tb/*
+run -all
+# read is working
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(44)
+#    Time: 300 ps  Iteration: 1  Instance: /ram168_tb
+# 1
+# Break in Module ram168_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 44
+# Compile of selfcheckingtb_ram.v was successful.
+vsim work.ram168_tb
+# End time: 15:23:25 on May 03,2021, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 2
+# vsim work.ram168_tb 
+# Start time: 15:23:25 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -r sim:/ram168_tb/*
+run -all
+# read not working
+# ** Note: $stop    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(34)
+#    Time: 205 ps  Iteration: 0  Instance: /ram168_tb
+# Break in Task check at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 34
+# Compile of selfcheckingtb_ram.v was successful.
+vsim work.ram168_tb
+# End time: 15:26:24 on May 03,2021, Elapsed time: 0:02:59
+# Errors: 0, Warnings: 2
+# vsim work.ram168_tb 
+# Start time: 15:26:24 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -r sim:/ram168_tb/*
+run -all
+# read is working
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(45)
+#    Time: 400 ps  Iteration: 1  Instance: /ram168_tb
+# 1
+# Break in Module ram168_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 45
+# Compile of selfcheckingtb_ram.v was successful.
+vsim work.ram168_tb
+# End time: 15:33:00 on May 03,2021, Elapsed time: 0:06:36
+# Errors: 0, Warnings: 2
+# vsim work.ram168_tb 
+# Start time: 15:33:00 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -r sim:/ram168_tb/*
+run -all
+# read not working
+# ** Note: $stop    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(34)
+#    Time: 200 ps  Iteration: 1  Instance: /ram168_tb
+# Break in Task check at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 34
+# Compile of selfcheckingtb_ram.v was successful.
+vsim work.ram168_tb
+# End time: 15:34:18 on May 03,2021, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 2
+# vsim work.ram168_tb 
+# Start time: 15:34:18 on May 03,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+run -all
+# read is working
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(44)
+#    Time: 305 ps  Iteration: 0  Instance: /ram168_tb
+# End time: 15:34:38 on May 03,2021, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
