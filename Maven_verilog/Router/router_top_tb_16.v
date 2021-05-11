@@ -48,19 +48,79 @@ begin
     repeat(30)
     @(negedge clock);
     data_in = 8'bx;
+    read_enb_2 = 1'b1;
 
+end
+endtask
+
+
+
+task pkt14();
+reg [7:0] parity;
+reg [5:0] payload_len;
+begin
+    wait(!busy);
+    begin
+        @(negedge clock);
+        payload_len = 6'b001110;
+        pkt_valid = 1'b1;
+        data_in = {payload_len,2'b10};
+        parity = data_in;
+    end
+    for(i=0 ; i < payload_len; i=i+1 )
+    begin
+        wait(!busy)
+        @(negedge clock)
+        data_in = i*2;
+        parity = parity^data_in;
+    end
+    wait(!busy);
+    @(negedge clock)
+    pkt_valid = 1'b0;
+    data_in = parity;
+    repeat(30)
+    @(negedge clock);
+    data_in = 8'bx;
+    read_enb_0 = 1'b1;
+end
+endtask
+
+task pkt17();
+reg [7:0] parity;
+reg [5:0] payload_len;
+begin
+    wait(!busy);
+    begin
+        @(negedge clock);
+        payload_len = 6'b010001;
+        pkt_valid = 1'b1;
+        data_in = {payload_len,2'b10};
+        parity = data_in;
+    end
+    for(i=0 ; i < payload_len; i=i+1 )
+    begin
+        wait(!busy)
+        @(negedge clock)
+        data_in = i*2;
+        parity = parity^data_in;
+    end
+    wait(!busy);
+    @(negedge clock)
+    pkt_valid = 1'b0;
+    data_in = parity;
+    repeat(30)
+    @(negedge clock);
+    data_in = 8'bx;
+    read_enb_1 = 1'b1;
 end
 endtask
 
 initial begin
     reset;
     pkt16;
+    pkt14;
+    pkt17;
     #1000;
     $finish;
-end
-
-initial begin
-    #300;
-    read_enb_2 = 1'b1;
 end
 endmodule
