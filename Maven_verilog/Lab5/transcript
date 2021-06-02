@@ -1,0 +1,18 @@
+# Compile of ram168.v was successful.
+# Compile of selfcheckingtb_ram.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.ram168_tb
+# vsim work.ram168_tb 
+# Start time: 15:06:27 on Jun 02,2021
+# Loading work.ram168_tb
+# Loading work.ram168
+# WARNING: No extended dataflow license exists
+add wave -r sim:/ram168_tb/*
+run -all
+# read is working
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v(44)
+#    Time: 305 ps  Iteration: 0  Instance: /ram168_tb
+# 1
+# Break in Module ram168_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Lab5/selfcheckingtb_ram.v line 44
+# End time: 15:07:17 on Jun 02,2021, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 3

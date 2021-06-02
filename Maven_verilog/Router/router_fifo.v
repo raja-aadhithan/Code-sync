@@ -75,3 +75,15 @@ always@(posedge clock)begin
 end
 
 endmodule
+
+// Code your design here
+module counter(output reg [3:0] q, input clk,reset,up_down);
+  always @(posedge clk) begin
+    if(reset==1)
+      q<=0;
+    else begin
+      if(up_down==1) q <= q+1;
+      else if(up_down==0) q <= q-1;
+    end
+  end
+endmodule
