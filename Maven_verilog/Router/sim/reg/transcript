@@ -1,14 +1,44 @@
 # Compile of router_reg.v was successful.
 vsim work.router_reg_tb
 # vsim work.router_reg_tb 
-# Start time: 09:05:55 on Apr 30,2021
+# Start time: 12:57:41 on Apr 24,2021
 # Loading work.router_reg_tb
 # Loading work.router_reg
-add wave -position insertpoint sim:/router_reg_tb/*
+add wave -r sim:/router_reg_tb/*
 run -all
 # ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v(129)
 #    Time: 365 ps  Iteration: 1  Instance: /router_reg_tb
 # 1
 # Break in Module router_reg_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v line 129
-# End time: 09:10:47 on Apr 30,2021, Elapsed time: 0:04:52
-# Errors: 0, Warnings: 2
+# Compile of router_reg.v was successful.
+vsim work.router_reg_tb
+# End time: 13:05:38 on Apr 24,2021, Elapsed time: 0:07:57
+# Errors: 0, Warnings: 3
+# vsim work.router_reg_tb 
+# Start time: 13:05:38 on Apr 24,2021
+# Loading work.router_reg_tb
+# Loading work.router_reg
+add wave -r sim:/router_reg_tb/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v(129)
+#    Time: 365 ps  Iteration: 1  Instance: /router_reg_tb
+# 1
+# Break in Module router_reg_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v line 129
+# Compile of router_reg.v failed with 1 errors.
+# Compile of router_reg.v failed with 1 errors.
+# Compile of router_reg.v was successful.
+vsim work.router_reg_tb
+# End time: 13:10:09 on Apr 24,2021, Elapsed time: 0:04:31
+# Errors: 0, Warnings: 4
+# vsim work.router_reg_tb 
+# Start time: 13:10:09 on Apr 24,2021
+# Loading work.router_reg_tb
+# Loading work.router_reg
+add wave -r sim:/router_reg_tb/*
+run -all
+# ** Note: $finish    : C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v(129)
+#    Time: 365 ps  Iteration: 1  Instance: /router_reg_tb
+# 1
+# Break in Module router_reg_tb at C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg_tb.v line 129
+# End time: 13:11:18 on Apr 24,2021, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 1

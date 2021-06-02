@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/intelFPGA_pro/20.4
 vrouter_reg
-!s110 1619753748
+!s110 1619249999
 !i10b 1
-!s100 6UeSJfkWJk<NhAeXifPKk0
+!s100 ocFmBLP3mo?Wo?gQP9fN<3
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IIU]U@PzY:6G09>NEV9Oei2
+I?:LGMkc^4WHII?z0O`1z71
 Z1 dC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/sim/reg
-w1619441920
+w1619249990
 8C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v
 FC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v
-!i122 20
-L0 1 52
+!i122 19
+L0 1 37
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OV;L;2020.3;71
 r1
 !s85 0
 31
-!s108 1619753748.000000
+!s108 1619249999.000000
 !s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v|
 !i113 1

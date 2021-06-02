@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/intelFPGA_pro/20.4
 vrouter_fsm
-!s110 1619753140
+!s110 1619068106
 !i10b 1
-!s100 WcXC`?`8hBN96<>^VThh[3
+!s100 OJ9D306FJ2dj:6g_@Cg373
 Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-ISX?E?bTZU=T[Xi4lcT?b]0
+Ibil1nBcNM_>ZKigoFTlI:2
 Z1 dC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/sim/fsm
-w1619434635
+w1619065810
 8C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v
 FC:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v
-!i122 28
+!i122 20
 L0 1 86
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 OV;L;2020.3;71
 r1
 !s85 0
 31
-!s108 1619753140.000000
+!s108 1619068106.000000
 !s107 C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v|
 !i113 1
