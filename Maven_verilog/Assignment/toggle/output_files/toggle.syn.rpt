@@ -1,6 +1,6 @@
 Synthesis report
-Fri Apr 16 13:13:39 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Thu Jun  3 12:55:23 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr 16 13:13:39 2021 ;
+; Synthesis Status      ; Successful - Thu Jun  3 12:55:23 2021 ;
 ; Revision Name         ; toggle                                ;
 ; Top-level Entity Name ; toggle                                ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -40,7 +40,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Design Assistant include IP blocks                                              ; Off                ; Off                ;
 ; High fanout net threshold for RAM inference                                     ; 15                 ; 15                 ;
-; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Design Assistant limit on reported violations per rule                          ; 5000               ; 5000               ;
 ; Optimization Mode                                                               ; Balanced           ; Balanced           ;
 ; Allow Register Merging                                                          ; On                 ; On                 ;
 ; Allow Register Duplication                                                      ; On                 ; On                 ;
@@ -110,6 +110,8 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Report Source Assignments to ASCII                                              ; On                 ; On                 ;
 ; Report Resource Utilization by Entity to ASCII                                  ; On                 ; On                 ;
 ; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable VHDL static assertion support                                            ; Off                ; Off                ;
+; Enable SystemVerilog static assertion support                                   ; Off                ; Off                ;
 ; Enable State Machines Inference                                                 ; On                 ; On                 ;
 ; Enable formal verification support during compilation                           ; Off                ; Off                ;
 ; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
@@ -221,9 +223,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
-    Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr 16 13:13:34 2021
-    Info: System process ID: 11932
+    Info: Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+    Info: Processing started: Thu Jun  3 12:55:15 2021
+    Info: System process ID: 2248
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off toggle -c toggle
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -246,9 +248,9 @@ Info (21057): Implemented 20 device resources after synthesis - the final resour
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 514 megabytes
-    Info: Processing ended: Fri Apr 16 13:13:39 2021
-    Info: Elapsed time: 00:00:05
-    Info: System process ID: 11932
+    Info: Peak virtual memory: 492 megabytes
+    Info: Processing ended: Thu Jun  3 12:55:23 2021
+    Info: Elapsed time: 00:00:08
+    Info: System process ID: 2248
 
 
