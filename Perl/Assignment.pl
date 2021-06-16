@@ -18,13 +18,15 @@ $result = $string x $a;
 print " output : \n $result \n";
 
 # 4)Write a program that reads a list of numbers (on separate lines) until end of input and then prints for each number the corresponding person's name from the list of a string array as shown below(fred, wilson, kelly, lewis, andrew).For example :if the input numbers were 0,1,3,2 then the output names would be fred,wilson,lewis,kelly.
+print "fred : 0 --- wilson : 1 --- kelly : 2 --- lewis : 3 --- andrew : 4 \n";
 print " enter n numbers ( the modulus will be taken ) press ctrl+D when done : \n ";
 @numbers = <STDIN>;
 @string = ("fred","wilson","kelly","lewis","andrew");
 foreach $num (@numbers) {
         $x = $num%5;
-        print "@string[$x] \n";
+        print "@string[$x] for modulo $x \n";
         }
+
 
 # 5)Calculate Simple interest for year 2000. Assume Principal = 10000,time = 5years ,rate = 10% .(Hint) SI = PTR/100 .
 $principle = 10000;
