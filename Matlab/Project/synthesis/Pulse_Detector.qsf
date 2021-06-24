@@ -2,7 +2,7 @@ set_global_assignment -name FAMILY "Cyclone 10 GX"
 set_global_assignment -name TOP_LEVEL_ENTITY Pulse_Detector
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.4.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:59:12  APRIL 10, 2021"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.4.0 Pro Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Pro Edition"
 set_global_assignment -name VERILOG_FILE ../hdl_project_verilog/hdlsrc/project_detect/subFilter.v
 set_global_assignment -name VERILOG_FILE ../hdl_project_verilog/hdlsrc/project_detect/Pulse_Detector.v
 set_global_assignment -name VERILOG_FILE ../hdl_project_verilog/hdlsrc/project_detect/MATLAB_Function.v

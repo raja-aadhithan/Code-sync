@@ -1,6 +1,6 @@
 Flow report for Pulse_Detector
-Sat Apr 10 13:00:48 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Thu Jun 24 15:19:41 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+
 ; Flow Summary                                        ;
 +-------------+---------------------------------------+
-; Flow Status ; Successful - Sat Apr 10 13:00:48 2021 ;
+; Flow Status ; Successful - Thu Jun 24 15:19:41 2021 ;
 +-------------+---------------------------------------+
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2021 12:59:56 ;
+; Start date & time ; 06/24/2021 15:18:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Pulse_Detector      ;
 +-------------------+---------------------+
@@ -66,8 +66,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------+--------------+---------------------+
 ; Module Name ; Elapsed Time ; Peak Virtual Memory ;
 +-------------+--------------+---------------------+
-; Synthesis   ; 00:00:53     ; 672 MB              ;
-; Total       ; 00:00:53     ; --                  ;
+; Synthesis   ; 00:00:52     ; 676 MB              ;
+; Total       ; 00:00:52     ; --                  ;
 +-------------+--------------+---------------------+
 
 

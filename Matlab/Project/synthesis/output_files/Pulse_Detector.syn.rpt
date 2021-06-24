@@ -1,6 +1,6 @@
 Synthesis report
-Sat Apr 10 13:00:49 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Thu Jun 24 15:19:41 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
 ---------------------
@@ -27,7 +27,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Sat Apr 10 13:00:48 2021 ;
+; Synthesis Status      ; Successful - Thu Jun 24 15:19:41 2021 ;
 ; Revision Name         ; Pulse_Detector                        ;
 ; Top-level Entity Name ; Pulse_Detector                        ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -46,7 +46,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Design Assistant include IP blocks                                              ; Off                ; Off                ;
 ; High fanout net threshold for RAM inference                                     ; 15                 ; 15                 ;
-; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Design Assistant limit on reported violations per rule                          ; 5000               ; 5000               ;
 ; Optimization Mode                                                               ; Balanced           ; Balanced           ;
 ; Allow Register Merging                                                          ; On                 ; On                 ;
 ; Allow Register Duplication                                                      ; On                 ; On                 ;
@@ -116,6 +116,8 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Report Source Assignments to ASCII                                              ; On                 ; On                 ;
 ; Report Resource Utilization by Entity to ASCII                                  ; On                 ; On                 ;
 ; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable VHDL static assertion support                                            ; Off                ; Off                ;
+; Enable SystemVerilog static assertion support                                   ; Off                ; Off                ;
 ; Enable State Machines Inference                                                 ; On                 ; On                 ;
 ; Enable formal verification support during compilation                           ; Off                ; Off                ;
 ; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
@@ -143,17 +145,17 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------------------------------------------------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path                                                 ; File Type              ; File Name with Absolute Path                                                                                                        ; Library ; MD5                              ;
 +----------------------------------------------------------------------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; ../hdl_project_verilog/hdlsrc/project_detect/subFilter.v                         ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/subFilter.v                         ;         ; 22b9cbffae76cb20132e07a2db13ba0f ;
-; ../hdl_project_verilog/hdlsrc/project_detect/Pulse_Detector.v                    ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/Pulse_Detector.v                    ;         ; 440f1cbeb1bb1ee3738da967e40c97c4 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/MATLAB_Function.v                   ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/MATLAB_Function.v                   ;         ; a49a983241bf28fea98203cdc914e091 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/Local_Peak.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/Local_Peak.v                        ;         ; e4c07ff725d8768994407270a66e1ce0 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/FilterTapSystolicWvldin.v           ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/FilterTapSystolicWvldin.v           ;         ; cf480d530271833ebe4cef090e100280 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block1.v                 ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block1.v                 ;         ; a6ac5963a5b55646f16d9ba24e04ec22 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block.v                  ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block.v                  ;         ; ab9b1369c1e932ffa30ffb67b3de9a3a ;
-; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef.v                        ;         ; 9a8ab9e1a86313084f44e006ffb96225 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/FilterBank.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/FilterBank.v                        ;         ; 940aee887e3dd79fd33f78fd0e4712e3 ;
-; ../hdl_project_verilog/hdlsrc/project_detect/Discrete_FIR_Filter_HDL_Optimized.v ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/Discrete_FIR_Filter_HDL_Optimized.v ;         ; 248481cef39717d994aa5c7ae0b975cf ;
-; ../hdl_project_verilog/hdlsrc/project_detect/Compute_Power.v                     ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Matlab/Project/hdl_project_verilog/hdlsrc/project_detect/Compute_Power.v                     ;         ; 7083a2787d3fcca47beecb904b66ce75 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/subFilter.v                         ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/subFilter.v                         ;         ; 22b9cbffae76cb20132e07a2db13ba0f ;
+; ../hdl_project_verilog/hdlsrc/project_detect/Pulse_Detector.v                    ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/Pulse_Detector.v                    ;         ; 440f1cbeb1bb1ee3738da967e40c97c4 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/MATLAB_Function.v                   ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/MATLAB_Function.v                   ;         ; a49a983241bf28fea98203cdc914e091 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/Local_Peak.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/Local_Peak.v                        ;         ; e4c07ff725d8768994407270a66e1ce0 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/FilterTapSystolicWvldin.v           ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/FilterTapSystolicWvldin.v           ;         ; cf480d530271833ebe4cef090e100280 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block1.v                 ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block1.v                 ;         ; a6ac5963a5b55646f16d9ba24e04ec22 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block.v                  ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef_block.v                  ;         ; ab9b1369c1e932ffa30ffb67b3de9a3a ;
+; ../hdl_project_verilog/hdlsrc/project_detect/FilterCoef.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/FilterCoef.v                        ;         ; 9a8ab9e1a86313084f44e006ffb96225 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/FilterBank.v                        ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/FilterBank.v                        ;         ; 940aee887e3dd79fd33f78fd0e4712e3 ;
+; ../hdl_project_verilog/hdlsrc/project_detect/Discrete_FIR_Filter_HDL_Optimized.v ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/Discrete_FIR_Filter_HDL_Optimized.v ;         ; 248481cef39717d994aa5c7ae0b975cf ;
+; ../hdl_project_verilog/hdlsrc/project_detect/Compute_Power.v                     ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/MATLAB/Project/hdl_project_verilog/hdlsrc/project_detect/Compute_Power.v                     ;         ; 7083a2787d3fcca47beecb904b66ce75 ;
 +----------------------------------------------------------------------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -5766,9 +5768,9 @@ Note: DSP block merging and most register packing occurs during the fitter.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
-    Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Sat Apr 10 12:59:55 2021
-    Info: System process ID: 9876
+    Info: Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+    Info: Processing started: Thu Jun 24 15:18:48 2021
+    Info: System process ID: 6664
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off Pulse_Detector -c Pulse_Detector
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -5793,9 +5795,9 @@ Info (21057): Implemented 22363 device resources after synthesis - the final res
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 680 megabytes
-    Info: Processing ended: Sat Apr 10 13:00:49 2021
+    Info: Peak virtual memory: 682 megabytes
+    Info: Processing ended: Thu Jun 24 15:19:42 2021
     Info: Elapsed time: 00:00:54
-    Info: System process ID: 9876
+    Info: System process ID: 6664
 
 
