@@ -1,3 +1,4 @@
+class ram_base_test extends uvm_test; // Extend ram_base_test from uvm_test;
         `uvm_component_utils(ram_base_test) // Factory Registration
         ram_env ram_envh; // Declare the ram_env and ram_wr_agent_config handles as ram_envh and m_ram_cfg respectively
         ram_wr_agent_config m_ram_cfg;
