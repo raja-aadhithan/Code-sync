@@ -1,6 +1,6 @@
 Synthesis report
-Fri Apr 23 21:10:18 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Fri Jul  2 10:25:22 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
 ---------------------
@@ -26,7 +26,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr 23 21:10:18 2021 ;
+; Synthesis Status      ; Successful - Fri Jul  2 10:25:21 2021 ;
 ; Revision Name         ; router_fsm                            ;
 ; Top-level Entity Name ; router_fsm                            ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -45,7 +45,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Design Assistant include IP blocks                                              ; Off                ; Off                ;
 ; High fanout net threshold for RAM inference                                     ; 15                 ; 15                 ;
-; Design Assistant limit on reported violations per rule                          ; 500                ; 500                ;
+; Design Assistant limit on reported violations per rule                          ; 5000               ; 5000               ;
 ; Optimization Mode                                                               ; Balanced           ; Balanced           ;
 ; Allow Register Merging                                                          ; On                 ; On                 ;
 ; Allow Register Duplication                                                      ; On                 ; On                 ;
@@ -115,6 +115,8 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Report Source Assignments to ASCII                                              ; On                 ; On                 ;
 ; Report Resource Utilization by Entity to ASCII                                  ; On                 ; On                 ;
 ; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable VHDL static assertion support                                            ; Off                ; Off                ;
+; Enable SystemVerilog static assertion support                                   ; Off                ; Off                ;
 ; Enable State Machines Inference                                                 ; On                 ; On                 ;
 ; Enable formal verification support during compilation                           ; Off                ; Off                ;
 ; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
@@ -132,7 +134,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------------+------------------------+--------------------------------------------------------------------------+---------+----------------------------------+
 ; File Name with User-Entered Path ; File Type              ; File Name with Absolute Path                                             ; Library ; MD5                              ;
 +----------------------------------+------------------------+--------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_fsm.v                  ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v ;         ; a4fbc7b8fde38603c16482ec136fb150 ;
+; ../router_fsm.v                  ; User Verilog HDL File  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_fsm.v ;         ; 4f0f2bffcae69cfb1a703916d364cb70 ;
 +----------------------------------+------------------------+--------------------------------------------------------------------------+---------+----------------------------------+
 
 
@@ -166,7 +168,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; IOPLLs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+-------------+--------------+
-; |                          ; 17 (17)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; |                   ; router_fsm  ; altera_work  ;
+; |                          ; 18 (18)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; 0 (0)  ; |                   ; router_fsm  ; altera_work  ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,10 +244,10 @@ Encoding Type:  One-Hot
 ; boundary_port          ; 22                                      ;
 ; cyclone10gx_ff         ; 8                                       ;
 ;     plain              ; 8                                       ;
-; cyclone10gx_lcell_comb ; 17                                      ;
-;     normal             ; 17                                      ;
+; cyclone10gx_lcell_comb ; 18                                      ;
+;     normal             ; 18                                      ;
 ;         1 data inputs  ; 1                                       ;
-;         2 data inputs  ; 3                                       ;
+;         2 data inputs  ; 4                                       ;
 ;         3 data inputs  ; 2                                       ;
 ;         4 data inputs  ; 2                                       ;
 ;         5 data inputs  ; 5                                       ;
@@ -255,7 +257,7 @@ Encoding Type:  One-Hot
 ; Max carry chain length ; 0                                       ;
 ;                        ;                                         ;
 ; Max LUT depth          ; 2.00                                    ;
-; Average LUT depth      ; 1.74                                    ;
+; Average LUT depth      ; 1.73                                    ;
 +------------------------+-----------------------------------------+
 
 
@@ -266,12 +268,12 @@ Encoding Type:  One-Hot
 +---------------------------------------------+-------------------+
 ; Estimate of Logic utilization (ALMs needed) ; 11                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 17                ;
+; Combinational ALUT usage for logic          ; 18                ;
 ;     -- 7 input functions                    ; 0                 ;
 ;     -- 6 input functions                    ; 4                 ;
 ;     -- 5 input functions                    ; 5                 ;
 ;     -- 4 input functions                    ; 2                 ;
-;     -- <=3 input functions                  ; 6                 ;
+;     -- <=3 input functions                  ; 7                 ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 8                 ;
 ;                                             ;                   ;
@@ -283,7 +285,7 @@ Encoding Type:  One-Hot
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; i27~0             ;
 ; Maximum fan-out                             ; 8                 ;
-; Total fan-out                               ; 94                ;
+; Total fan-out                               ; 96                ;
 ; Average fan-out                             ; 2.00              ;
 +---------------------------------------------+-------------------+
 
@@ -291,37 +293,5 @@ Encoding Type:  One-Hot
 +--------------------+
 ; Synthesis Messages ;
 +--------------------+
-Info: *******************************************************************
-Info: Running Quartus Prime Synthesis
-    Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr 23 21:10:10 2021
-    Info: System process ID: 11680
-Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_fsm -c router_fsm
-Info: qis_default_flow_script.tcl version: #2
-Info: Initializing Synthesis...
-Info: Project = "router_fsm"
-Info: Revision = "router_fsm"
-Info: Analyzing source files
-Info: Elaborating from top-level entity "router_fsm"
-Info: Found 1 design entities
-Info: There are 1 partitions after elaboration.
-Info: Creating instance-specific data models and dissolving soft partitions
-Info (18299): Expanding entity and wildcard assignments.
-Info (18300): Expanded entity and wildcard assignments. Elapsed time: 00:00:00
-Info: found pre-synthesis snapshots for 1 partition(s)
-Info: Synthesizing partition "root_partition"
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
-Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 17 logic cells
-Info: Successfully synthesized partition
-Info: Saving post-synthesis snapshots for 1 partition(s)
-Info: Quartus Prime Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri Apr 23 21:10:18 2021
-    Info: Elapsed time: 00:00:08
-    Info: System process ID: 11680
 
 
