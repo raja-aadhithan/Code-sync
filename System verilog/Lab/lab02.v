@@ -1,4 +1,4 @@
-nterface ram_if(input bit clock);
+interface ram_if(input bit clock);
 
 // Declare the interface signals:
         // data_in, data_out(logic type , size 64)
