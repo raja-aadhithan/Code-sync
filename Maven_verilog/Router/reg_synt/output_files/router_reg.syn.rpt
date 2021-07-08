@@ -1,6 +1,6 @@
 Synthesis report
-Fri Apr 30 09:07:56 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Thu Jul  8 09:02:42 2021
+Quartus Prime Version 21.2.0 Build 72 06/14/2021 SC Pro Edition
 
 
 ---------------------
@@ -10,24 +10,23 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
   2. Synthesis Settings
   3. Synthesis Source Files Read
   4. Synthesis Partition Summary
-  5. Ignored Source Level Assignments for Top-Level Entity
-  6. Partition "root_partition" Resource Utilization by Entity
-  7. General Register Statistics for Partition "root_partition"
-  8. Multiplexer Restructuring Statistics (Restructuring Performed)
-  9. Registers Added for RAM Pass-Through Logic
- 10. Source Assignments for b_rtl_0|auto_generated
- 11. Parameter Settings for Inferred Entity Instance: b_rtl_0
- 12. Post-Synthesis Netlist Statistics for Partition "root_partition"
- 13. Synthesis Resource Usage Summary for Partition "root_partition"
- 14. Synthesis RAM Summary for Partition "root_partition"
- 15. Synthesis Messages
+  5. Partition "root_partition" Resource Utilization by Entity
+  6. General Register Statistics for Partition "root_partition"
+  7. Multiplexer Restructuring Statistics (Restructuring Performed)
+  8. Registers Added for RAM Pass-Through Logic
+  9. Source Assignments for b_rtl_0|auto_generated
+ 10. Parameter Settings for Inferred Entity Instance: b_rtl_0
+ 11. Post-Synthesis Netlist Statistics for Partition "root_partition"
+ 12. Synthesis Resource Usage Summary for Partition "root_partition"
+ 13. Synthesis RAM Summary for Partition "root_partition"
+ 14. Synthesis Messages
 
 
 
 +---------------------------------------------------------------+
 ; Synthesis Summary                                             ;
 +-----------------------+---------------------------------------+
-; Synthesis Status      ; Successful - Fri Apr 30 09:07:55 2021 ;
+; Synthesis Status      ; Successful - Thu Jul  8 09:02:41 2021 ;
 ; Revision Name         ; router_reg                            ;
 ; Top-level Entity Name ; router_reg                            ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -116,6 +115,8 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ; Report Source Assignments to ASCII                                              ; On                 ; On                 ;
 ; Report Resource Utilization by Entity to ASCII                                  ; On                 ; On                 ;
 ; Size of the Latch Report                                                        ; 100                ; 100                ;
+; Enable VHDL static assertion support                                            ; Off                ; Off                ;
+; Enable SystemVerilog static assertion support                                   ; Off                ; Off                ;
 ; Enable State Machines Inference                                                 ; On                 ; On                 ;
 ; Enable formal verification support during compilation                           ; Off                ; Off                ;
 ; Size of the PR Initial Conditions Report                                        ; 100                ; 100                ;
@@ -128,24 +129,24 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Synthesis Source Files Read                                                                                                                                                                                                                                                                                                 ;
-+------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; File Name with User-Entered Path                                                                                       ; File Type                    ; File Name with Absolute Path                                                                                           ; Library ; MD5                              ;
-+------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
-; ../router_reg.v                                                                                                        ; User Verilog HDL File        ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v                                               ;         ; 1763187923e10a4b5f2f05aaadd7c96e ;
-; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                   ; Megafunction                 ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altsyncram.tdf                                                   ; work    ;                                  ;
-; stratix_ram_block.inc                                                                                                  ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/stratix_ram_block.inc                                            ;         ;                                  ;
-; lpm_mux.inc                                                                                                            ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_mux.inc                                                      ;         ;                                  ;
-; lpm_decode.inc                                                                                                         ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/lpm_decode.inc                                                   ;         ;                                  ;
-; aglobal204.inc                                                                                                         ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/aglobal204.inc                                                   ;         ;                                  ;
-; a_rdenreg.inc                                                                                                          ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/a_rdenreg.inc                                                    ;         ;                                  ;
-; altrom.inc                                                                                                             ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altrom.inc                                                       ;         ;                                  ;
-; altram.inc                                                                                                             ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altram.inc                                                       ;         ;                                  ;
-; altdpram.inc                                                                                                           ; Auto-Found AHDL File         ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/altdpram.inc                                                     ;         ;                                  ;
-; cbx.lst                                                                                                                ; Auto-Found Unspecified File  ; c:/intelfpga_pro/20.4/quartus/libraries/megafunctions/cbx.lst                                                          ;         ;                                  ;
-; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/reg_synt/tmp-clearbox/router_reg/18820/altsyncram_16l1.tdf ; Auto-Generated Megafunction  ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/reg_synt/tmp-clearbox/router_reg/18820/altsyncram_16l1.tdf ;         ;                                  ;
-+------------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Synthesis Source Files Read                                                                                                                                                                                                                                                                                     ;
++------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; File Name with User-Entered Path                                                                                 ; File Type                    ; File Name with Absolute Path                                                                                     ; Library ; MD5                              ;
++------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
+; ../router_reg.v                                                                                                  ; User Verilog HDL File        ; C:/Users/User/Documents/Code-sync/Maven_verilog/Router/router_reg.v                                              ;         ; 1763187923e10a4b5f2f05aaadd7c96e ;
+; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/altsyncram.tdf                                             ; Megafunction                 ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/altsyncram.tdf                                             ; work    ;                                  ;
+; stratix_ram_block.inc                                                                                            ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/stratix_ram_block.inc                                      ;         ;                                  ;
+; lpm_mux.inc                                                                                                      ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/lpm_mux.inc                                                ;         ;                                  ;
+; lpm_decode.inc                                                                                                   ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/lpm_decode.inc                                             ;         ;                                  ;
+; aglobal212.inc                                                                                                   ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/aglobal212.inc                                             ;         ;                                  ;
+; a_rdenreg.inc                                                                                                    ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/a_rdenreg.inc                                              ;         ;                                  ;
+; altrom.inc                                                                                                       ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/altrom.inc                                                 ;         ;                                  ;
+; altram.inc                                                                                                       ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/altram.inc                                                 ;         ;                                  ;
+; altdpram.inc                                                                                                     ; Auto-Found AHDL File         ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/altdpram.inc                                               ;         ;                                  ;
+; cbx.lst                                                                                                          ; Auto-Found Unspecified File  ; c:/intelfpga_pro/21.2/quartus/libraries/megafunctions/cbx.lst                                                    ;         ;                                  ;
+; C:/Users/User/Documents/Code-sync/Maven_verilog/Router/reg_synt/tmp-clearbox/router_reg/6056/altsyncram_16l1.tdf ; Auto-Generated Megafunction  ; C:/Users/User/Documents/Code-sync/Maven_verilog/Router/reg_synt/tmp-clearbox/router_reg/6056/altsyncram_16l1.tdf ;         ;                                  ;
++------------------------------------------------------------------------------------------------------------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -155,16 +156,6 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 +----------------+----------------+---------+--------------+-------+-------------------------+
 ; root_partition ; |              ; Default ;              ;       ;                         ;
 +----------------+----------------+---------+--------------+-------+-------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Ignored Source Level Assignments for Top-Level Entity                                                                                          ;
-+------------+-------+------------------+-------------------------+------------------------------------------------------------------------------+
-; Assignment ; Value ; To               ; Reason                  ; Location                                                                     ;
-+------------+-------+------------------+-------------------------+------------------------------------------------------------------------------+
-; ORIG_DEPTH ; 32    ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v(28) ;
-; ORIG_WIDTH ; 9     ; clk_write_port_0 ; Invalid assignment name ; C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v(28) ;
-+------------+-------+------------------+-------------------------+------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -233,13 +224,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------------------+
 
 
-+------------------------------------------------------------------+
-; Source Assignments for b_rtl_0|auto_generated                    ;
-+---------------------------------+--------------------+------+----+
-; Assignment                      ; Value              ; From ; To ;
-+---------------------------------+--------------------+------+----+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -  ;
-+---------------------------------+--------------------+------+----+
++-----------------------------------------------------------------------------------------------------------------------+
+; Source Assignments for b_rtl_0|auto_generated                                                                         ;
++---------------------------------+--------------------+------+----+----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To ; Source Location                                    ;
++---------------------------------+--------------------+------+----+----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -  ; tmp-clearbox/router_reg/6056/altsyncram_16l1.tdf:0 ;
++---------------------------------+--------------------+------+----+----------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -376,9 +367,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Synthesis
-    Info: Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
-    Info: Processing started: Fri Apr 30 09:07:45 2021
-    Info: System process ID: 18820
+    Info: Version 21.2.0 Build 72 06/14/2021 SC Pro Edition
+    Info: Processing started: Thu Jul  8 09:02:30 2021
+    Info: System process ID: 6056
 Info: Command: quartus_syn --read_settings_files=on --write_settings_files=off router_reg -c router_reg
 Info: qis_default_flow_script.tcl version: #2
 Info: Initializing Synthesis...
@@ -386,9 +377,9 @@ Info: Project = "router_reg"
 Info: Revision = "router_reg"
 Info: Analyzing source files
 Info: Elaborating from top-level entity "router_reg"
-Warning (13469): Verilog HDL assignment warning at router_reg.v(29): truncated value with size 6 to match size of target (5) File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 29
-Warning (13469): Verilog HDL assignment warning at router_reg.v(33): truncated value with size 9 to match size of target (8) File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 33
-Warning (13469): Verilog HDL assignment warning at router_reg.v(34): truncated value with size 6 to match size of target (5) File: C:/Users/Aadhithan/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 34
+Warning (13469): Verilog HDL assignment warning at router_reg.v(29): truncated value with size 6 to match size of target (5) File: C:/Users/User/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 29
+Warning (13469): Verilog HDL assignment warning at router_reg.v(33): truncated value with size 9 to match size of target (8) File: C:/Users/User/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 33
+Warning (13469): Verilog HDL assignment warning at router_reg.v(34): truncated value with size 6 to match size of target (5) File: C:/Users/User/Documents/Code-sync/Maven_verilog/Router/router_reg.v Line: 34
 Info: Found 1 design entities
 Info: There are 1 partitions after elaboration.
 Info: Creating instance-specific data models and dissolving soft partitions
@@ -423,9 +414,9 @@ Info (21057): Implemented 113 device resources after synthesis - the final resou
 Info: Successfully synthesized partition
 Info: Saving post-synthesis snapshots for 1 partition(s)
 Info: Quartus Prime Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 510 megabytes
-    Info: Processing ended: Fri Apr 30 09:07:56 2021
-    Info: Elapsed time: 00:00:11
-    Info: System process ID: 18820
+    Info: Peak virtual memory: 501 megabytes
+    Info: Processing ended: Thu Jul  8 09:02:42 2021
+    Info: Elapsed time: 00:00:12
+    Info: System process ID: 6056
 
 

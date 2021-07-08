@@ -1,6 +1,6 @@
 Flow report for router_reg
-Fri Apr 30 09:07:55 2021
-Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
+Thu Jul  8 09:02:42 2021
+Quartus Prime Version 21.2.0 Build 72 06/14/2021 SC Pro Edition
 
 
 ---------------------
@@ -19,7 +19,7 @@ Quartus Prime Version 20.4.0 Build 72 12/14/2020 SC Pro Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+
 ; Flow Summary                                        ;
 +-------------+---------------------------------------+
-; Flow Status ; Successful - Fri Apr 30 09:07:55 2021 ;
+; Flow Status ; Successful - Thu Jul  8 09:02:41 2021 ;
 +-------------+---------------------------------------+
 
 
@@ -48,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/30/2021 09:07:47 ;
+; Start date & time ; 07/08/2021 09:02:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; router_reg          ;
 +-------------------+---------------------+
@@ -66,8 +66,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------+--------------+---------------------+
 ; Module Name ; Elapsed Time ; Peak Virtual Memory ;
 +-------------+--------------+---------------------+
-; Synthesis   ; 00:00:10     ; 510 MB              ;
-; Total       ; 00:00:10     ; --                  ;
+; Synthesis   ; 00:00:11     ; 501 MB              ;
+; Total       ; 00:00:11     ; --                  ;
 +-------------+--------------+---------------------+
 
 
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------+------------------+------------+------------+----------------+
 ; Module Name ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +-------------+------------------+------------+------------+----------------+
-; Synthesis   ; Aadhithan-PC     ; Windows 10 ; 10.0       ; x86_64         ;
+; Synthesis   ; DESKTOP-IOEGPPP  ; Windows 10 ; 10.0       ; x86_64         ;
 +-------------+------------------+------------+------------+----------------+
 
 

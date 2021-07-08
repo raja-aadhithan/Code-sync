@@ -1,10 +1,7 @@
-module router_fsm(input clock, resetn, pkt_valid, parity_done,
-                        soft_reset_0, soft_reset_1, soft_reset_2,
-                        fifo_full, low_pkt_valid, 
-                        fifo_empty_0, fifo_empty_1, fifo_empty_2,
-                        input [1:0] data_in,
-                        output busy, detect_add, ld_state, laf_state,
-                        full_state, write_enb_reg, rst_int_reg, lfd_state);
+module router_fsm(input clock, resetn, pkt_valid, parity_done, soft_reset_0, soft_reset_1, soft_reset_2,
+                        fifo_full, low_pkt_valid, fifo_empty_0, fifo_empty_1, fifo_empty_2,
+                  input [1:0] data_in,
+                  output busy, detect_add, ld_state, laf_state, full_state, write_enb_reg, rst_int_reg, lfd_state);
 parameter Decode_Address = 3'b000, 
           Load_First_Data = 3'b001,
           Wait_Till_Empty = 3'b010,
