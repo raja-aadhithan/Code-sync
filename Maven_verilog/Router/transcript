@@ -1,0 +1,17 @@
+vsim work.router_top_tb
+# vsim work.router_top_tb 
+# Start time: 11:37:24 on Jul 09,2021
+# Loading work.router_top_tb
+# Loading work.router_top
+# Loading work.router_reg
+# Loading work.router_fsm
+# Loading work.router_sync
+# Loading work.router_fifo
+add wave -r sim:/router_top_tb/*
+run -all
+# ** Note: $finish    : C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v(123)
+#    Time: 2035 ps  Iteration: 0  Instance: /router_top_tb
+# 1
+# Break in Module router_top_tb at C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v line 123
+# End time: 11:39:22 on Jul 09,2021, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 1
