@@ -1,17 +1,73 @@
+# Compile of router_fifo.v was successful.
+# Compile of router_fsm.v was successful.
+# Compile of router_reg.v was successful.
+# Compile of router_sync.v was successful.
+# Compile of router_top.v was successful.
+# Compile of router_top_tb_16.v was successful.
+# Compile of router_top_tb.v was successful.
+# 7 compiles, 0 failed with no errors.
 vsim work.router_top_tb
 # vsim work.router_top_tb 
-# Start time: 11:37:24 on Jul 09,2021
+# Start time: 10:23:26 on Jul 12,2021
 # Loading work.router_top_tb
 # Loading work.router_top
-# Loading work.router_reg
 # Loading work.router_fsm
 # Loading work.router_sync
+# Loading work.router_reg
 # Loading work.router_fifo
-add wave -r sim:/router_top_tb/*
-run -all
-# ** Note: $finish    : C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v(123)
-#    Time: 2035 ps  Iteration: 0  Instance: /router_top_tb
-# 1
-# Break in Module router_top_tb at C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v line 123
-# End time: 11:39:22 on Jul 09,2021, Elapsed time: 0:01:58
-# Errors: 0, Warnings: 1
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'packet_valid' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'datain' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_0' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_1' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_2' not found in the connected module (13th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# Error loading design
+# End time: 10:23:27 on Jul 12,2021, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 2
+# Compile of router_fifo.v was successful.
+# Compile of router_fsm.v was successful.
+# Compile of router_reg.v was successful.
+# Compile of router_sync.v was successful.
+# Compile of router_top.v was successful.
+# Compile of router_top_tb_16.v was successful.
+# Compile of router_top_tb.v was successful.
+# Compile of router_top_gen.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim work.router_top_tb
+# vsim work.router_top_tb 
+# Start time: 10:25:40 on Jul 12,2021
+# Loading work.router_top_tb
+# Loading work.router_top
+# Loading work.router_fsm
+# Loading work.router_sync
+# Loading work.router_reg
+# Loading work.router_fifo
+# ** Error: (vsim-3063) Port 'clk' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'packet_valid' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'datain' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_0' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_1' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# ** Error: (vsim-3063) Port 'vldout_2' not found in the connected module (13th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /router_top_tb/DUT File: C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v Line: 9
+# Error loading design
+# End time: 10:25:40 on Jul 12,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 3
+clear
+# invalid command name "clear"
+clc
+# invalid command name "clc"
+clr
+# invalid command name "clr"
+clear
+# invalid command name "clear"

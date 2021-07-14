@@ -5,19 +5,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	router_top
 
+} {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_gen.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_gen.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module router_top_gen
+
+Top level modules:
+	router_top_gen
+
+} {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module router_top_gen_tb
+
+Top level modules:
+	router_top_gen_tb
+
 } {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fifo.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fifo.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module router_fifo
 
 Top level modules:
 	router_fifo
-
-} {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module router_top_tb
-
-Top level modules:
-	router_top_tb
 
 } {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_sync.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_sync.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -26,19 +33,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	router_sync
 
-} {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fsm.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fsm.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module router_fsm
-
-Top level modules:
-	router_fsm
-
 } {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_reg.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_reg.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module router_reg
 
 Top level modules:
 	router_reg
+
+} {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fsm.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_fsm.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module router_fsm
+
+Top level modules:
+	router_fsm
 
 } {} {}} {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb_16.v} {1 {vlog -work work -stats=none {C:/Users/User/Documents/Code-sync/Router 1x3/RTL/router_top_tb_16.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
