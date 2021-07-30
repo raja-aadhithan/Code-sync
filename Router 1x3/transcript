@@ -1,0 +1,24 @@
+# Compile of router_fifo.v was successful.
+# Compile of router_fsm.v was successful.
+# Compile of router_register.v was successful.
+# Compile of router_sync.v was successful.
+# Compile of router_top.v was successful.
+# Compile of router_tb.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.router_top_tb
+# vsim work.router_top_tb 
+# Start time: 11:14:58 on Jul 30,2021
+# Loading work.router_top_tb
+# Loading work.router_top
+# Loading work.router_fifo
+# Loading work.router_sync
+# Loading work.router_fsm
+# Loading work.router_register
+add wave -r sim:/router_top_tb/*
+run -all
+# ** Note: $finish    : C:/Users/User/Documents/Code-sync/Router 1x3/TB/router_tb.v(91)
+#    Time: 815 ps  Iteration: 0  Instance: /router_top_tb
+# 1
+# Break in Module router_top_tb at C:/Users/User/Documents/Code-sync/Router 1x3/TB/router_tb.v line 91
+# End time: 11:21:21 on Jul 30,2021, Elapsed time: 0:06:23
+# Errors: 0, Warnings: 20
